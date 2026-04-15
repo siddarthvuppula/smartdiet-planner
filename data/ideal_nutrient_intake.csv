@@ -1,0 +1,17 @@
+profile,age_range,diabetic,meal,calories,protein,fat,carbs,fiber,sugar
+non-diabetic-young,18-35,No,break-fast,520,22,16,65,6,10
+non-diabetic-young,18-35,No,lunch,680,28,22,75,8,10
+non-diabetic-young,18-35,No,snacks,210,9,8,27,4,7
+non-diabetic-young,18-35,No,dinner,620,27,21,63,8,9
+non-diabetic-middle,36-59,No,break-fast,500,20,15,60,5,8
+non-diabetic-middle,36-59,No,lunch,650,25,20,70,7,8
+non-diabetic-middle,36-59,No,snacks,200,8,7,25,3,6
+non-diabetic-middle,36-59,No,dinner,600,25,20,60,7,8
+diabetic-young,18-35,Yes,break-fast,400,22,14,45,8,3
+diabetic-young,18-35,Yes,lunch,500,28,18,55,10,3
+diabetic-young,18-35,Yes,snacks,150,8,6,18,5,2
+diabetic-young,18-35,Yes,dinner,450,26,16,50,9,3
+diabetic-middle,36-59,Yes,break-fast,360,20,12,40,8,2
+diabetic-middle,36-59,Yes,lunch,450,25,16,50,10,2
+diabetic-middle,36-59,Yes,snacks,130,7,5,15,5,2
+diabetic-middle,36-59,Yes,dinner,410,23,14,45,9,2

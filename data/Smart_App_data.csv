@@ -1,0 +1,1719 @@
+Participant_ID,Date,Meal_Type,Meal_Name,Dietary_Pattern,Restriction,Cuisine_Type,Calories,Protein_g,Carbs_g,Fat_g,Glycemic_Index
+P-001,3/1/2026,Breakfast,Oatmeal,Vegan,,Korean,646,44,31,23,57
+P-001,3/1/2026,Dinner,Lentil Dahl,Vegan,,Korean,558,11,91,11,75
+P-001,3/2/2026,Breakfast,Oatmeal,Vegan,,Korean,601,27,20,29,81
+P-001,3/2/2026,Lunch,Quinoa Salad,Vegan,,Korean,474,27,39,11,78
+P-001,3/2/2026,Dinner,Lentil Dahl,Vegan,,Korean,349,32,64,24,46
+P-001,3/3/2026,Breakfast,Oatmeal,Vegan,,Korean,798,34,30,22,48
+P-001,3/3/2026,Lunch,Quinoa Salad,Vegan,,Korean,595,22,28,6,72
+P-001,3/3/2026,Dinner,Lentil Dahl,Vegan,,Korean,340,24,32,17,47
+P-001,3/4/2026,Breakfast,Oatmeal,Vegan,,Korean,481,23,54,27,89
+P-001,3/4/2026,Lunch,Quinoa Salad,Vegan,,Korean,625,20,88,28,45
+P-001,3/4/2026,Dinner,Lentil Dahl,Vegan,,Korean,773,45,48,26,50
+P-001,3/5/2026,Breakfast,Oatmeal,Vegan,,Korean,316,30,71,13,34
+P-001,3/5/2026,Lunch,Quinoa Salad,Vegan,,Korean,408,41,70,33,88
+P-001,3/5/2026,Dinner,Lentil Dahl,Vegan,,Korean,371,25,91,22,46
+P-001,3/6/2026,Breakfast,Oatmeal,Vegan,,Korean,485,24,37,21,61
+P-001,3/6/2026,Lunch,Quinoa Salad,Vegan,,Korean,356,19,100,10,80
+P-001,3/6/2026,Dinner,Lentil Dahl,Vegan,,Korean,497,34,96,19,63
+P-001,3/7/2026,Breakfast,Oatmeal,Vegan,,Korean,649,44,54,29,71
+P-001,3/7/2026,Lunch,Quinoa Salad,Vegan,,Korean,380,39,20,35,76
+P-001,3/7/2026,Dinner,Lentil Dahl,Vegan,,Korean,556,21,84,34,36
+P-001,3/8/2026,Breakfast,Oatmeal,Vegan,,Korean,378,33,40,22,79
+P-001,3/8/2026,Lunch,Quinoa Salad,Vegan,,Korean,550,11,34,34,53
+P-001,3/8/2026,Dinner,Tofu Stir-fry,Vegan,,Korean,422,13,50,33,66
+P-001,3/9/2026,Breakfast,Oatmeal,Vegan,,Korean,335,44,36,9,72
+P-001,3/9/2026,Lunch,Quinoa Salad,Vegan,,Korean,435,43,97,18,43
+P-001,3/9/2026,Dinner,Lentil Dahl,Vegan,,Korean,665,29,71,26,71
+P-001,3/10/2026,Breakfast,Oatmeal,Vegan,,Korean,426,24,28,15,31
+P-001,3/10/2026,Lunch,Quinoa Salad,Vegan,,Korean,412,10,29,27,70
+P-001,3/10/2026,Dinner,Lentil Dahl,Vegan,,Korean,316,31,29,21,45
+P-001,3/11/2026,Breakfast,Oatmeal,Vegan,,Korean,670,40,51,30,60
+P-001,3/11/2026,Lunch,Quinoa Salad,Vegan,,Korean,349,37,65,18,56
+P-001,3/11/2026,Dinner,Lentil Dahl,Vegan,,Korean,331,35,63,30,85
+P-001,3/12/2026,Breakfast,Oatmeal,Vegan,,Korean,371,37,43,13,59
+P-001,3/12/2026,Lunch,Quinoa Salad,Vegan,,Korean,713,45,32,6,71
+P-001,3/12/2026,Dinner,Lentil Dahl,Vegan,,Korean,774,25,41,18,61
+P-001,3/13/2026,Breakfast,Oatmeal,Vegan,,Korean,494,10,69,13,89
+P-001,3/13/2026,Lunch,Quinoa Salad,Vegan,,Korean,516,45,82,9,42
+P-001,3/13/2026,Dinner,Lentil Dahl,Vegan,,Korean,682,30,27,6,67
+P-001,3/14/2026,Breakfast,Oatmeal,Vegan,,Korean,329,42,30,32,41
+P-001,3/14/2026,Lunch,Quinoa Salad,Vegan,,Korean,741,25,71,8,90
+P-001,3/14/2026,Dinner,Lentil Dahl,Vegan,,Korean,604,12,99,7,56
+P-002,3/1/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,Korean,435,35,36,26,71
+P-002,3/1/2026,Lunch,Shrimp Salad,Pescatarian,Nut-Free,Korean,775,14,21,19,69
+P-002,3/1/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,Korean,337,44,47,21,46
+P-002,3/2/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,Korean,425,33,56,10,58
+P-002,3/2/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,641,45,58,34,72
+P-002,3/2/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,359,16,90,9,47
+P-002,3/3/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,Korean,651,26,84,20,46
+P-002,3/3/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,624,37,55,6,30
+P-002,3/3/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,434,20,76,22,75
+P-002,3/4/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,579,12,67,23,65
+P-002,3/4/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,457,33,25,33,52
+P-002,3/5/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,Korean,699,45,72,24,77
+P-002,3/5/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,799,21,72,5,41
+P-002,3/5/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,776,36,51,13,40
+P-002,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,413,22,78,16,49
+P-002,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,312,22,71,15,47
+P-002,3/6/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,479,42,71,26,83
+P-002,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,796,26,42,23,46
+P-002,3/7/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,702,30,75,24,62
+P-002,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,322,37,20,21,89
+P-002,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,486,37,28,35,72
+P-002,3/8/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,Korean,668,29,84,14,72
+P-002,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,365,22,73,26,90
+P-002,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,615,29,71,22,83
+P-002,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,635,30,79,19,58
+P-002,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,706,20,30,14,62
+P-002,3/10/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,Korean,719,25,59,12,81
+P-002,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,735,14,78,18,86
+P-002,3/11/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,Korean,656,34,83,17,45
+P-002,3/12/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,Korean,698,37,48,10,81
+P-002,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,325,45,51,34,84
+P-002,3/12/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,Korean,537,43,91,24,50
+P-002,3/13/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,725,45,77,33,40
+P-002,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,432,25,55,29,79
+P-002,3/13/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,525,14,56,12,47
+P-002,3/14/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,Korean,377,24,69,27,39
+P-002,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,Korean,508,31,89,19,56
+P-002,3/14/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,Korean,763,11,93,17,60
+P-003,3/1/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Korean,575,44,97,33,44
+P-003,3/1/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Korean,523,41,23,17,51
+P-003,3/1/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,670,20,79,34,38
+P-003,3/2/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Korean,342,37,37,32,59
+P-003,3/2/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Korean,467,23,78,15,51
+P-003,3/2/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,685,36,52,31,35
+P-003,3/3/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Korean,787,32,48,25,34
+P-003,3/3/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,786,25,45,31,31
+P-003,3/3/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,542,17,92,35,43
+P-003,3/4/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Korean,610,17,40,35,49
+P-003,3/4/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,459,34,70,35,75
+P-003,3/4/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,725,25,33,27,79
+P-003,3/5/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Korean,477,44,74,26,53
+P-003,3/5/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,734,36,82,8,57
+P-003,3/5/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,662,19,75,10,76
+P-003,3/6/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Korean,538,37,95,13,50
+P-003,3/6/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,442,38,51,29,59
+P-003,3/6/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,314,41,61,10,61
+P-003,3/7/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Korean,750,27,91,5,63
+P-003,3/7/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,668,36,82,22,78
+P-003,3/7/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,664,41,77,30,31
+P-003,3/8/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Mexican,639,33,80,22,63
+P-003,3/8/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,480,39,54,14,46
+P-003,3/8/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,361,44,43,11,43
+P-003,3/9/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Mexican,689,43,96,14,36
+P-003,3/9/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,484,21,58,5,75
+P-003,3/9/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,798,13,90,14,74
+P-003,3/10/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,746,10,93,14,60
+P-003,3/10/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,794,13,52,35,85
+P-003,3/10/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,551,14,93,25,73
+P-003,3/11/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mediterranean,427,17,91,29,56
+P-003,3/11/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Mediterranean,697,43,68,19,88
+P-003,3/11/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mediterranean,456,13,98,35,77
+P-003,3/12/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,341,20,50,10,65
+P-003,3/12/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Mexican,530,40,57,6,44
+P-003,3/12/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,740,39,29,26,44
+P-003,3/13/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,517,17,89,12,71
+P-003,3/13/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Mexican,372,14,27,10,80
+P-003,3/13/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,524,17,79,27,49
+P-003,3/14/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,552,38,30,24,32
+P-003,3/14/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,313,15,49,35,73
+P-003,3/14/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,786,11,54,23,32
+P-004,3/1/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,392,37,82,7,60
+P-004,3/1/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,464,16,40,15,56
+P-004,3/1/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,639,35,90,6,59
+P-004,3/2/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,742,42,20,26,85
+P-004,3/2/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,396,43,66,24,78
+P-004,3/2/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,326,23,54,22,38
+P-004,3/3/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,314,25,40,14,65
+P-004,3/3/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,730,17,79,35,37
+P-004,3/4/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,560,27,73,31,60
+P-004,3/4/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,582,19,69,11,88
+P-004,3/4/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,742,14,55,29,80
+P-004,3/5/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,720,10,56,28,49
+P-004,3/5/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,637,41,39,19,64
+P-004,3/5/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,690,44,68,19,89
+P-004,3/6/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,419,36,25,15,77
+P-004,3/6/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,497,19,83,35,32
+P-004,3/6/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,745,16,76,8,63
+P-004,3/7/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,338,40,53,15,69
+P-004,3/7/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,736,44,68,35,50
+P-004,3/8/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,577,12,99,7,45
+P-004,3/8/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,682,15,75,8,78
+P-004,3/8/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,385,29,23,6,50
+P-004,3/9/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,374,25,87,18,66
+P-004,3/9/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,389,15,98,32,54
+P-004,3/9/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,767,19,49,19,70
+P-004,3/10/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,711,39,56,26,64
+P-004,3/10/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,476,29,74,27,46
+P-004,3/10/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,496,40,33,12,54
+P-004,3/11/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,311,35,55,5,66
+P-004,3/11/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,766,41,56,29,81
+P-004,3/11/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,625,22,99,13,73
+P-004,3/12/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,621,16,100,25,32
+P-004,3/12/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,596,33,36,7,88
+P-004,3/12/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,402,18,89,33,53
+P-004,3/13/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,767,40,57,28,85
+P-004,3/13/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,793,14,38,29,44
+P-004,3/13/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,795,45,66,7,80
+P-004,3/14/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,488,26,94,17,82
+P-004,3/14/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,645,24,80,5,69
+P-004,3/14/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Korean,768,24,28,25,82
+P-005,3/1/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,349,25,88,9,54
+P-005,3/2/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,West African,600,19,73,25,36
+P-005,3/2/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,West African,780,27,24,27,53
+P-005,3/2/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,420,33,32,26,53
+P-005,3/3/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,West African,503,27,44,35,37
+P-005,3/3/2026,Lunch,Turkey Club,Omnivore,Nut-Free,West African,639,23,96,5,33
+P-005,3/3/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,364,23,28,31,78
+P-005,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,West African,468,19,96,5,47
+P-005,3/4/2026,Lunch,Turkey Club,Omnivore,Nut-Free,West African,366,44,52,30,41
+P-005,3/4/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,307,32,50,23,50
+P-005,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Korean,681,14,80,19,79
+P-005,3/5/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Korean,531,42,48,35,69
+P-005,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Korean,534,11,27,20,84
+P-005,3/6/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Korean,664,38,29,33,35
+P-005,3/6/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Korean,364,27,99,25,67
+P-005,3/7/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Korean,532,42,97,18,36
+P-005,3/7/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Korean,635,45,47,18,58
+P-005,3/7/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Korean,723,39,71,18,76
+P-005,3/8/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,West African,788,19,80,7,35
+P-005,3/8/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,West African,349,33,36,22,33
+P-005,3/8/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,468,17,72,16,85
+P-005,3/9/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,West African,795,28,96,14,52
+P-005,3/9/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,West African,379,40,48,32,36
+P-005,3/9/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,358,27,93,12,81
+P-005,3/10/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,West African,611,27,23,10,47
+P-005,3/10/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,West African,473,32,20,10,85
+P-005,3/10/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,West African,372,11,31,28,63
+P-005,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,West African,489,29,61,29,90
+P-005,3/11/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,West African,326,19,40,29,69
+P-005,3/12/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Italian,526,36,54,11,78
+P-005,3/12/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Italian,356,28,95,20,63
+P-005,3/12/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Italian,502,13,20,11,49
+P-005,3/13/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Italian,467,17,20,20,77
+P-005,3/13/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Italian,572,24,84,22,83
+P-005,3/13/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Italian,503,12,75,5,59
+P-005,3/14/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Italian,593,35,73,14,37
+P-005,3/14/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Italian,710,39,66,7,57
+P-005,3/14/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Italian,601,35,87,7,55
+P-006,3/1/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mexican,571,42,44,33,79
+P-006,3/1/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,420,16,38,13,42
+P-006,3/1/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mexican,689,14,42,35,79
+P-006,3/2/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mexican,596,38,92,25,70
+P-006,3/2/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,797,30,39,19,34
+P-006,3/2/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,602,13,65,21,34
+P-006,3/3/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mexican,725,28,29,25,85
+P-006,3/3/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,604,42,69,19,67
+P-006,3/3/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mexican,530,22,61,24,60
+P-006,3/4/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mexican,715,31,30,21,71
+P-006,3/4/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,524,38,87,21,69
+P-006,3/4/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mexican,444,34,72,29,51
+P-006,3/5/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,333,31,32,22,73
+P-006,3/5/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,736,19,62,7,67
+P-006,3/5/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,795,35,36,24,75
+P-006,3/6/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,705,31,36,26,74
+P-006,3/6/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,630,37,85,16,31
+P-006,3/6/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,409,31,82,11,44
+P-006,3/7/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,703,16,84,29,64
+P-006,3/7/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mexican,638,31,99,9,68
+P-006,3/7/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,725,20,76,6,56
+P-006,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,685,38,49,22,45
+P-006,3/8/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,762,22,67,26,90
+P-006,3/8/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,693,28,68,21,63
+P-006,3/9/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,609,18,52,6,71
+P-006,3/9/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,778,16,86,32,37
+P-006,3/9/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,530,42,38,31,57
+P-006,3/10/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mexican,512,13,70,21,53
+P-006,3/10/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,414,11,60,34,36
+P-006,3/10/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mexican,370,12,56,34,83
+P-006,3/11/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,529,10,30,5,46
+P-006,3/11/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,781,43,74,8,79
+P-006,3/11/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mexican,324,25,73,25,80
+P-006,3/12/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,605,44,22,25,62
+P-006,3/12/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,519,10,98,16,45
+P-006,3/12/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mexican,642,15,87,16,34
+P-006,3/13/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mexican,499,40,25,25,54
+P-006,3/13/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,308,32,28,16,45
+P-006,3/13/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,368,12,65,22,51
+P-006,3/14/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,656,40,100,10,81
+P-006,3/14/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,318,28,45,6,80
+P-006,3/14/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,777,29,85,17,82
+P-007,3/1/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Mexican,743,31,54,8,81
+P-007,3/1/2026,Lunch,Shrimp Salad,Pescatarian,Diabetic-friendly,Mexican,680,38,69,15,41
+P-007,3/1/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Mexican,488,43,54,30,35
+P-007,3/2/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Mexican,579,28,61,8,35
+P-007,3/2/2026,Lunch,Shrimp Salad,Pescatarian,Diabetic-friendly,Mexican,528,37,41,27,58
+P-007,3/2/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Mexican,745,32,98,18,47
+P-007,3/3/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Mexican,643,35,66,21,81
+P-007,3/3/2026,Lunch,Shrimp Salad,Pescatarian,Diabetic-friendly,Mexican,315,19,97,26,80
+P-007,3/3/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Mexican,420,33,66,17,90
+P-007,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Mexican,490,38,29,23,38
+P-007,3/4/2026,Lunch,Shrimp Salad,Pescatarian,Diabetic-friendly,Mexican,632,27,51,35,37
+P-007,3/5/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Mexican,434,26,77,11,69
+P-007,3/5/2026,Lunch,Shrimp Salad,Pescatarian,Diabetic-friendly,Mexican,402,17,37,32,34
+P-007,3/5/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Mexican,344,30,64,27,34
+P-007,3/6/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Mexican,380,21,66,21,44
+P-007,3/6/2026,Lunch,Shrimp Salad,Pescatarian,Diabetic-friendly,Mexican,371,25,83,5,53
+P-007,3/6/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Mexican,711,45,36,24,86
+P-007,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,569,36,72,31,66
+P-007,3/7/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,530,39,86,16,38
+P-007,3/7/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,693,18,75,21,88
+P-007,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,455,20,40,15,89
+P-007,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,781,43,56,32,35
+P-007,3/8/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,364,29,98,22,35
+P-007,3/9/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Korean,387,31,92,6,82
+P-007,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,785,26,46,29,66
+P-007,3/9/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,755,44,57,25,49
+P-007,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,532,14,27,10,58
+P-007,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,474,19,60,32,75
+P-007,3/10/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,799,35,36,29,53
+P-007,3/11/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,362,27,77,12,39
+P-007,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,496,36,51,35,85
+P-007,3/11/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,397,20,83,21,59
+P-007,3/12/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,783,35,84,19,45
+P-007,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,325,28,83,24,86
+P-007,3/12/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,574,10,33,18,38
+P-007,3/13/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,323,35,26,23,65
+P-007,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,337,34,84,19,78
+P-007,3/13/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,365,16,70,16,80
+P-007,3/14/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,373,22,97,21,55
+P-007,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,370,31,80,21,59
+P-007,3/14/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,467,30,40,17,69
+P-008,3/1/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Italian,488,31,34,18,67
+P-008,3/1/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Italian,605,40,53,35,71
+P-008,3/1/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,669,13,94,20,40
+P-008,3/2/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,375,25,24,23,90
+P-008,3/2/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Italian,525,30,73,9,56
+P-008,3/2/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,696,40,27,27,38
+P-008,3/3/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,569,34,60,35,41
+P-008,3/3/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Italian,579,32,53,24,60
+P-008,3/3/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,585,29,48,35,49
+P-008,3/4/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,462,40,64,22,89
+P-008,3/4/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,362,44,68,33,55
+P-008,3/4/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,448,12,56,35,75
+P-008,3/5/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Italian,403,44,54,34,65
+P-008,3/5/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,615,25,51,6,72
+P-008,3/5/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,419,13,32,18,51
+P-008,3/6/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Italian,793,45,40,18,71
+P-008,3/6/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,633,22,56,15,48
+P-008,3/6/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,633,24,88,28,76
+P-008,3/7/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,728,21,24,31,55
+P-008,3/7/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,683,28,24,5,49
+P-008,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,532,44,87,20,86
+P-008,3/8/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,439,22,34,15,40
+P-008,3/8/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,307,31,57,23,73
+P-008,3/9/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,723,37,85,15,35
+P-008,3/9/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,371,40,61,34,45
+P-008,3/10/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,468,29,94,28,66
+P-008,3/10/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,641,17,79,14,40
+P-008,3/11/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,653,17,57,16,69
+P-008,3/11/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,378,39,97,16,56
+P-008,3/11/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,690,25,96,32,80
+P-008,3/12/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,769,17,27,31,65
+P-008,3/12/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,574,19,41,15,84
+P-008,3/12/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,405,41,31,33,62
+P-008,3/13/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,512,39,92,6,65
+P-008,3/13/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Italian,502,26,20,28,43
+P-008,3/13/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,476,14,89,6,89
+P-008,3/14/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Italian,446,36,43,29,38
+P-008,3/14/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Italian,491,34,77,32,88
+P-008,3/14/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Italian,649,44,37,25,85
+P-009,3/1/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,672,24,20,29,31
+P-009,3/1/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,644,44,74,22,54
+P-009,3/1/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,535,32,39,13,42
+P-009,3/2/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,714,36,98,29,89
+P-009,3/2/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,405,14,32,24,32
+P-009,3/2/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,425,12,71,19,44
+P-009,3/3/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,557,28,49,31,88
+P-009,3/3/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,606,30,50,14,86
+P-009,3/3/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,511,29,55,6,65
+P-009,3/4/2026,Breakfast,Fruit Bowl,Vegetarian,,Mediterranean,584,41,26,16,90
+P-009,3/4/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,568,30,73,18,39
+P-009,3/4/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,575,40,50,32,44
+P-009,3/5/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,587,36,73,22,63
+P-009,3/5/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,404,31,30,34,58
+P-009,3/5/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,670,22,26,13,54
+P-009,3/6/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,711,45,47,20,43
+P-009,3/6/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,789,10,47,34,42
+P-009,3/6/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,686,40,51,27,68
+P-009,3/7/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,464,28,68,19,64
+P-009,3/7/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,484,42,83,19,36
+P-009,3/7/2026,Dinner,Mushroom Risotto,Vegetarian,,Mediterranean,768,23,67,15,56
+P-009,3/8/2026,Breakfast,Pancakes,Vegetarian,,Mexican,583,36,57,9,42
+P-009,3/8/2026,Lunch,Veggie Burger,Vegetarian,,Mexican,726,25,83,22,71
+P-009,3/8/2026,Dinner,Mushroom Risotto,Vegetarian,,Mexican,690,41,82,19,40
+P-009,3/9/2026,Breakfast,Pancakes,Vegetarian,,Mexican,579,41,43,34,86
+P-009,3/9/2026,Lunch,Greek Salad,Vegetarian,,Mexican,568,12,29,35,82
+P-009,3/9/2026,Dinner,Mushroom Risotto,Vegetarian,,Mexican,370,24,28,27,39
+P-009,3/10/2026,Breakfast,Fruit Bowl,Vegetarian,,Italian,637,41,22,5,64
+P-009,3/10/2026,Lunch,Greek Salad,Vegetarian,,Italian,571,27,88,14,31
+P-009,3/10/2026,Dinner,Mushroom Risotto,Vegetarian,,Italian,712,21,33,34,36
+P-009,3/11/2026,Breakfast,Fruit Bowl,Vegetarian,,Italian,717,32,54,30,55
+P-009,3/11/2026,Lunch,Veggie Burger,Vegetarian,,Italian,589,25,48,14,73
+P-009,3/11/2026,Dinner,Mushroom Risotto,Vegetarian,,Italian,739,12,31,17,54
+P-009,3/12/2026,Breakfast,Pancakes,Vegetarian,,Italian,342,41,75,25,80
+P-009,3/12/2026,Lunch,Greek Salad,Vegetarian,,Italian,758,43,25,12,43
+P-009,3/12/2026,Dinner,Mushroom Risotto,Vegetarian,,Italian,438,12,29,26,89
+P-009,3/13/2026,Breakfast,Pancakes,Vegetarian,,Italian,775,30,22,35,43
+P-009,3/13/2026,Lunch,Veggie Burger,Vegetarian,,Italian,775,14,58,10,66
+P-009,3/13/2026,Dinner,Mushroom Risotto,Vegetarian,,Italian,646,44,62,17,78
+P-009,3/14/2026,Breakfast,Pancakes,Vegetarian,,Italian,556,32,26,8,57
+P-009,3/14/2026,Lunch,Veggie Burger,Vegetarian,,Italian,609,35,61,5,70
+P-009,3/14/2026,Dinner,Mushroom Risotto,Vegetarian,,Italian,416,32,90,35,54
+P-010,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,342,27,39,17,75
+P-010,3/1/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Korean,678,34,60,16,36
+P-010,3/1/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,527,33,54,8,38
+P-010,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,508,16,23,7,52
+P-010,3/2/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,701,30,69,5,48
+P-010,3/2/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,592,43,41,26,54
+P-010,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,374,14,41,18,47
+P-010,3/3/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,339,33,52,35,45
+P-010,3/3/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,615,22,78,8,38
+P-010,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,617,34,62,19,51
+P-010,3/4/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,453,30,97,35,74
+P-010,3/4/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,793,35,60,14,77
+P-010,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,424,30,68,13,82
+P-010,3/5/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,777,22,95,22,41
+P-010,3/5/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,787,39,46,19,81
+P-010,3/6/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,644,41,37,25,49
+P-010,3/6/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,704,34,29,19,68
+P-010,3/6/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,559,36,89,6,80
+P-010,3/7/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,355,25,65,10,71
+P-010,3/7/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,630,35,62,35,80
+P-010,3/7/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,432,24,85,28,63
+P-010,3/8/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,491,35,79,29,73
+P-010,3/8/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,476,11,81,8,48
+P-010,3/8/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,725,19,64,14,51
+P-010,3/9/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,543,16,76,28,74
+P-010,3/9/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,322,17,22,32,51
+P-010,3/9/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,776,25,86,10,65
+P-010,3/10/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,708,35,100,10,41
+P-010,3/10/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,314,22,77,23,57
+P-010,3/10/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,442,14,93,8,81
+P-010,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,534,17,53,26,85
+P-010,3/11/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,605,34,98,17,67
+P-010,3/11/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,534,21,58,34,69
+P-010,3/12/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,422,29,34,10,53
+P-010,3/12/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,514,18,93,17,57
+P-010,3/12/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,584,20,82,14,38
+P-010,3/13/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,787,10,82,9,42
+P-010,3/13/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,509,41,73,27,83
+P-010,3/13/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,589,11,48,14,32
+P-010,3/14/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,534,41,90,21,37
+P-010,3/14/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,578,33,89,31,78
+P-011,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,452,12,77,13,52
+P-011,3/1/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,524,17,50,11,81
+P-011,3/1/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,740,37,41,24,38
+P-011,3/2/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,572,27,96,22,40
+P-011,3/2/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,593,27,85,33,73
+P-011,3/2/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,684,36,27,13,85
+P-011,3/3/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,374,30,51,29,83
+P-011,3/3/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,595,27,100,18,54
+P-011,3/3/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,506,42,55,27,89
+P-011,3/4/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,597,10,31,28,59
+P-011,3/4/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,707,44,70,11,57
+P-011,3/4/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,465,28,63,22,66
+P-011,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,323,16,100,30,83
+P-011,3/5/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,739,20,76,19,30
+P-011,3/5/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,652,18,58,10,85
+P-011,3/6/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,342,33,41,6,55
+P-011,3/6/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,519,15,32,5,43
+P-011,3/6/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,415,43,76,5,30
+P-011,3/7/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,655,18,81,7,44
+P-011,3/7/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,352,30,67,33,49
+P-011,3/7/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,628,19,28,21,66
+P-011,3/8/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,770,36,98,26,58
+P-011,3/8/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mediterranean,351,18,35,23,76
+P-011,3/8/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Mediterranean,705,18,51,13,71
+P-011,3/9/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Korean,405,43,97,21,42
+P-011,3/9/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Korean,327,25,83,17,37
+P-011,3/9/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Korean,570,10,66,34,50
+P-011,3/10/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Korean,487,44,42,29,60
+P-011,3/10/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Korean,600,14,21,13,43
+P-011,3/11/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,516,35,30,25,64
+P-011,3/11/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,342,29,30,21,88
+P-011,3/11/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,500,14,59,27,57
+P-011,3/12/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,344,37,34,19,69
+P-011,3/12/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,679,21,35,5,75
+P-011,3/12/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,554,32,86,21,80
+P-011,3/13/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,683,27,35,29,87
+P-011,3/13/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,332,26,93,25,34
+P-011,3/14/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,739,20,67,10,46
+P-011,3/14/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,416,42,20,6,84
+P-011,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,541,33,69,34,39
+P-012,3/1/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Japanese,414,30,51,18,88
+P-012,3/1/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,722,14,93,16,37
+P-012,3/1/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,391,24,86,6,55
+P-012,3/2/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,467,15,90,19,30
+P-012,3/2/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,701,29,99,12,59
+P-012,3/2/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,675,44,51,9,30
+P-012,3/3/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,786,31,20,29,72
+P-012,3/3/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,353,23,87,12,56
+P-012,3/4/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,347,12,49,33,84
+P-012,3/4/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,534,15,94,8,62
+P-012,3/4/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,603,13,75,26,38
+P-012,3/5/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,710,35,61,15,58
+P-012,3/5/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,403,18,94,8,39
+P-012,3/5/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,460,36,35,22,52
+P-012,3/6/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,435,17,31,10,81
+P-012,3/6/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,410,30,38,7,75
+P-012,3/6/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,562,13,58,13,82
+P-012,3/7/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,683,45,51,8,59
+P-012,3/7/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,306,13,48,9,42
+P-012,3/8/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,598,26,29,5,34
+P-012,3/8/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,347,31,35,6,90
+P-012,3/8/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,593,37,70,20,31
+P-012,3/9/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,765,21,55,13,58
+P-012,3/9/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,617,25,57,20,56
+P-012,3/9/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,344,27,69,9,56
+P-012,3/10/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,622,44,22,17,80
+P-012,3/10/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,700,41,64,34,66
+P-012,3/10/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,392,11,60,24,44
+P-012,3/11/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,692,24,40,8,45
+P-012,3/11/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,717,13,48,23,84
+P-012,3/11/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,778,21,42,12,67
+P-012,3/12/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,602,11,65,35,66
+P-012,3/12/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,396,41,89,14,41
+P-012,3/12/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,419,24,22,21,60
+P-012,3/13/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Mexican,390,30,27,5,39
+P-012,3/13/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Mexican,733,43,66,35,34
+P-012,3/13/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Mexican,600,16,63,14,50
+P-012,3/14/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Mexican,632,30,42,27,65
+P-012,3/14/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Mexican,414,21,68,14,76
+P-012,3/14/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Mexican,673,10,93,17,84
+P-013,3/1/2026,Breakfast,Avocado Toast,Pescatarian,,Mediterranean,627,16,83,9,51
+P-013,3/1/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Mediterranean,477,30,41,25,86
+P-013,3/1/2026,Dinner,Grilled Fish,Pescatarian,,Mediterranean,528,10,53,11,45
+P-013,3/2/2026,Breakfast,Avocado Toast,Pescatarian,,Mediterranean,324,34,76,28,56
+P-013,3/2/2026,Lunch,Shrimp Salad,Pescatarian,,Mediterranean,751,34,64,22,54
+P-013,3/2/2026,Dinner,Grilled Fish,Pescatarian,,Mediterranean,742,24,40,19,34
+P-013,3/3/2026,Dinner,Grilled Fish,Pescatarian,,Mediterranean,475,20,68,10,76
+P-013,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,660,11,75,35,71
+P-013,3/4/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,327,16,62,11,42
+P-013,3/4/2026,Dinner,Grilled Fish,Pescatarian,,Indian,773,44,53,26,48
+P-013,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,581,41,39,6,53
+P-013,3/5/2026,Dinner,Grilled Fish,Pescatarian,,Indian,402,16,23,11,40
+P-013,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,359,29,70,20,61
+P-013,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,628,44,69,10,53
+P-013,3/6/2026,Dinner,Grilled Fish,Pescatarian,,Indian,528,12,53,19,59
+P-013,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,377,16,30,26,52
+P-013,3/7/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,687,24,90,6,83
+P-013,3/7/2026,Dinner,Grilled Fish,Pescatarian,,Indian,794,44,80,23,86
+P-013,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,737,12,84,23,87
+P-013,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,617,19,35,35,78
+P-013,3/8/2026,Dinner,Miso Cod,Pescatarian,,Indian,797,23,44,9,32
+P-013,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,721,19,96,13,50
+P-013,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,344,34,91,17,65
+P-013,3/9/2026,Dinner,Miso Cod,Pescatarian,,Indian,534,10,99,23,63
+P-013,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,590,16,33,23,79
+P-013,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,574,32,72,13,54
+P-013,3/10/2026,Dinner,Miso Cod,Pescatarian,,Indian,542,12,42,13,55
+P-013,3/11/2026,Breakfast,Avocado Toast,Pescatarian,,Indian,502,31,50,6,77
+P-013,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,490,11,63,31,80
+P-013,3/11/2026,Dinner,Miso Cod,Pescatarian,,Indian,551,16,49,9,49
+P-013,3/12/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,673,36,97,25,35
+P-013,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,721,36,82,29,63
+P-013,3/12/2026,Dinner,Miso Cod,Pescatarian,,Indian,333,29,84,17,38
+P-013,3/13/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,388,22,45,31,33
+P-013,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,770,33,45,13,53
+P-013,3/13/2026,Dinner,Miso Cod,Pescatarian,,Indian,625,17,23,12,53
+P-013,3/14/2026,Breakfast,Fruit Yogurt,Pescatarian,,Indian,600,45,64,16,40
+P-013,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Indian,725,15,56,5,54
+P-014,3/1/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,633,36,85,5,85
+P-014,3/1/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Mexican,542,18,42,24,81
+P-014,3/2/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,795,27,74,33,54
+P-014,3/2/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Mexican,411,39,58,26,63
+P-014,3/2/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Mexican,599,16,20,21,72
+P-014,3/3/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,604,28,58,26,36
+P-014,3/3/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Mexican,441,30,55,13,71
+P-014,3/3/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Mexican,396,19,86,29,45
+P-014,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,638,30,37,28,31
+P-014,3/4/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Mexican,764,36,71,17,77
+P-014,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,671,24,88,25,80
+P-014,3/5/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Mexican,559,29,41,31,72
+P-014,3/5/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Mexican,349,40,36,28,46
+P-014,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,635,15,48,16,44
+P-014,3/6/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Mexican,703,31,67,13,67
+P-014,3/6/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Mexican,327,14,80,33,42
+P-014,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mexican,452,36,26,32,84
+P-014,3/7/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Mexican,509,39,38,15,85
+P-014,3/7/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Mexican,470,21,60,25,33
+P-014,3/8/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Korean,550,15,36,24,57
+P-014,3/8/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,794,40,69,5,32
+P-014,3/8/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,756,30,87,11,31
+P-014,3/9/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Korean,655,32,59,9,36
+P-014,3/9/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,385,14,25,14,90
+P-014,3/9/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,522,18,63,33,61
+P-014,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,309,24,48,28,38
+P-014,3/10/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,558,20,35,16,75
+P-014,3/10/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,748,26,88,24,33
+P-014,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,653,17,73,19,54
+P-014,3/11/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,659,19,46,27,73
+P-014,3/12/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,618,18,73,31,87
+P-014,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,444,17,33,20,42
+P-014,3/12/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,483,36,57,10,32
+P-014,3/13/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,469,25,20,5,72
+P-014,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,593,41,39,35,35
+P-014,3/13/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,670,16,52,25,44
+P-014,3/14/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,325,16,42,32,32
+P-014,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,646,30,74,28,37
+P-014,3/14/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,304,18,41,15,52
+P-015,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,505,35,78,13,83
+P-015,3/1/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,709,36,41,8,38
+P-015,3/1/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,782,20,33,18,88
+P-015,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,612,34,65,24,31
+P-015,3/2/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Indian,547,41,34,33,56
+P-015,3/2/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,635,30,21,27,85
+P-015,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,589,24,63,21,63
+P-015,3/3/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,638,25,81,16,72
+P-015,3/3/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,729,45,98,6,30
+P-015,3/4/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Indian,745,20,29,29,61
+P-015,3/4/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,442,13,84,12,65
+P-015,3/4/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,420,15,78,19,81
+P-015,3/5/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Indian,461,17,83,28,71
+P-015,3/5/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,581,10,31,30,68
+P-015,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,635,39,63,16,82
+P-015,3/6/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,532,31,91,29,69
+P-015,3/6/2026,Dinner,Spaghetti Bolognese,Omnivore,Nut-Free,Indian,666,38,34,8,78
+P-015,3/7/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,580,43,67,27,36
+P-015,3/8/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Indian,354,26,98,11,42
+P-015,3/8/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Indian,534,22,63,8,78
+P-015,3/8/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,695,38,78,26,67
+P-015,3/9/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Indian,571,13,90,34,57
+P-015,3/9/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Indian,560,21,94,10,76
+P-015,3/9/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,636,30,84,33,54
+P-015,3/10/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,440,35,63,14,58
+P-015,3/10/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Indian,608,42,58,31,74
+P-015,3/10/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,677,45,100,11,42
+P-015,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,663,21,84,22,74
+P-015,3/11/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,587,40,94,23,90
+P-015,3/11/2026,Dinner,Chicken Curry,Omnivore,Nut-Free,Indian,682,44,56,33,84
+P-015,3/12/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,327,13,45,13,78
+P-015,3/12/2026,Dinner,Spaghetti Bolognese,Omnivore,Nut-Free,Indian,374,13,57,11,78
+P-015,3/13/2026,Breakfast,Scrambled Eggs,Omnivore,Nut-Free,Indian,615,45,48,28,71
+P-015,3/13/2026,Lunch,Chicken Wrap,Omnivore,Nut-Free,Indian,701,28,26,34,54
+P-015,3/13/2026,Dinner,Spaghetti Bolognese,Omnivore,Nut-Free,Indian,794,45,26,5,77
+P-015,3/14/2026,Breakfast,Toast & Bacon,Omnivore,Nut-Free,Indian,724,24,67,29,67
+P-015,3/14/2026,Lunch,Turkey Club,Omnivore,Nut-Free,Indian,450,38,42,26,34
+P-015,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,Nut-Free,Indian,563,17,68,6,57
+P-016,3/1/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mediterranean,469,39,39,6,39
+P-016,3/1/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mediterranean,696,29,82,30,66
+P-016,3/1/2026,Dinner,Paneer Tikka,Vegetarian,Nut-Free,Mediterranean,701,30,87,12,41
+P-016,3/2/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mediterranean,578,44,71,7,52
+P-016,3/2/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mediterranean,469,31,66,14,43
+P-016,3/2/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mediterranean,587,10,34,26,52
+P-016,3/3/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mediterranean,790,12,61,17,88
+P-016,3/3/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mediterranean,431,44,56,5,88
+P-016,3/3/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mediterranean,549,12,57,33,71
+P-016,3/4/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mediterranean,797,44,88,5,70
+P-016,3/4/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mediterranean,742,37,33,11,64
+P-016,3/4/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mediterranean,631,14,39,5,59
+P-016,3/5/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mediterranean,428,45,29,23,82
+P-016,3/5/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mediterranean,498,38,100,17,57
+P-016,3/6/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mediterranean,303,14,94,6,74
+P-016,3/6/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Mediterranean,557,16,57,30,73
+P-016,3/6/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mediterranean,691,38,68,17,82
+P-016,3/7/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Mediterranean,369,35,89,14,70
+P-016,3/7/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mediterranean,790,10,90,32,65
+P-016,3/7/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mediterranean,593,35,88,22,90
+P-016,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Mexican,408,36,85,9,40
+P-016,3/8/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Mexican,399,17,43,26,81
+P-016,3/8/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Mexican,684,45,79,25,65
+P-016,3/9/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Indian,597,41,62,16,38
+P-016,3/9/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Indian,445,14,44,15,61
+P-016,3/9/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Indian,655,19,92,23,53
+P-016,3/10/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Indian,460,25,48,27,77
+P-016,3/10/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Indian,484,18,62,33,60
+P-016,3/10/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Indian,456,41,90,8,41
+P-016,3/11/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Indian,723,18,88,11,46
+P-016,3/11/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Indian,756,11,84,25,31
+P-016,3/11/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Indian,693,23,24,22,46
+P-016,3/12/2026,Breakfast,Fruit Bowl,Vegetarian,Nut-Free,Indian,696,19,66,17,44
+P-016,3/12/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Indian,738,28,37,19,62
+P-016,3/12/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Indian,557,10,50,32,81
+P-016,3/13/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Indian,528,20,42,23,90
+P-016,3/13/2026,Lunch,Greek Salad,Vegetarian,Nut-Free,Indian,676,40,65,6,44
+P-016,3/13/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Indian,435,33,49,6,72
+P-016,3/14/2026,Breakfast,Pancakes,Vegetarian,Nut-Free,Indian,540,39,25,6,71
+P-016,3/14/2026,Lunch,Veggie Burger,Vegetarian,Nut-Free,Indian,727,26,94,22,66
+P-016,3/14/2026,Dinner,Mushroom Risotto,Vegetarian,Nut-Free,Indian,600,14,86,13,54
+P-017,3/1/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,West African,705,40,97,5,62
+P-017,3/1/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,384,24,29,21,71
+P-017,3/1/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,395,20,66,24,75
+P-017,3/2/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,West African,469,17,81,26,60
+P-017,3/2/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,631,36,22,12,32
+P-017,3/2/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,368,42,25,33,66
+P-017,3/3/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,West African,606,11,56,35,35
+P-017,3/3/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,744,40,41,12,83
+P-017,3/3/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,598,21,99,26,62
+P-017,3/4/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,West African,532,14,49,17,54
+P-017,3/4/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,567,42,73,31,39
+P-017,3/4/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,761,12,88,21,78
+P-017,3/5/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,West African,608,44,20,33,90
+P-017,3/5/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,489,12,87,18,44
+P-017,3/5/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,693,34,64,23,81
+P-017,3/6/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,West African,517,18,52,20,79
+P-017,3/6/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,606,44,72,13,42
+P-017,3/7/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,492,23,60,18,53
+P-017,3/7/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,599,26,53,32,64
+P-017,3/8/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,West African,648,35,46,18,65
+P-017,3/8/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,489,45,91,20,46
+P-017,3/8/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,West African,696,35,37,32,85
+P-017,3/9/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,West African,658,20,32,11,62
+P-017,3/9/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,West African,581,13,40,17,70
+P-017,3/10/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Mediterranean,332,26,48,16,35
+P-017,3/10/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Mediterranean,614,43,56,27,68
+P-017,3/10/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Mediterranean,627,41,76,5,42
+P-017,3/11/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Mediterranean,399,12,96,21,63
+P-017,3/11/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Mediterranean,484,25,20,10,35
+P-017,3/11/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Mediterranean,642,35,71,23,42
+P-017,3/12/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Mediterranean,346,45,56,28,83
+P-017,3/12/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Mediterranean,477,27,48,24,42
+P-017,3/12/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Mediterranean,302,26,42,18,62
+P-017,3/13/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Mediterranean,784,17,85,35,46
+P-017,3/13/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Mediterranean,655,38,68,23,60
+P-017,3/13/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Mediterranean,648,39,95,32,31
+P-017,3/14/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Mediterranean,703,24,49,30,50
+P-017,3/14/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Mediterranean,574,10,53,12,48
+P-017,3/14/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Mediterranean,338,45,42,20,50
+P-018,3/1/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,Korean,555,22,50,28,45
+P-018,3/1/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,Korean,417,22,51,31,69
+P-018,3/1/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,361,15,83,24,30
+P-018,3/2/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,Korean,546,33,99,15,61
+P-018,3/2/2026,Lunch,Veggie Burger,Vegetarian,Gluten-Free,Korean,551,21,85,13,55
+P-018,3/2/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,327,43,74,20,90
+P-018,3/3/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,Korean,651,21,78,8,74
+P-018,3/3/2026,Lunch,Veggie Burger,Vegetarian,Gluten-Free,Korean,304,10,46,17,67
+P-018,3/3/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,741,26,43,22,46
+P-018,3/4/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,Korean,394,41,74,11,56
+P-018,3/4/2026,Lunch,Veggie Burger,Vegetarian,Gluten-Free,Korean,737,35,55,19,41
+P-018,3/4/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,716,16,54,30,45
+P-018,3/5/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,Korean,709,19,80,30,30
+P-018,3/5/2026,Lunch,Veggie Burger,Vegetarian,Gluten-Free,Korean,757,43,88,28,50
+P-018,3/5/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,587,13,70,8,74
+P-018,3/6/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,Korean,729,16,77,28,51
+P-018,3/6/2026,Lunch,Veggie Burger,Vegetarian,Gluten-Free,Korean,585,26,64,5,56
+P-018,3/6/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,595,44,42,29,48
+P-018,3/7/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,Korean,677,38,30,17,69
+P-018,3/7/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,Korean,744,20,63,18,70
+P-018,3/7/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,764,14,30,10,51
+P-018,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,Korean,436,35,54,33,58
+P-018,3/8/2026,Lunch,Veggie Burger,Vegetarian,Gluten-Free,Korean,511,20,43,32,31
+P-018,3/8/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,428,15,46,10,55
+P-018,3/9/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,Korean,313,35,87,29,35
+P-018,3/9/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,Korean,635,34,59,12,45
+P-018,3/9/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Korean,364,18,87,31,40
+P-018,3/10/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,American,543,39,89,34,47
+P-018,3/10/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,American,785,44,42,23,68
+P-018,3/10/2026,Dinner,Mushroom Risotto,Vegetarian,Gluten-Free,American,568,44,59,34,52
+P-018,3/11/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,American,457,33,72,13,39
+P-018,3/11/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,American,717,18,64,14,60
+P-018,3/11/2026,Dinner,Mushroom Risotto,Vegetarian,Gluten-Free,American,784,40,58,5,79
+P-018,3/12/2026,Breakfast,Pancakes,Vegetarian,Gluten-Free,American,303,45,67,11,56
+P-018,3/12/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,American,427,20,69,31,54
+P-018,3/12/2026,Dinner,Mushroom Risotto,Vegetarian,Gluten-Free,American,620,25,86,29,81
+P-018,3/13/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,American,632,44,54,18,42
+P-018,3/13/2026,Lunch,Greek Salad,Vegetarian,Gluten-Free,American,448,17,78,24,58
+P-018,3/13/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,American,464,11,39,6,64
+P-018,3/14/2026,Breakfast,Fruit Bowl,Vegetarian,Gluten-Free,Indian,524,10,49,7,39
+P-018,3/14/2026,Dinner,Paneer Tikka,Vegetarian,Gluten-Free,Indian,702,41,67,19,74
+P-019,3/1/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,436,35,29,22,60
+P-019,3/1/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,718,34,21,8,79
+P-019,3/1/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,694,38,51,28,32
+P-019,3/2/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,640,23,80,17,73
+P-019,3/2/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,622,12,90,21,37
+P-019,3/2/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,484,13,47,8,45
+P-019,3/3/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,441,17,70,30,45
+P-019,3/4/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,490,15,51,10,61
+P-019,3/4/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,330,32,39,27,64
+P-019,3/4/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,419,30,91,30,71
+P-019,3/5/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,398,11,68,16,76
+P-019,3/5/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,661,38,91,14,64
+P-019,3/5/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,395,44,64,15,76
+P-019,3/6/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,740,45,40,7,63
+P-019,3/6/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,434,44,66,19,30
+P-019,3/6/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,675,21,22,24,84
+P-019,3/7/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,332,44,69,11,63
+P-019,3/7/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,613,28,61,18,71
+P-019,3/7/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,637,14,25,31,90
+P-019,3/8/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,548,22,32,6,66
+P-019,3/8/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,550,43,99,27,67
+P-019,3/8/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,610,14,21,34,88
+P-019,3/9/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,539,13,66,22,77
+P-019,3/9/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,488,13,98,13,63
+P-019,3/10/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Korean,565,16,32,28,44
+P-019,3/10/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,569,25,92,25,90
+P-019,3/10/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,682,16,93,16,73
+P-019,3/11/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Korean,705,21,90,17,62
+P-019,3/11/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,607,38,65,33,50
+P-019,3/11/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,511,37,61,24,45
+P-019,3/12/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Korean,484,38,77,35,55
+P-019,3/13/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,453,24,47,32,50
+P-019,3/14/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Korean,583,42,91,23,89
+P-019,3/14/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Korean,535,32,39,9,46
+P-019,3/14/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Korean,419,26,58,7,66
+P-020,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Indian,549,16,96,25,49
+P-020,3/1/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Indian,340,13,62,16,86
+P-020,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Indian,682,10,100,17,33
+P-020,3/2/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Indian,463,44,92,9,50
+P-020,3/2/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Indian,325,35,77,29,68
+P-020,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Indian,702,35,38,9,51
+P-020,3/3/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Indian,325,45,71,13,35
+P-020,3/3/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Indian,657,18,37,20,65
+P-020,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Indian,587,43,51,12,34
+P-020,3/4/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Indian,650,15,34,26,56
+P-020,3/4/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Indian,464,32,96,25,31
+P-020,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Indian,720,38,99,9,58
+P-020,3/5/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Indian,491,19,30,8,77
+P-020,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,475,17,59,19,60
+P-020,3/6/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Mediterranean,404,44,86,29,46
+P-020,3/7/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,492,43,25,13,40
+P-020,3/7/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mediterranean,656,27,26,19,71
+P-020,3/7/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Mediterranean,638,27,66,32,36
+P-020,3/8/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,800,16,60,20,85
+P-020,3/8/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,401,42,78,22,89
+P-020,3/8/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,772,43,59,15,61
+P-020,3/9/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,480,32,100,14,45
+P-020,3/9/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,715,13,100,13,86
+P-020,3/9/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,783,45,55,12,39
+P-020,3/10/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,673,34,86,35,73
+P-020,3/10/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,513,25,93,9,57
+P-020,3/10/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,529,44,36,11,71
+P-020,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,458,43,37,18,88
+P-020,3/11/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,777,20,60,7,65
+P-020,3/11/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,462,19,23,29,50
+P-020,3/12/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,West African,526,27,39,29,42
+P-020,3/12/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,690,27,97,23,69
+P-020,3/12/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,West African,651,11,65,7,74
+P-020,3/13/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,664,33,43,32,54
+P-020,3/13/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,West African,398,24,24,18,78
+P-020,3/13/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,413,22,46,7,41
+P-020,3/14/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,West African,652,30,78,33,45
+P-020,3/14/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,West African,668,30,70,24,90
+P-020,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,West African,568,12,86,8,58
+P-021,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,,Mexican,585,34,86,29,70
+P-021,3/1/2026,Lunch,Turkey Club,Omnivore,,Mexican,449,38,70,33,49
+P-021,3/1/2026,Dinner,Spaghetti Bolognese,Omnivore,,Mexican,536,20,74,14,69
+P-021,3/2/2026,Breakfast,Toast & Bacon,Omnivore,,Mexican,724,38,31,28,62
+P-021,3/2/2026,Lunch,Turkey Club,Omnivore,,Mexican,501,36,61,19,31
+P-021,3/2/2026,Dinner,Spaghetti Bolognese,Omnivore,,Mexican,664,22,78,7,46
+P-021,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,,Mexican,667,17,31,8,75
+P-021,3/3/2026,Lunch,Turkey Club,Omnivore,,Mexican,568,34,85,24,90
+P-021,3/3/2026,Dinner,Spaghetti Bolognese,Omnivore,,Mexican,322,20,62,23,85
+P-021,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,,Mexican,693,13,73,14,49
+P-021,3/4/2026,Lunch,Chicken Wrap,Omnivore,,Mexican,620,21,35,33,38
+P-021,3/4/2026,Dinner,Spaghetti Bolognese,Omnivore,,Mexican,691,26,21,19,61
+P-021,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,,Mexican,751,41,50,11,67
+P-021,3/5/2026,Lunch,Chicken Wrap,Omnivore,,Mexican,526,15,96,24,30
+P-021,3/5/2026,Dinner,Spaghetti Bolognese,Omnivore,,Mexican,617,45,46,6,41
+P-021,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,,Mexican,737,12,93,31,68
+P-021,3/6/2026,Lunch,Turkey Club,Omnivore,,Mexican,355,36,42,10,73
+P-021,3/6/2026,Dinner,Chicken Curry,Omnivore,,Mexican,794,39,94,16,89
+P-021,3/7/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,688,37,90,7,48
+P-021,3/7/2026,Lunch,Turkey Club,Omnivore,,Korean,740,27,62,21,56
+P-021,3/7/2026,Dinner,Chicken Curry,Omnivore,,Korean,355,43,31,20,76
+P-021,3/8/2026,Breakfast,Toast & Bacon,Omnivore,,Korean,518,30,53,21,66
+P-021,3/8/2026,Lunch,Turkey Club,Omnivore,,Korean,366,41,86,28,70
+P-021,3/8/2026,Dinner,Chicken Curry,Omnivore,,Korean,662,28,44,5,37
+P-021,3/9/2026,Breakfast,Toast & Bacon,Omnivore,,Indian,615,36,72,6,51
+P-021,3/9/2026,Lunch,Turkey Club,Omnivore,,Indian,305,22,56,13,80
+P-021,3/9/2026,Dinner,Chicken Curry,Omnivore,,Indian,581,30,20,8,73
+P-021,3/10/2026,Breakfast,Toast & Bacon,Omnivore,,Indian,791,11,42,11,51
+P-021,3/10/2026,Lunch,Chicken Wrap,Omnivore,,Indian,769,40,24,25,38
+P-021,3/10/2026,Dinner,Spaghetti Bolognese,Omnivore,,Indian,536,36,27,31,63
+P-021,3/11/2026,Breakfast,Toast & Bacon,Omnivore,,Indian,574,11,46,23,73
+P-021,3/11/2026,Lunch,Chicken Wrap,Omnivore,,Indian,333,19,55,31,31
+P-021,3/11/2026,Dinner,Spaghetti Bolognese,Omnivore,,Indian,573,20,93,24,54
+P-021,3/12/2026,Breakfast,Toast & Bacon,Omnivore,,Indian,661,30,24,13,56
+P-021,3/12/2026,Lunch,Chicken Wrap,Omnivore,,Indian,531,29,47,21,49
+P-021,3/12/2026,Dinner,Spaghetti Bolognese,Omnivore,,Indian,319,22,31,19,62
+P-021,3/13/2026,Breakfast,Toast & Bacon,Omnivore,,Italian,474,40,87,14,79
+P-021,3/13/2026,Lunch,Turkey Club,Omnivore,,Italian,720,43,36,11,76
+P-021,3/14/2026,Breakfast,Toast & Bacon,Omnivore,,Italian,459,12,96,32,35
+P-021,3/14/2026,Lunch,Turkey Club,Omnivore,,Italian,566,29,22,23,78
+P-021,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,402,22,56,13,64
+P-022,3/1/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,Indian,307,45,85,8,43
+P-022,3/1/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,438,19,56,23,45
+P-022,3/1/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Indian,613,31,89,19,33
+P-022,3/2/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,Indian,496,13,31,18,55
+P-022,3/2/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,603,38,98,16,49
+P-022,3/2/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Indian,688,44,30,34,78
+P-022,3/3/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,Indian,710,39,32,19,49
+P-022,3/3/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,540,24,48,9,85
+P-022,3/3/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Indian,486,35,43,27,88
+P-022,3/4/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Indian,549,11,28,20,37
+P-022,3/4/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,387,28,64,24,66
+P-022,3/4/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Indian,718,16,61,22,71
+P-022,3/5/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Korean,511,25,99,12,65
+P-022,3/5/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Korean,333,31,46,31,74
+P-022,3/5/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Korean,590,31,89,27,45
+P-022,3/6/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Korean,358,39,61,22,36
+P-022,3/6/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Korean,789,35,28,24,36
+P-022,3/6/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Korean,719,34,61,20,71
+P-022,3/7/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,Korean,687,19,39,19,64
+P-022,3/7/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Korean,400,23,60,14,66
+P-022,3/7/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Korean,667,32,31,23,30
+P-022,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Korean,331,33,90,35,33
+P-022,3/8/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,Korean,740,28,23,12,57
+P-022,3/9/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Korean,495,35,68,18,64
+P-022,3/9/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Korean,371,22,91,17,83
+P-022,3/9/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,Korean,447,18,37,5,34
+P-022,3/10/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Korean,799,18,30,9,71
+P-022,3/10/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Korean,619,21,78,21,57
+P-022,3/10/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,Korean,481,24,43,18,68
+P-022,3/11/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Italian,556,27,72,34,64
+P-022,3/11/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Italian,319,40,67,8,67
+P-022,3/11/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,Italian,673,43,55,19,63
+P-022,3/12/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,Indian,650,44,94,14,69
+P-022,3/12/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,698,10,80,19,62
+P-022,3/12/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,Indian,469,36,65,35,81
+P-022,3/13/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Indian,672,26,27,25,60
+P-022,3/13/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,636,28,99,5,48
+P-022,3/13/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,Indian,339,27,52,9,69
+P-022,3/14/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,Indian,357,21,95,28,39
+P-022,3/14/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,Indian,389,26,50,20,41
+P-022,3/14/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,Indian,343,19,96,34,82
+P-023,3/1/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,421,38,41,11,66
+P-023,3/1/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,327,26,34,6,40
+P-023,3/1/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,454,40,88,12,54
+P-023,3/2/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,571,37,21,14,89
+P-023,3/2/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,461,43,25,8,88
+P-023,3/2/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,732,37,98,34,71
+P-023,3/3/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,350,26,94,17,59
+P-023,3/3/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,566,31,43,15,65
+P-023,3/4/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,528,32,48,28,48
+P-023,3/4/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Indian,617,15,27,35,68
+P-023,3/5/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Indian,662,17,31,32,68
+P-023,3/5/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,758,17,43,13,48
+P-023,3/5/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Indian,772,27,74,27,87
+P-023,3/6/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Indian,699,14,55,29,33
+P-023,3/6/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,330,26,53,10,58
+P-023,3/6/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Indian,612,35,42,25,61
+P-023,3/7/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Indian,614,16,76,27,46
+P-023,3/7/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,592,26,77,5,87
+P-023,3/7/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Indian,777,12,69,13,39
+P-023,3/8/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Indian,563,41,81,18,55
+P-023,3/8/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,576,24,20,17,74
+P-023,3/8/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Indian,590,44,65,15,73
+P-023,3/9/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Indian,487,44,63,7,83
+P-023,3/9/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,390,45,25,35,54
+P-023,3/9/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Indian,499,16,100,27,52
+P-023,3/10/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Indian,397,18,24,11,31
+P-023,3/10/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Indian,550,34,28,30,64
+P-023,3/10/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Indian,794,38,22,6,51
+P-023,3/11/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,634,43,78,35,73
+P-023,3/11/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Japanese,679,24,29,6,77
+P-023,3/11/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,764,12,51,27,71
+P-023,3/12/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,457,16,78,24,40
+P-023,3/12/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Japanese,718,16,34,20,68
+P-023,3/12/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,711,22,74,15,81
+P-023,3/13/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,361,44,37,15,83
+P-023,3/13/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Japanese,323,21,62,7,37
+P-023,3/13/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,656,33,90,10,58
+P-023,3/14/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,705,34,40,5,86
+P-023,3/14/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Japanese,391,15,95,33,48
+P-023,3/14/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,654,18,46,9,70
+P-024,3/1/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,605,21,83,24,90
+P-024,3/1/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,West African,478,36,20,22,45
+P-024,3/1/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,616,33,89,21,44
+P-024,3/2/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,327,22,34,30,39
+P-024,3/2/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,West African,554,21,40,26,89
+P-024,3/3/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,471,39,25,8,77
+P-024,3/3/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,West African,380,11,82,21,37
+P-024,3/3/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,527,30,73,11,77
+P-024,3/4/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,West African,416,16,50,28,56
+P-024,3/4/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,West African,412,14,80,23,61
+P-024,3/4/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,410,39,42,17,53
+P-024,3/5/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,West African,403,31,36,6,74
+P-024,3/5/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,West African,356,39,78,18,40
+P-024,3/5/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,451,20,98,33,40
+P-024,3/6/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,West African,510,43,82,32,43
+P-024,3/6/2026,Lunch,Veggie Burger,Vegetarian,Diabetic-friendly,West African,307,37,51,12,50
+P-024,3/6/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,774,19,93,33,30
+P-024,3/7/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,517,43,70,20,81
+P-024,3/7/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,West African,553,25,30,22,78
+P-024,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,West African,451,25,31,5,60
+P-024,3/8/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,535,11,78,19,79
+P-024,3/8/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,704,33,100,19,75
+P-024,3/9/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,West African,757,31,87,6,48
+P-024,3/9/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,784,44,93,30,43
+P-024,3/9/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,750,31,27,21,90
+P-024,3/10/2026,Breakfast,Fruit Bowl,Vegetarian,Diabetic-friendly,West African,496,33,79,24,32
+P-024,3/10/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,586,14,91,27,79
+P-024,3/10/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,576,17,81,28,90
+P-024,3/11/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,464,32,54,21,73
+P-024,3/11/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,490,32,77,20,62
+P-024,3/11/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,663,44,88,33,48
+P-024,3/12/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,396,39,31,7,55
+P-024,3/12/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,789,14,33,10,47
+P-024,3/12/2026,Dinner,Paneer Tikka,Vegetarian,Diabetic-friendly,West African,377,23,86,35,70
+P-024,3/13/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,367,40,64,18,58
+P-024,3/13/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,396,14,22,32,81
+P-024,3/13/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,West African,510,31,61,20,67
+P-024,3/14/2026,Breakfast,Pancakes,Vegetarian,Diabetic-friendly,West African,534,29,92,9,87
+P-024,3/14/2026,Lunch,Greek Salad,Vegetarian,Diabetic-friendly,West African,433,24,81,16,48
+P-024,3/14/2026,Dinner,Mushroom Risotto,Vegetarian,Diabetic-friendly,West African,480,28,78,35,40
+P-025,3/1/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Korean,382,25,34,6,50
+P-025,3/1/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,433,33,43,11,65
+P-025,3/1/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,800,32,38,16,58
+P-025,3/2/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Korean,771,11,71,34,61
+P-025,3/2/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,379,10,89,21,51
+P-025,3/2/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,758,28,93,26,39
+P-025,3/3/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,652,17,81,33,32
+P-025,3/3/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,457,11,71,24,83
+P-025,3/3/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,467,13,97,25,42
+P-025,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,400,11,30,22,84
+P-025,3/4/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,799,42,70,11,61
+P-025,3/4/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,765,33,70,9,75
+P-025,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,445,32,64,14,58
+P-025,3/5/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,672,38,73,30,58
+P-025,3/5/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,673,36,37,31,67
+P-025,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,744,43,62,7,89
+P-025,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,303,36,54,18,41
+P-025,3/6/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,402,21,68,14,65
+P-025,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,599,29,83,22,77
+P-025,3/7/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,301,19,53,14,70
+P-025,3/7/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,634,28,73,10,61
+P-025,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,691,27,83,7,68
+P-025,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,589,37,53,25,73
+P-025,3/8/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,491,42,93,5,84
+P-025,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,536,18,65,10,33
+P-025,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,766,32,26,14,48
+P-025,3/9/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,692,21,32,24,78
+P-025,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,732,29,54,26,74
+P-025,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,596,32,38,5,38
+P-025,3/10/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,548,36,63,34,88
+P-025,3/11/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,725,22,91,24,74
+P-025,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,572,45,34,18,59
+P-025,3/11/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,367,11,81,16,49
+P-025,3/12/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,605,43,63,10,75
+P-025,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,413,18,38,27,44
+P-025,3/12/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,340,37,34,7,31
+P-025,3/13/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,355,12,85,23,33
+P-025,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,333,29,21,29,36
+P-025,3/13/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,600,22,43,26,52
+P-025,3/14/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Mediterranean,480,20,84,29,76
+P-025,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Mediterranean,334,16,94,29,30
+P-025,3/14/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Mediterranean,387,44,20,28,36
+P-026,3/1/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,644,16,43,31,52
+P-026,3/1/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,409,42,49,18,37
+P-026,3/1/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,363,39,34,21,38
+P-026,3/2/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,669,12,30,15,61
+P-026,3/2/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,607,29,76,12,65
+P-026,3/2/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,396,14,80,35,73
+P-026,3/3/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,524,43,30,8,39
+P-026,3/3/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,679,20,28,16,42
+P-026,3/4/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,419,37,83,13,78
+P-026,3/4/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,439,35,65,20,72
+P-026,3/4/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,548,42,55,9,79
+P-026,3/5/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,418,18,23,8,77
+P-026,3/5/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,647,11,42,17,68
+P-026,3/5/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,618,16,29,26,78
+P-026,3/6/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,450,41,82,21,46
+P-026,3/6/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,787,12,75,33,88
+P-026,3/6/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,736,34,76,19,32
+P-026,3/7/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,520,18,59,27,54
+P-026,3/7/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,645,41,90,26,64
+P-026,3/7/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,737,20,84,6,55
+P-026,3/8/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,646,32,56,15,33
+P-026,3/9/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,691,31,68,8,57
+P-026,3/9/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,479,13,51,12,45
+P-026,3/9/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,766,14,59,8,51
+P-026,3/10/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,636,37,92,21,87
+P-026,3/10/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,540,11,60,17,66
+P-026,3/10/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,713,41,32,27,73
+P-026,3/11/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,385,29,66,18,42
+P-026,3/11/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,730,44,47,14,46
+P-026,3/12/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,680,15,94,8,67
+P-026,3/12/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,710,43,80,18,43
+P-026,3/12/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,721,29,84,30,49
+P-026,3/13/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,505,26,99,21,59
+P-026,3/13/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,751,11,100,27,63
+P-026,3/13/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,409,39,54,34,70
+P-026,3/14/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Korean,778,13,86,11,53
+P-026,3/14/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Korean,682,29,75,18,50
+P-026,3/14/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,733,36,54,31,48
+P-027,3/1/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,358,19,44,5,45
+P-027,3/1/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,537,41,91,18,57
+P-027,3/1/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,403,20,54,9,31
+P-027,3/2/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,629,12,82,30,31
+P-027,3/2/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,608,29,28,33,56
+P-027,3/2/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,503,18,50,8,66
+P-027,3/3/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,724,43,52,20,86
+P-027,3/3/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,695,30,62,31,67
+P-027,3/3/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,778,37,47,9,36
+P-027,3/4/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Korean,430,13,82,22,53
+P-027,3/4/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Korean,579,37,80,26,45
+P-027,3/4/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Korean,485,40,67,31,49
+P-027,3/5/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,653,25,52,22,54
+P-027,3/5/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,762,17,88,32,45
+P-027,3/5/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,765,35,52,14,35
+P-027,3/6/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,740,20,76,25,50
+P-027,3/6/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,704,12,55,32,35
+P-027,3/6/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,677,36,62,27,57
+P-027,3/7/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Japanese,559,14,65,18,68
+P-027,3/7/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,467,39,23,29,33
+P-027,3/7/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,527,18,20,17,42
+P-027,3/8/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Japanese,380,25,86,27,79
+P-027,3/8/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,705,30,77,20,85
+P-027,3/8/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,651,30,56,11,35
+P-027,3/9/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,310,11,91,25,69
+P-027,3/9/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,401,26,41,6,55
+P-027,3/9/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,345,33,41,35,66
+P-027,3/10/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,771,39,83,8,44
+P-027,3/10/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,741,27,56,28,61
+P-027,3/10/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,405,23,56,28,73
+P-027,3/11/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,448,26,50,24,58
+P-027,3/11/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,650,39,30,5,60
+P-027,3/11/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,654,35,47,27,54
+P-027,3/12/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,348,45,27,6,51
+P-027,3/12/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,481,12,20,13,62
+P-027,3/12/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Japanese,502,33,36,35,87
+P-027,3/13/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Japanese,557,41,63,33,59
+P-027,3/13/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Japanese,571,37,38,13,37
+P-027,3/13/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,746,27,66,34,57
+P-027,3/14/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Japanese,564,30,75,33,40
+P-027,3/14/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Japanese,584,38,26,11,39
+P-027,3/14/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Japanese,540,26,40,27,59
+P-028,3/1/2026,Breakfast,Toast & Bacon,Omnivore,,American,534,41,34,32,76
+P-028,3/1/2026,Lunch,Turkey Club,Omnivore,,American,478,15,46,32,48
+P-028,3/1/2026,Dinner,Chicken Curry,Omnivore,,American,683,42,54,23,87
+P-028,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,,American,569,21,73,34,34
+P-028,3/2/2026,Lunch,Turkey Club,Omnivore,,American,348,31,23,14,73
+P-028,3/2/2026,Dinner,Chicken Curry,Omnivore,,American,491,16,61,9,31
+P-028,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,468,12,99,35,58
+P-028,3/3/2026,Lunch,Turkey Club,Omnivore,,Italian,408,13,56,15,81
+P-028,3/3/2026,Dinner,Chicken Curry,Omnivore,,Italian,787,34,31,17,46
+P-028,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,310,23,40,17,79
+P-028,3/4/2026,Lunch,Turkey Club,Omnivore,,Italian,361,29,82,30,57
+P-028,3/4/2026,Dinner,Chicken Curry,Omnivore,,Italian,483,16,67,21,42
+P-028,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,588,37,31,29,57
+P-028,3/5/2026,Lunch,Chicken Wrap,Omnivore,,Italian,622,37,31,6,62
+P-028,3/5/2026,Dinner,Chicken Curry,Omnivore,,Italian,414,19,83,21,70
+P-028,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,340,40,58,9,38
+P-028,3/6/2026,Lunch,Chicken Wrap,Omnivore,,Italian,427,43,74,14,66
+P-028,3/7/2026,Breakfast,Scrambled Eggs,Omnivore,,Japanese,511,16,79,26,76
+P-028,3/7/2026,Lunch,Chicken Wrap,Omnivore,,Japanese,430,15,84,5,37
+P-028,3/7/2026,Dinner,Chicken Curry,Omnivore,,Japanese,702,21,70,6,35
+P-028,3/8/2026,Breakfast,Scrambled Eggs,Omnivore,,Japanese,670,39,77,24,81
+P-028,3/8/2026,Lunch,Turkey Club,Omnivore,,Japanese,408,21,30,28,68
+P-028,3/8/2026,Dinner,Spaghetti Bolognese,Omnivore,,Japanese,573,11,20,17,37
+P-028,3/9/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,636,41,58,24,82
+P-028,3/9/2026,Lunch,Turkey Club,Omnivore,,Italian,644,35,58,7,38
+P-028,3/9/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,717,11,44,32,31
+P-028,3/10/2026,Breakfast,Toast & Bacon,Omnivore,,Italian,731,44,44,7,49
+P-028,3/10/2026,Lunch,Turkey Club,Omnivore,,Italian,516,11,34,10,87
+P-028,3/10/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,541,11,77,23,45
+P-028,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,470,10,33,25,84
+P-028,3/11/2026,Lunch,Chicken Wrap,Omnivore,,Italian,677,45,57,6,61
+P-028,3/11/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,671,41,49,27,33
+P-028,3/12/2026,Breakfast,Scrambled Eggs,Omnivore,,Italian,332,27,73,33,60
+P-028,3/12/2026,Lunch,Chicken Wrap,Omnivore,,Italian,529,37,22,10,48
+P-028,3/12/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,524,24,84,12,67
+P-028,3/13/2026,Breakfast,Toast & Bacon,Omnivore,,Italian,367,28,69,35,56
+P-028,3/13/2026,Lunch,Chicken Wrap,Omnivore,,Italian,707,40,40,24,43
+P-028,3/13/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,366,21,45,10,68
+P-028,3/14/2026,Breakfast,Toast & Bacon,Omnivore,,Italian,455,25,46,22,33
+P-028,3/14/2026,Lunch,Chicken Wrap,Omnivore,,Italian,433,32,40,10,82
+P-028,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,,Italian,713,14,63,18,37
+P-029,3/1/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Indian,701,32,25,29,86
+P-029,3/1/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,736,42,97,26,36
+P-029,3/1/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Indian,709,39,34,8,80
+P-029,3/2/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,559,16,41,25,37
+P-029,3/2/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,672,28,76,29,62
+P-029,3/2/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Indian,631,33,62,31,38
+P-029,3/3/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,425,40,63,14,62
+P-029,3/3/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,666,36,66,25,72
+P-029,3/3/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Indian,703,24,37,30,57
+P-029,3/4/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,736,43,66,35,31
+P-029,3/4/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,343,31,60,17,79
+P-029,3/4/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Indian,688,12,39,33,66
+P-029,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,669,30,64,5,82
+P-029,3/5/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,771,19,71,19,71
+P-029,3/5/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,703,38,64,33,81
+P-029,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,454,15,24,22,51
+P-029,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,566,44,56,11,35
+P-029,3/6/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,474,20,22,5,86
+P-029,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,696,29,74,21,37
+P-029,3/7/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,621,42,65,8,33
+P-029,3/7/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,452,10,78,15,45
+P-029,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,757,44,96,12,52
+P-029,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,665,34,86,28,45
+P-029,3/8/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,398,33,78,8,39
+P-029,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,331,37,36,20,43
+P-029,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,569,35,95,22,63
+P-029,3/9/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,625,37,76,27,89
+P-029,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,383,19,84,9,61
+P-029,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,660,42,87,8,74
+P-029,3/10/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,682,20,91,16,88
+P-029,3/11/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,361,33,93,14,32
+P-029,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,456,33,58,14,61
+P-029,3/12/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,779,29,56,11,41
+P-029,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,362,45,64,7,85
+P-029,3/13/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,472,34,80,31,76
+P-029,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,370,42,78,29,58
+P-029,3/13/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,672,30,31,30,69
+P-029,3/14/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,502,31,89,6,72
+P-029,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,743,20,23,23,70
+P-029,3/14/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Korean,629,45,30,11,69
+P-030,3/1/2026,Breakfast,Avocado Toast,Pescatarian,,Mexican,361,44,43,35,31
+P-030,3/1/2026,Lunch,Tuna Poke Bowl,Pescatarian,,Mexican,425,38,30,30,64
+P-030,3/1/2026,Dinner,Grilled Fish,Pescatarian,,Mexican,601,12,82,32,89
+P-030,3/2/2026,Breakfast,Avocado Toast,Pescatarian,,West African,570,30,68,13,35
+P-030,3/2/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,386,28,38,10,46
+P-030,3/2/2026,Dinner,Grilled Fish,Pescatarian,,West African,787,36,41,6,69
+P-030,3/3/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,499,16,60,9,56
+P-030,3/3/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,782,17,26,11,45
+P-030,3/3/2026,Dinner,Grilled Fish,Pescatarian,,West African,552,42,84,17,90
+P-030,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,508,14,81,5,56
+P-030,3/4/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,437,45,95,26,36
+P-030,3/4/2026,Dinner,Grilled Fish,Pescatarian,,West African,702,18,58,23,56
+P-030,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,700,19,67,22,40
+P-030,3/5/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,516,45,77,6,30
+P-030,3/5/2026,Dinner,Grilled Fish,Pescatarian,,West African,634,20,20,6,89
+P-030,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,648,34,64,31,70
+P-030,3/6/2026,Lunch,Shrimp Salad,Pescatarian,,West African,323,20,88,23,34
+P-030,3/6/2026,Dinner,Grilled Fish,Pescatarian,,West African,362,18,91,13,86
+P-030,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,752,31,53,29,75
+P-030,3/7/2026,Lunch,Shrimp Salad,Pescatarian,,West African,464,31,46,19,68
+P-030,3/7/2026,Dinner,Miso Cod,Pescatarian,,West African,630,10,97,20,30
+P-030,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,758,41,70,22,35
+P-030,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,575,11,76,26,37
+P-030,3/8/2026,Dinner,Grilled Fish,Pescatarian,,West African,498,21,21,8,59
+P-030,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,680,11,55,26,88
+P-030,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,717,29,48,12,61
+P-030,3/9/2026,Dinner,Grilled Fish,Pescatarian,,West African,552,23,20,11,82
+P-030,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,556,41,41,22,42
+P-030,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,649,21,28,23,38
+P-030,3/10/2026,Dinner,Grilled Fish,Pescatarian,,West African,777,24,86,28,80
+P-030,3/11/2026,Breakfast,Fruit Yogurt,Pescatarian,,West African,796,44,98,13,73
+P-030,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,780,37,26,32,90
+P-030,3/11/2026,Dinner,Grilled Fish,Pescatarian,,West African,440,17,86,19,61
+P-030,3/12/2026,Breakfast,Avocado Toast,Pescatarian,,West African,324,27,73,22,58
+P-030,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,471,15,93,30,31
+P-030,3/12/2026,Dinner,Grilled Fish,Pescatarian,,West African,653,37,29,34,45
+P-030,3/13/2026,Breakfast,Avocado Toast,Pescatarian,,West African,620,16,23,20,57
+P-030,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,,West African,620,31,52,12,36
+P-030,3/13/2026,Dinner,Miso Cod,Pescatarian,,West African,720,31,86,30,45
+P-030,3/14/2026,Breakfast,Avocado Toast,Pescatarian,,West African,620,38,94,8,35
+P-030,3/14/2026,Lunch,Shrimp Salad,Pescatarian,,West African,460,14,36,6,88
+P-030,3/14/2026,Dinner,Miso Cod,Pescatarian,,West African,612,37,28,8,73
+P-031,3/1/2026,Breakfast,Fruit Smoothie,Vegan,,Korean,419,10,78,17,59
+P-031,3/1/2026,Lunch,Chickpea Wrap,Vegan,,Korean,473,11,78,21,51
+P-031,3/1/2026,Dinner,Lentil Dahl,Vegan,,Korean,352,10,96,27,34
+P-031,3/2/2026,Breakfast,Oatmeal,Vegan,,Korean,626,42,52,16,56
+P-031,3/2/2026,Lunch,Chickpea Wrap,Vegan,,Korean,424,18,25,6,38
+P-031,3/2/2026,Dinner,Lentil Dahl,Vegan,,Korean,791,32,59,23,86
+P-031,3/3/2026,Breakfast,Oatmeal,Vegan,,Korean,608,31,57,16,30
+P-031,3/3/2026,Lunch,Chickpea Wrap,Vegan,,Korean,329,25,84,31,83
+P-031,3/3/2026,Dinner,Lentil Dahl,Vegan,,Korean,476,22,45,25,88
+P-031,3/4/2026,Breakfast,Oatmeal,Vegan,,Korean,543,39,96,27,51
+P-031,3/4/2026,Lunch,Chickpea Wrap,Vegan,,Korean,471,29,73,15,40
+P-031,3/4/2026,Dinner,Lentil Dahl,Vegan,,Korean,553,24,20,25,44
+P-031,3/5/2026,Breakfast,Oatmeal,Vegan,,Korean,546,31,68,11,55
+P-031,3/5/2026,Lunch,Quinoa Salad,Vegan,,Korean,305,14,65,5,65
+P-031,3/5/2026,Dinner,Lentil Dahl,Vegan,,Korean,399,33,25,5,42
+P-031,3/6/2026,Breakfast,Oatmeal,Vegan,,Korean,473,45,51,10,42
+P-031,3/6/2026,Dinner,Lentil Dahl,Vegan,,Korean,725,18,68,25,80
+P-031,3/7/2026,Breakfast,Oatmeal,Vegan,,Korean,533,25,67,30,53
+P-031,3/7/2026,Lunch,Quinoa Salad,Vegan,,Korean,749,14,35,9,86
+P-031,3/7/2026,Dinner,Lentil Dahl,Vegan,,Korean,572,34,67,15,68
+P-031,3/8/2026,Breakfast,Oatmeal,Vegan,,Korean,737,44,57,30,39
+P-031,3/8/2026,Lunch,Quinoa Salad,Vegan,,Korean,707,27,36,32,62
+P-031,3/8/2026,Dinner,Lentil Dahl,Vegan,,Korean,672,15,80,30,72
+P-031,3/9/2026,Breakfast,Oatmeal,Vegan,,Korean,751,42,67,20,63
+P-031,3/9/2026,Lunch,Quinoa Salad,Vegan,,Korean,491,43,81,27,61
+P-031,3/9/2026,Dinner,Lentil Dahl,Vegan,,Korean,626,12,46,12,87
+P-031,3/10/2026,Breakfast,Oatmeal,Vegan,,Korean,456,37,68,23,40
+P-031,3/10/2026,Lunch,Quinoa Salad,Vegan,,Korean,581,15,37,29,35
+P-031,3/10/2026,Dinner,Lentil Dahl,Vegan,,Korean,417,12,79,21,69
+P-031,3/11/2026,Breakfast,Oatmeal,Vegan,,Korean,488,41,60,13,54
+P-031,3/11/2026,Dinner,Lentil Dahl,Vegan,,Korean,338,32,30,14,83
+P-031,3/12/2026,Breakfast,Oatmeal,Vegan,,Korean,441,24,32,8,34
+P-031,3/12/2026,Lunch,Quinoa Salad,Vegan,,Korean,470,22,62,13,49
+P-031,3/12/2026,Dinner,Tofu Stir-fry,Vegan,,Korean,397,18,89,34,46
+P-031,3/13/2026,Breakfast,Oatmeal,Vegan,,Korean,506,35,94,29,71
+P-031,3/13/2026,Dinner,Lentil Dahl,Vegan,,Korean,743,35,49,12,76
+P-031,3/14/2026,Breakfast,Oatmeal,Vegan,,Korean,702,45,79,28,82
+P-031,3/14/2026,Lunch,Quinoa Salad,Vegan,,Korean,733,22,74,29,90
+P-031,3/14/2026,Dinner,Lentil Dahl,Vegan,,Korean,530,45,23,16,38
+P-032,3/1/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,473,24,73,18,73
+P-032,3/1/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,466,11,92,30,32
+P-032,3/2/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,590,35,68,11,90
+P-032,3/2/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,396,40,33,15,66
+P-032,3/2/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,347,20,33,26,65
+P-032,3/3/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Korean,395,22,28,34,54
+P-032,3/3/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,637,43,28,19,33
+P-032,3/3/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,467,36,70,10,37
+P-032,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,789,23,36,32,43
+P-032,3/4/2026,Lunch,Shrimp Salad,Pescatarian,Gluten-Free,Korean,381,29,95,11,62
+P-032,3/4/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,403,10,38,19,34
+P-032,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,468,41,78,19,66
+P-032,3/5/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,477,29,70,24,82
+P-032,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,760,37,78,17,88
+P-032,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,501,12,50,33,85
+P-032,3/6/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,641,14,47,34,61
+P-032,3/7/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,488,14,33,21,79
+P-032,3/7/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,384,26,46,21,32
+P-032,3/7/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,655,39,68,15,77
+P-032,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Korean,428,17,37,15,72
+P-032,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Korean,334,15,90,26,45
+P-032,3/8/2026,Dinner,Grilled Fish,Pescatarian,Gluten-Free,Korean,541,27,40,10,83
+P-032,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,Gluten-Free,Indian,679,35,41,7,72
+P-032,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,525,32,42,11,75
+P-032,3/10/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,499,29,76,6,68
+P-032,3/10/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Indian,491,25,45,7,31
+P-032,3/11/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,398,14,48,35,86
+P-032,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,670,20,25,18,62
+P-032,3/11/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Indian,587,22,99,11,89
+P-032,3/12/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,409,16,65,15,41
+P-032,3/12/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Indian,408,39,48,7,72
+P-032,3/13/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,334,23,72,14,79
+P-032,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,664,44,92,10,46
+P-032,3/13/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Indian,623,34,37,15,41
+P-032,3/14/2026,Breakfast,Avocado Toast,Pescatarian,Gluten-Free,Indian,735,40,28,15,31
+P-032,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Gluten-Free,Indian,495,42,49,21,67
+P-032,3/14/2026,Dinner,Miso Cod,Pescatarian,Gluten-Free,Indian,310,17,59,12,77
+P-033,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,American,377,34,46,25,32
+P-033,3/1/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,American,678,31,37,13,50
+P-033,3/1/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,American,566,36,56,29,31
+P-033,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,American,405,44,26,34,88
+P-033,3/2/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,American,651,24,97,32,54
+P-033,3/2/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,American,622,10,28,32,61
+P-033,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mexican,364,15,42,23,65
+P-033,3/3/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mexican,559,15,74,28,59
+P-033,3/3/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mexican,517,21,97,12,49
+P-033,3/4/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Mexican,741,40,30,35,53
+P-033,3/4/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mexican,525,37,84,24,77
+P-033,3/4/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mexican,788,40,22,29,54
+P-033,3/5/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Mexican,604,44,39,22,76
+P-033,3/5/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mexican,456,39,56,17,65
+P-033,3/5/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mexican,369,40,45,9,88
+P-033,3/6/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mexican,507,36,70,28,53
+P-033,3/6/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mexican,601,14,72,33,32
+P-033,3/7/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mexican,399,37,52,29,88
+P-033,3/7/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mexican,663,41,67,27,33
+P-033,3/7/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mexican,424,40,24,34,82
+P-033,3/8/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mexican,640,19,53,24,59
+P-033,3/8/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mexican,426,20,21,8,79
+P-033,3/8/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Mexican,503,15,86,34,42
+P-033,3/9/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mexican,654,29,84,35,64
+P-033,3/9/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mexican,457,36,31,8,70
+P-033,3/9/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mexican,437,23,70,27,49
+P-033,3/10/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,335,36,87,18,71
+P-033,3/10/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mediterranean,390,33,43,27,38
+P-033,3/10/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mediterranean,785,17,77,23,82
+P-033,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,432,36,76,25,88
+P-033,3/11/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mediterranean,340,28,30,17,37
+P-033,3/11/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mediterranean,599,25,81,20,73
+P-033,3/12/2026,Lunch,Turkey Club,Omnivore,Gluten-Free,Mediterranean,349,23,86,30,30
+P-033,3/12/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mediterranean,792,27,82,20,78
+P-033,3/13/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,755,31,60,31,45
+P-033,3/13/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mediterranean,612,13,65,32,51
+P-033,3/13/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mediterranean,745,35,37,5,68
+P-033,3/14/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Mediterranean,488,38,99,26,72
+P-033,3/14/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Mediterranean,638,22,20,25,90
+P-033,3/14/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Mediterranean,484,12,61,26,58
+P-034,3/1/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,478,37,80,26,84
+P-034,3/1/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,675,34,57,24,42
+P-034,3/1/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,365,41,31,14,83
+P-034,3/2/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,758,38,34,20,72
+P-034,3/2/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,387,15,33,18,75
+P-034,3/3/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,443,24,52,26,60
+P-034,3/3/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,772,44,82,7,80
+P-034,3/3/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,629,31,68,34,75
+P-034,3/4/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,713,24,48,13,37
+P-034,3/4/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,474,22,34,23,53
+P-034,3/4/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,494,10,59,6,67
+P-034,3/5/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,694,33,36,21,72
+P-034,3/5/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,502,10,88,32,59
+P-034,3/5/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,728,24,83,26,59
+P-034,3/6/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,606,30,59,21,74
+P-034,3/6/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,623,23,83,14,75
+P-034,3/6/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,714,31,39,31,75
+P-034,3/7/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,772,21,82,28,55
+P-034,3/7/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,311,45,70,15,57
+P-034,3/7/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,500,14,87,28,48
+P-034,3/8/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,349,18,61,29,80
+P-034,3/8/2026,Lunch,Zucchini Noodles,Low Carb,Diabetic-friendly,Italian,534,20,93,9,58
+P-034,3/8/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,374,23,47,30,77
+P-034,3/9/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,738,16,38,17,90
+P-034,3/9/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,774,13,32,16,60
+P-034,3/9/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,563,31,95,18,39
+P-034,3/10/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,423,35,82,14,74
+P-034,3/10/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,681,34,31,29,59
+P-034,3/10/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,623,38,67,5,37
+P-034,3/11/2026,Breakfast,Egg Bites,Low Carb,Diabetic-friendly,Italian,311,40,55,27,77
+P-034,3/11/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,496,40,75,14,66
+P-034,3/11/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,665,44,43,17,82
+P-034,3/12/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,332,43,94,22,75
+P-034,3/12/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,794,17,43,32,68
+P-034,3/12/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,528,30,35,6,38
+P-034,3/13/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,431,12,30,8,62
+P-034,3/13/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,516,10,51,14,32
+P-034,3/13/2026,Dinner,Steak & Asparagus,Low Carb,Diabetic-friendly,Italian,700,28,88,19,38
+P-034,3/14/2026,Breakfast,Greek Yogurt,Low Carb,Diabetic-friendly,Italian,480,44,85,11,74
+P-034,3/14/2026,Lunch,Chicken Cobb Salad,Low Carb,Diabetic-friendly,Italian,318,22,38,14,84
+P-034,3/14/2026,Dinner,Grilled Salmon,Low Carb,Diabetic-friendly,Italian,602,32,55,9,76
+P-035,3/1/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Indian,504,39,30,35,46
+P-035,3/1/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Indian,574,23,29,25,76
+P-035,3/1/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Indian,665,33,92,26,71
+P-035,3/2/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Indian,378,30,75,17,31
+P-035,3/2/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Indian,438,17,88,8,73
+P-035,3/2/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Indian,627,15,66,34,51
+P-035,3/3/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Indian,305,16,68,12,54
+P-035,3/3/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Indian,389,43,59,23,82
+P-035,3/3/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Indian,478,28,90,13,68
+P-035,3/4/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Japanese,392,32,88,22,68
+P-035,3/4/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Japanese,603,18,53,5,73
+P-035,3/4/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Japanese,364,19,68,23,77
+P-035,3/5/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Japanese,662,25,97,18,75
+P-035,3/5/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Japanese,481,39,84,14,47
+P-035,3/5/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Japanese,667,24,59,25,84
+P-035,3/6/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,346,15,29,28,45
+P-035,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,329,15,56,22,89
+P-035,3/6/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,646,42,37,20,61
+P-035,3/7/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Korean,507,10,98,11,88
+P-035,3/7/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,517,44,64,12,77
+P-035,3/7/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,610,38,41,26,89
+P-035,3/8/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Korean,338,33,37,21,52
+P-035,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,494,20,67,8,51
+P-035,3/8/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,576,17,57,14,60
+P-035,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,411,29,85,31,87
+P-035,3/9/2026,Dinner,Grilled Fish,Pescatarian,Diabetic-friendly,Korean,329,32,20,24,59
+P-035,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,755,21,71,16,30
+P-035,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,343,43,85,33,39
+P-035,3/10/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,379,26,48,20,55
+P-035,3/11/2026,Breakfast,Fruit Yogurt,Pescatarian,Diabetic-friendly,Korean,355,38,76,10,38
+P-035,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,483,22,34,11,48
+P-035,3/12/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Korean,641,22,81,35,72
+P-035,3/12/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,550,45,83,30,73
+P-035,3/12/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,691,35,84,28,89
+P-035,3/13/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,Korean,790,16,22,9,39
+P-035,3/13/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,Korean,650,25,26,26,83
+P-035,3/13/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,Korean,522,40,57,14,61
+P-035,3/14/2026,Breakfast,Avocado Toast,Pescatarian,Diabetic-friendly,West African,561,21,51,13,79
+P-035,3/14/2026,Lunch,Tuna Poke Bowl,Pescatarian,Diabetic-friendly,West African,658,25,74,11,60
+P-035,3/14/2026,Dinner,Miso Cod,Pescatarian,Diabetic-friendly,West African,396,19,49,8,38
+P-036,3/1/2026,Breakfast,Toast & Bacon,Omnivore,,Korean,309,22,31,32,33
+P-036,3/1/2026,Lunch,Chicken Wrap,Omnivore,,Korean,658,24,48,15,57
+P-036,3/1/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,629,13,58,8,47
+P-036,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,463,13,43,6,30
+P-036,3/2/2026,Lunch,Turkey Club,Omnivore,,Korean,446,40,55,34,68
+P-036,3/2/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,785,41,66,15,49
+P-036,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,469,33,66,28,79
+P-036,3/3/2026,Lunch,Turkey Club,Omnivore,,Korean,632,27,46,23,54
+P-036,3/3/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,622,17,25,23,88
+P-036,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,528,16,29,35,64
+P-036,3/4/2026,Lunch,Turkey Club,Omnivore,,Korean,542,22,88,28,39
+P-036,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,749,45,64,33,53
+P-036,3/5/2026,Lunch,Chicken Wrap,Omnivore,,Korean,334,40,73,21,89
+P-036,3/5/2026,Dinner,Chicken Curry,Omnivore,,Korean,606,27,36,14,32
+P-036,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,679,35,83,26,64
+P-036,3/6/2026,Lunch,Turkey Club,Omnivore,,Korean,524,42,69,22,79
+P-036,3/6/2026,Dinner,Chicken Curry,Omnivore,,Korean,394,10,40,23,43
+P-036,3/7/2026,Lunch,Turkey Club,Omnivore,,Korean,557,43,53,14,84
+P-036,3/7/2026,Dinner,Chicken Curry,Omnivore,,Korean,387,24,25,22,45
+P-036,3/8/2026,Breakfast,Toast & Bacon,Omnivore,,Korean,774,18,54,32,80
+P-036,3/8/2026,Lunch,Turkey Club,Omnivore,,Korean,573,17,20,25,52
+P-036,3/8/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,342,45,53,28,38
+P-036,3/9/2026,Breakfast,Toast & Bacon,Omnivore,,Korean,329,10,65,12,76
+P-036,3/9/2026,Lunch,Turkey Club,Omnivore,,Korean,797,11,88,26,85
+P-036,3/9/2026,Dinner,Chicken Curry,Omnivore,,Korean,669,34,52,32,70
+P-036,3/10/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,466,27,46,23,70
+P-036,3/10/2026,Lunch,Turkey Club,Omnivore,,Korean,528,24,75,16,39
+P-036,3/10/2026,Dinner,Chicken Curry,Omnivore,,Korean,392,39,43,31,85
+P-036,3/11/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,631,28,22,14,40
+P-036,3/11/2026,Lunch,Turkey Club,Omnivore,,Korean,335,19,29,18,45
+P-036,3/11/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,351,43,37,28,78
+P-036,3/12/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,310,17,21,29,83
+P-036,3/12/2026,Lunch,Turkey Club,Omnivore,,Korean,427,15,54,9,90
+P-036,3/12/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,794,10,33,22,77
+P-036,3/13/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,371,40,92,33,58
+P-036,3/13/2026,Lunch,Turkey Club,Omnivore,,Korean,545,19,51,6,64
+P-036,3/13/2026,Dinner,Chicken Curry,Omnivore,,Korean,310,12,33,22,48
+P-036,3/14/2026,Breakfast,Scrambled Eggs,Omnivore,,Korean,300,24,23,12,57
+P-036,3/14/2026,Lunch,Turkey Club,Omnivore,,Korean,446,24,69,26,86
+P-036,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,,Korean,386,17,48,8,48
+P-037,3/1/2026,Breakfast,Pancakes,Vegetarian,,American,758,12,97,9,41
+P-037,3/1/2026,Lunch,Veggie Burger,Vegetarian,,American,607,21,74,9,87
+P-037,3/1/2026,Dinner,Mushroom Risotto,Vegetarian,,American,619,28,64,33,36
+P-037,3/2/2026,Breakfast,Pancakes,Vegetarian,,American,435,14,20,32,89
+P-037,3/2/2026,Lunch,Greek Salad,Vegetarian,,American,463,19,69,19,76
+P-037,3/2/2026,Dinner,Paneer Tikka,Vegetarian,,American,357,37,55,9,35
+P-037,3/3/2026,Breakfast,Fruit Bowl,Vegetarian,,American,463,41,74,20,74
+P-037,3/3/2026,Lunch,Veggie Burger,Vegetarian,,American,370,25,69,18,65
+P-037,3/3/2026,Dinner,Paneer Tikka,Vegetarian,,American,572,44,49,17,35
+P-037,3/4/2026,Breakfast,Fruit Bowl,Vegetarian,,American,655,24,31,12,53
+P-037,3/4/2026,Dinner,Paneer Tikka,Vegetarian,,American,585,40,37,34,37
+P-037,3/5/2026,Breakfast,Pancakes,Vegetarian,,American,450,39,38,31,84
+P-037,3/5/2026,Lunch,Veggie Burger,Vegetarian,,American,424,23,48,6,77
+P-037,3/5/2026,Dinner,Paneer Tikka,Vegetarian,,American,493,11,74,16,33
+P-037,3/6/2026,Breakfast,Pancakes,Vegetarian,,American,728,20,23,9,53
+P-037,3/6/2026,Lunch,Veggie Burger,Vegetarian,,American,306,36,39,29,41
+P-037,3/6/2026,Dinner,Paneer Tikka,Vegetarian,,American,570,29,80,18,76
+P-037,3/7/2026,Breakfast,Fruit Bowl,Vegetarian,,American,356,19,27,33,71
+P-037,3/7/2026,Dinner,Paneer Tikka,Vegetarian,,American,305,35,74,26,90
+P-037,3/8/2026,Breakfast,Fruit Bowl,Vegetarian,,American,663,24,74,34,40
+P-037,3/8/2026,Lunch,Veggie Burger,Vegetarian,,American,493,18,47,17,69
+P-037,3/8/2026,Dinner,Paneer Tikka,Vegetarian,,American,721,45,97,31,34
+P-037,3/9/2026,Breakfast,Fruit Bowl,Vegetarian,,American,628,35,68,10,33
+P-037,3/9/2026,Lunch,Greek Salad,Vegetarian,,American,438,16,33,7,53
+P-037,3/9/2026,Dinner,Paneer Tikka,Vegetarian,,American,422,28,40,22,36
+P-037,3/10/2026,Breakfast,Fruit Bowl,Vegetarian,,Japanese,582,22,24,12,47
+P-037,3/10/2026,Lunch,Greek Salad,Vegetarian,,Japanese,322,40,25,6,50
+P-037,3/10/2026,Dinner,Paneer Tikka,Vegetarian,,Japanese,482,28,70,21,42
+P-037,3/11/2026,Breakfast,Fruit Bowl,Vegetarian,,Japanese,366,16,62,18,87
+P-037,3/11/2026,Lunch,Greek Salad,Vegetarian,,Japanese,713,19,23,23,80
+P-037,3/11/2026,Dinner,Paneer Tikka,Vegetarian,,Japanese,736,12,57,10,39
+P-037,3/12/2026,Breakfast,Pancakes,Vegetarian,,Japanese,752,23,38,29,75
+P-037,3/12/2026,Lunch,Veggie Burger,Vegetarian,,Japanese,529,18,63,14,53
+P-037,3/12/2026,Dinner,Paneer Tikka,Vegetarian,,Japanese,756,34,50,11,69
+P-037,3/13/2026,Breakfast,Pancakes,Vegetarian,,Japanese,554,16,21,9,79
+P-037,3/13/2026,Lunch,Veggie Burger,Vegetarian,,Japanese,796,15,83,8,59
+P-037,3/13/2026,Dinner,Paneer Tikka,Vegetarian,,Japanese,334,27,93,16,52
+P-037,3/14/2026,Breakfast,Pancakes,Vegetarian,,Mediterranean,542,26,76,25,89
+P-037,3/14/2026,Lunch,Veggie Burger,Vegetarian,,Mediterranean,591,41,25,16,84
+P-037,3/14/2026,Dinner,Paneer Tikka,Vegetarian,,Mediterranean,617,18,76,16,62
+P-038,3/1/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,749,12,99,25,33
+P-038,3/1/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,658,45,21,9,84
+P-038,3/1/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,381,35,29,12,54
+P-038,3/2/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,539,44,79,8,35
+P-038,3/2/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,791,35,75,11,55
+P-038,3/2/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,609,41,47,27,77
+P-038,3/3/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,379,40,38,25,43
+P-038,3/3/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,607,34,27,34,81
+P-038,3/3/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,542,23,26,11,85
+P-038,3/4/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,West African,372,14,55,17,35
+P-038,3/4/2026,Lunch,Shrimp Salad,Pescatarian,Nut-Free,West African,568,23,53,10,83
+P-038,3/4/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,475,29,41,11,52
+P-038,3/5/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,West African,701,20,75,16,88
+P-038,3/5/2026,Lunch,Shrimp Salad,Pescatarian,Nut-Free,West African,305,45,96,11,34
+P-038,3/5/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,374,30,60,5,39
+P-038,3/6/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,West African,462,17,72,13,63
+P-038,3/6/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,624,38,94,8,32
+P-038,3/6/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,656,44,41,24,54
+P-038,3/7/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,West African,647,10,67,31,53
+P-038,3/7/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,744,17,83,25,59
+P-038,3/8/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,567,31,34,34,41
+P-038,3/8/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,583,20,89,18,54
+P-038,3/8/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,624,28,99,35,89
+P-038,3/9/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,728,16,31,25,31
+P-038,3/9/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,554,44,32,25,58
+P-038,3/9/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,736,36,47,12,79
+P-038,3/10/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,540,17,64,35,80
+P-038,3/10/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,720,35,20,35,53
+P-038,3/10/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,437,26,59,31,87
+P-038,3/11/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,760,36,24,5,31
+P-038,3/11/2026,Lunch,Tuna Poke Bowl,Pescatarian,Nut-Free,West African,718,43,96,15,51
+P-038,3/11/2026,Dinner,Grilled Fish,Pescatarian,Nut-Free,West African,520,25,91,17,42
+P-038,3/12/2026,Breakfast,Fruit Yogurt,Pescatarian,Nut-Free,West African,777,37,36,35,70
+P-038,3/12/2026,Lunch,Shrimp Salad,Pescatarian,Nut-Free,West African,762,30,86,10,57
+P-038,3/12/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,West African,558,17,100,23,80
+P-038,3/13/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,West African,785,30,46,7,35
+P-038,3/14/2026,Breakfast,Avocado Toast,Pescatarian,Nut-Free,West African,592,34,23,28,76
+P-038,3/14/2026,Lunch,Shrimp Salad,Pescatarian,Nut-Free,West African,623,32,43,12,71
+P-038,3/14/2026,Dinner,Miso Cod,Pescatarian,Nut-Free,West African,574,25,68,29,46
+P-039,3/1/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,356,39,96,8,36
+P-039,3/1/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,758,21,31,7,61
+P-039,3/1/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,500,16,82,30,31
+P-039,3/2/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,651,36,68,33,50
+P-039,3/2/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,382,21,58,5,87
+P-039,3/2/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,610,12,35,15,52
+P-039,3/3/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,381,43,52,34,37
+P-039,3/3/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,311,43,85,29,39
+P-039,3/3/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Indian,760,23,23,15,38
+P-039,3/4/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,440,40,45,35,35
+P-039,3/4/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,450,39,83,18,62
+P-039,3/4/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,388,22,55,35,55
+P-039,3/5/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,384,23,82,18,86
+P-039,3/5/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,439,30,99,8,68
+P-039,3/5/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,480,33,100,31,34
+P-039,3/6/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,600,36,57,24,82
+P-039,3/6/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,503,11,34,10,81
+P-039,3/6/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,425,14,47,26,53
+P-039,3/7/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,463,10,62,11,59
+P-039,3/7/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,419,45,28,17,48
+P-039,3/7/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,352,45,55,27,68
+P-039,3/8/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,649,37,60,31,50
+P-039,3/8/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,552,41,25,13,56
+P-039,3/8/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,607,30,95,17,45
+P-039,3/9/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,766,39,56,9,83
+P-039,3/9/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,573,43,25,15,71
+P-039,3/10/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,454,27,60,29,52
+P-039,3/10/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,460,41,98,6,55
+P-039,3/10/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,734,17,67,35,69
+P-039,3/11/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Indian,353,30,75,12,40
+P-039,3/11/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,717,44,20,34,74
+P-039,3/11/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,701,12,34,6,90
+P-039,3/12/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,438,20,37,23,59
+P-039,3/12/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Indian,375,36,77,26,37
+P-039,3/12/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,544,41,55,15,79
+P-039,3/13/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,451,15,65,22,83
+P-039,3/13/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,655,14,29,20,33
+P-039,3/13/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,719,34,44,20,36
+P-039,3/14/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Indian,689,29,78,25,39
+P-039,3/14/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Indian,366,24,66,17,58
+P-039,3/14/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Indian,699,35,44,7,47
+P-040,3/1/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,375,39,33,28,37
+P-040,3/1/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,395,27,23,20,72
+P-040,3/1/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,435,17,90,7,52
+P-040,3/2/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,560,31,26,19,47
+P-040,3/2/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,495,37,44,14,42
+P-040,3/2/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,571,41,86,18,36
+P-040,3/3/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,358,13,24,23,47
+P-040,3/3/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,441,24,99,27,75
+P-040,3/3/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,412,27,83,11,40
+P-040,3/4/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,605,28,20,8,41
+P-040,3/4/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,678,29,50,10,50
+P-040,3/4/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,470,39,38,35,30
+P-040,3/5/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,798,26,29,10,73
+P-040,3/5/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,480,40,94,5,61
+P-040,3/5/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,323,11,92,26,48
+P-040,3/6/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Korean,375,16,32,14,81
+P-040,3/6/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,676,32,89,13,72
+P-040,3/6/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,306,32,58,27,51
+P-040,3/7/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Korean,357,27,86,28,70
+P-040,3/7/2026,Dinner,Chicken Curry,Omnivore,Gluten-Free,Korean,482,41,23,12,66
+P-040,3/8/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Korean,681,15,44,34,54
+P-040,3/8/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Korean,790,43,42,13,88
+P-040,3/8/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Korean,601,36,55,14,42
+P-040,3/9/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,American,707,39,92,35,80
+P-040,3/9/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,American,796,10,83,34,73
+P-040,3/9/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,American,619,45,40,14,61
+P-040,3/10/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,American,320,23,56,31,67
+P-040,3/10/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,American,302,37,65,26,83
+P-040,3/11/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,American,739,42,91,9,35
+P-040,3/11/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,American,675,22,75,23,88
+P-040,3/11/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,American,542,32,51,30,73
+P-040,3/12/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,American,757,26,58,24,49
+P-040,3/12/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,American,748,30,94,9,73
+P-040,3/12/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,American,513,45,45,14,49
+P-040,3/13/2026,Breakfast,Scrambled Eggs,Omnivore,Gluten-Free,Italian,748,37,32,9,63
+P-040,3/13/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Italian,778,32,79,16,57
+P-040,3/13/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Italian,314,45,23,35,79
+P-040,3/14/2026,Breakfast,Toast & Bacon,Omnivore,Gluten-Free,Italian,702,25,94,21,53
+P-040,3/14/2026,Lunch,Chicken Wrap,Omnivore,Gluten-Free,Italian,589,28,26,29,84
+P-040,3/14/2026,Dinner,Spaghetti Bolognese,Omnivore,Gluten-Free,Italian,303,39,86,19,83
+P-041,3/1/2026,Breakfast,Oatmeal,Vegan,,Japanese,470,16,57,23,60
+P-041,3/1/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,362,42,26,27,43
+P-041,3/1/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,369,24,39,14,70
+P-041,3/2/2026,Breakfast,Oatmeal,Vegan,,Japanese,548,22,34,7,30
+P-041,3/2/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,426,23,33,20,31
+P-041,3/2/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,328,17,58,17,60
+P-041,3/3/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,720,38,98,8,57
+P-041,3/3/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,372,25,41,21,77
+P-041,3/3/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,545,28,57,26,36
+P-041,3/4/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,497,16,79,18,82
+P-041,3/4/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,534,17,92,17,30
+P-041,3/4/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,633,38,25,34,88
+P-041,3/5/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,441,10,40,16,62
+P-041,3/5/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,478,43,69,21,34
+P-041,3/5/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,635,31,78,27,84
+P-041,3/6/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,772,35,28,34,83
+P-041,3/6/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,541,21,93,27,89
+P-041,3/6/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,366,30,95,35,67
+P-041,3/7/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,323,11,40,12,36
+P-041,3/7/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,647,40,61,29,44
+P-041,3/7/2026,Dinner,Lentil Dahl,Vegan,,Japanese,353,21,69,29,56
+P-041,3/8/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,319,14,76,29,53
+P-041,3/8/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,464,16,77,17,38
+P-041,3/8/2026,Dinner,Lentil Dahl,Vegan,,Japanese,402,22,52,20,58
+P-041,3/9/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,716,43,44,7,67
+P-041,3/9/2026,Dinner,Lentil Dahl,Vegan,,Japanese,317,18,20,16,79
+P-041,3/10/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,394,43,83,11,83
+P-041,3/10/2026,Lunch,Quinoa Salad,Vegan,,Japanese,482,45,37,30,34
+P-041,3/10/2026,Dinner,Lentil Dahl,Vegan,,Japanese,591,15,36,30,63
+P-041,3/11/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,607,44,62,5,44
+P-041,3/11/2026,Lunch,Quinoa Salad,Vegan,,Japanese,724,26,69,27,52
+P-041,3/11/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,338,44,93,12,84
+P-041,3/12/2026,Breakfast,Fruit Smoothie,Vegan,,Japanese,616,13,89,27,87
+P-041,3/12/2026,Lunch,Quinoa Salad,Vegan,,Japanese,769,26,23,6,51
+P-041,3/12/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,754,13,37,11,65
+P-041,3/13/2026,Breakfast,Oatmeal,Vegan,,Japanese,420,41,29,30,90
+P-041,3/13/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,477,14,73,24,77
+P-041,3/13/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,582,40,36,13,76
+P-041,3/14/2026,Breakfast,Oatmeal,Vegan,,Japanese,479,37,81,14,80
+P-041,3/14/2026,Lunch,Chickpea Wrap,Vegan,,Japanese,776,13,23,29,80
+P-041,3/14/2026,Dinner,Tofu Stir-fry,Vegan,,Japanese,740,34,22,22,60
+P-042,3/1/2026,Breakfast,Fruit Smoothie,Vegan,Diabetic-friendly,West African,581,18,34,19,37
+P-042,3/1/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,West African,480,22,63,18,88
+P-042,3/1/2026,Dinner,Lentil Dahl,Vegan,Diabetic-friendly,West African,347,10,49,18,77
+P-042,3/2/2026,Breakfast,Fruit Smoothie,Vegan,Diabetic-friendly,West African,323,10,51,31,33
+P-042,3/2/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,West African,392,28,25,15,52
+P-042,3/2/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,West African,366,35,81,26,37
+P-042,3/3/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,West African,553,32,48,19,75
+P-042,3/3/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,West African,582,28,51,21,87
+P-042,3/3/2026,Dinner,Lentil Dahl,Vegan,Diabetic-friendly,West African,327,32,72,27,90
+P-042,3/4/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,West African,370,43,49,14,77
+P-042,3/4/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,West African,671,19,24,12,74
+P-042,3/4/2026,Dinner,Lentil Dahl,Vegan,Diabetic-friendly,West African,310,41,24,13,47
+P-042,3/5/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,West African,442,34,83,5,85
+P-042,3/5/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,West African,414,23,68,10,72
+P-042,3/5/2026,Dinner,Lentil Dahl,Vegan,Diabetic-friendly,West African,456,12,89,29,52
+P-042,3/6/2026,Breakfast,Fruit Smoothie,Vegan,Diabetic-friendly,West African,772,26,95,11,78
+P-042,3/6/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,West African,700,13,33,22,54
+P-042,3/7/2026,Breakfast,Fruit Smoothie,Vegan,Diabetic-friendly,West African,780,44,79,18,66
+P-042,3/7/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,West African,383,34,79,28,89
+P-042,3/7/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,West African,709,27,30,12,79
+P-042,3/8/2026,Breakfast,Fruit Smoothie,Vegan,Diabetic-friendly,West African,615,27,66,13,72
+P-042,3/8/2026,Lunch,Chickpea Wrap,Vegan,Diabetic-friendly,West African,363,29,92,26,50
+P-042,3/8/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,West African,536,11,76,5,59
+P-042,3/9/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,American,509,13,94,35,35
+P-042,3/9/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,American,788,14,76,10,46
+P-042,3/9/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,American,744,41,36,12,70
+P-042,3/10/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,American,358,12,43,26,62
+P-042,3/10/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,American,321,45,49,6,90
+P-042,3/10/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,American,431,11,65,22,75
+P-042,3/11/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,Mexican,527,17,85,7,45
+P-042,3/11/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,Mexican,724,36,29,25,57
+P-042,3/11/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,Mexican,467,33,62,18,87
+P-042,3/12/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,Mexican,382,33,25,14,89
+P-042,3/12/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,Mexican,354,23,60,21,75
+P-042,3/12/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,Mexican,597,32,47,17,83
+P-042,3/13/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,Mexican,690,15,29,35,89
+P-042,3/13/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,Mexican,594,45,73,22,76
+P-042,3/13/2026,Dinner,Lentil Dahl,Vegan,Diabetic-friendly,Mexican,610,40,87,21,58
+P-042,3/14/2026,Breakfast,Oatmeal,Vegan,Diabetic-friendly,Mexican,766,25,62,12,81
+P-042,3/14/2026,Lunch,Quinoa Salad,Vegan,Diabetic-friendly,Mexican,533,30,34,27,45
+P-042,3/14/2026,Dinner,Tofu Stir-fry,Vegan,Diabetic-friendly,Mexican,485,15,65,22,62
+P-043,3/1/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Italian,417,18,88,12,79
+P-043,3/1/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Italian,610,26,56,15,50
+P-043,3/1/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Italian,515,42,38,23,61
+P-043,3/2/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Italian,307,20,35,18,46
+P-043,3/2/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Italian,680,16,36,32,32
+P-043,3/2/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Italian,385,14,36,21,85
+P-043,3/3/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Italian,365,35,91,12,75
+P-043,3/3/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Italian,722,31,95,24,69
+P-043,3/3/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Italian,678,32,77,34,56
+P-043,3/4/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Italian,687,40,37,28,41
+P-043,3/4/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Italian,719,42,30,9,87
+P-043,3/5/2026,Breakfast,Fruit Smoothie,Vegan,Nut-Free,Italian,464,38,42,21,76
+P-043,3/5/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Italian,418,29,83,15,33
+P-043,3/5/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Italian,446,30,69,15,78
+P-043,3/6/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Italian,520,43,55,23,86
+P-043,3/6/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Italian,445,20,35,14,47
+P-043,3/6/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Italian,386,28,53,24,78
+P-043,3/7/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Italian,349,23,90,31,62
+P-043,3/7/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Italian,762,12,89,22,81
+P-043,3/7/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Italian,721,11,67,11,48
+P-043,3/8/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Italian,725,39,57,34,37
+P-043,3/8/2026,Lunch,Chickpea Wrap,Vegan,Nut-Free,Italian,527,37,83,13,35
+P-043,3/8/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Italian,795,32,30,28,80
+P-043,3/9/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Italian,471,27,78,25,77
+P-043,3/9/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Italian,756,12,75,8,89
+P-043,3/9/2026,Dinner,Lentil Dahl,Vegan,Nut-Free,Italian,397,45,100,6,90
+P-043,3/10/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Italian,782,24,45,13,60
+P-043,3/10/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Italian,444,18,45,25,86
+P-043,3/11/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,406,21,24,18,74
+P-043,3/11/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,598,25,64,20,63
+P-043,3/12/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,418,28,82,20,80
+P-043,3/12/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,578,40,57,8,44
+P-043,3/12/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,514,38,61,12,72
+P-043,3/13/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,477,35,36,29,86
+P-043,3/13/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,607,36,50,5,48
+P-043,3/13/2026,Dinner,Tofu Stir-fry,Vegan,Nut-Free,Mexican,735,36,27,22,79
+P-043,3/14/2026,Breakfast,Oatmeal,Vegan,Nut-Free,Mexican,714,38,74,17,46
+P-043,3/14/2026,Lunch,Quinoa Salad,Vegan,Nut-Free,Mexican,672,24,63,25,82

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# Data files (generated at runtime — not committed)
+data/all_users.csv
+data/all_meal_logs.csv
+data/all_meal_plans.csv
+data/SmartDiet_Data.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.suo
+
+# Local server (not needed in production)
+START.bat
+start.sh
+server.py

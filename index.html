@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Smart Diet Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<!-- ▼ PRODUCTION CONFIG — replace with your Render URL after deploying ▼ -->
+<script>
+  // Set your Render backend URL here after deploying:
+  // window.SMARTDIET_API_URL = 'https://smartdiet-api.onrender.com';
+  window.SMARTDIET_API_URL = '';  // Vercel proxies /api/* to Render — leave empty!
+</script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCREEN 1 — LOGIN / SIGN-UP
+════════════════════════════════════════════════════════ -->
+<div id="screen-login" class="screen active">
+  <div class="login-box">
+    <div class="login-title">🥗 Smart Diet</div>
+    <div class="login-sub">
+      AI-powered nutrition planner · 2,350 foods · FDC + NDB<br/>
+      <span style="font-size:.76rem;color:var(--muted)">For adults aged 18–59 years</span>
+    </div>
+
+    <div class="mode-toggle">
+      <button class="mode-btn active" id="btn-login"  onclick="setMode('login')">Login</button>
+      <button class="mode-btn"        id="btn-signup" onclick="setMode('signup')">Sign Up</button>
+    </div>
+
+    <!-- ── Sign-up only fields ── -->
+    <div id="signup-fields" style="display:none">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="form-group">
+          <label class="form-label">First Name</label>
+          <input class="form-input" id="in-fname" placeholder="First name" autocomplete="given-name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name</label>
+          <input class="form-input" id="in-lname" placeholder="Last name" autocomplete="family-name"/>
+        </div>
+      </div>
+
+      <!-- Age field with validation hint -->
+      <div class="form-group">
+        <label class="form-label">Age (years)</label>
+        <input class="form-input" id="in-age" type="number" min="18" max="59"
+               placeholder="Enter your age (18–59)" oninput="checkAgeInput(this)"/>
+        <div class="form-hint">Must be between 18 and 59 years.</div>
+        <div class="age-warn" id="age-warn">
+          ⚠ This app supports users aged 18–59 only. Please check your age.
+        </div>
+      </div>
+
+      <!-- Diet preference -->
+      <div class="form-group">
+        <label class="form-label">Diet Preference</label>
+        <select class="form-select" id="in-diet">
+          <option value="vegan">🌱 Vegan</option>
+          <option value="non-veg">🍗 Non-Vegetarian</option>
+        </select>
+      </div>
+
+      <!-- Diabetic status — radio cards -->
+      <div class="form-group">
+        <label class="form-label">Diabetic Status</label>
+        <div class="radio-group" id="diabetic-group">
+          <label class="radio-card" id="rc-no" onclick="selectDiabetic('no')">
+            <input type="radio" name="diabetic" id="diab-no" value="no" checked/>
+            <div>
+              <div class="rc-label">✅ Non-Diabetic</div>
+              <div class="rc-sub">Standard WHO/FAO targets</div>
+            </div>
+          </label>
+          <label class="radio-card" id="rc-yes" onclick="selectDiabetic('yes')">
+            <input type="radio" name="diabetic" id="diab-yes" value="yes"/>
+            <div>
+              <div class="rc-label">🩺 Diabetic</div>
+              <div class="rc-sub">ADA 2024 — low sugar, high fiber</div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+    </div><!-- /signup-fields -->
+
+    <!-- ── Shared fields ── -->
+    <div class="form-group">
+      <label class="form-label">Mobile Number</label>
+      <div class="phone-input-wrap">
+        <select class="phone-country-select" id="in-country" onchange="updateCountryFlag()">
+          <option value="+91"  data-flag="🇮🇳" selected>🇮🇳 +91 &nbsp;India</option>
+          <option value="+1"   data-flag="🇺🇸">🇺🇸 +1 &nbsp;&nbsp;USA</option>
+          <option value="+1"   data-flag="🇨🇦">🇨🇦 +1 &nbsp;&nbsp;Canada</option>
+          <option value="+44"  data-flag="🇬🇧">🇬🇧 +44 &nbsp;UK</option>
+          <option value="+61"  data-flag="🇦🇺">🇦🇺 +61 &nbsp;Australia</option>
+          <option value="+971" data-flag="🇦🇪">🇦🇪 +971 UAE</option>
+          <option value="+65"  data-flag="🇸🇬">🇸🇬 +65 &nbsp;Singapore</option>
+          <option value="+60"  data-flag="🇲🇾">🇲🇾 +60 &nbsp;Malaysia</option>
+          <option value="+49"  data-flag="🇩🇪">🇩🇪 +49 &nbsp;Germany</option>
+          <option value="+33"  data-flag="🇫🇷">🇫🇷 +33 &nbsp;France</option>
+          <option value="+86"  data-flag="🇨🇳">🇨🇳 +86 &nbsp;China</option>
+          <option value="+81"  data-flag="🇯🇵">🇯🇵 +81 &nbsp;Japan</option>
+          <option value="+82"  data-flag="🇰🇷">🇰🇷 +82 &nbsp;South Korea</option>
+          <option value="+55"  data-flag="🇧🇷">🇧🇷 +55 &nbsp;Brazil</option>
+          <option value="+27"  data-flag="🇿🇦">🇿🇦 +27 &nbsp;South Africa</option>
+          <option value="+234" data-flag="🇳🇬">🇳🇬 +234 Nigeria</option>
+          <option value="+92"  data-flag="🇵🇰">🇵🇰 +92 &nbsp;Pakistan</option>
+          <option value="+880" data-flag="🇧🇩">🇧🇩 +880 Bangladesh</option>
+          <option value="+94"  data-flag="🇱🇰">🇱🇰 +94 &nbsp;Sri Lanka</option>
+          <option value="+977" data-flag="🇳🇵">🇳🇵 +977 Nepal</option>
+        </select>
+        <input class="phone-number-input" id="in-mobile" type="tel"
+               placeholder="10-digit mobile number"
+               maxlength="10" pattern="[0-9]{10}"
+               oninput="validatePhone(this)"
+               autocomplete="tel-national"/>
+      </div>
+      <div class="phone-hint" id="phone-hint">
+        Enter your 10-digit mobile number without country code
+      </div>
+      <div class="phone-warn" id="phone-warn" style="display:none">
+        ⚠ Please enter a valid 10-digit mobile number (digits only)
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <div class="password-wrap">
+        <input class="form-input" id="in-pass" type="password"
+               placeholder="Minimum 6 characters"
+               autocomplete="current-password" oninput="validatePassword(this)"/>
+        <button type="button" class="pass-toggle" onclick="togglePassword()" title="Show/hide password">👁</button>
+      </div>
+      <div class="pass-strength-wrap" id="pass-strength-wrap" style="display:none">
+        <div class="pass-strength-bar" id="pass-strength-bar"></div>
+        <span class="pass-strength-label" id="pass-strength-label"></span>
+      </div>
+    </div>
+
+    <button class="btn-primary" onclick="handleAuth()">Continue →</button>
+    <div class="login-err" id="login-err"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCREEN 2 — MAIN APPLICATION
+════════════════════════════════════════════════════════ -->
+<div id="screen-app" class="screen">
+
+  <!-- ── Topbar ── -->
+  <div class="topbar">
+    <div class="logo">
+      Smart<span>Diet</span>
+      <span class="db-badge">2,350 foods · FDC + NDB</span>
+    </div>
+    <div class="topbar-right">
+      <span id="profile-pill" class="profile-pill healthy">✅ Non-Diabetic</span>
+      <div class="user-chip" id="user-chip">User</div>
+      <button class="btn-ghost" onclick="signOut()">Sign Out</button>
+    </div>
+  </div>
+
+  <!-- ── Navigation Tabs ── -->
+  <div class="nav-tabs">
+    <div class="nav-tab active" id="tab-menu"     onclick="switchTab('menu')"    >📋 Main Menu</div>
+    <div class="nav-tab"        id="tab-log"      onclick="switchTab('log')"     >📝 Log Meals</div>
+    <div class="nav-tab"        id="tab-plan"     onclick="switchTab('plan')"    >🗓 Weekly Plan</div>
+    <div class="nav-tab"        id="tab-summary"  onclick="switchTab('summary')" >📊 Nutrient Summary</div>
+    <div class="nav-tab"        id="tab-overview" onclick="switchTab('overview')">📈 Weekly Overview</div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       TAB 1 — MAIN MENU (personalised targets)
+  ════════════════════════════════════════════ -->
+  <div class="content" id="tab-content-menu">
+    <div class="section-title">Ideal Nutrient Intake</div>
+    <div class="section-sub">
+      Personalised WHO/FAO + ADA 2024 targets for your profile.
+      All meal recommendations are generated against these values.
+    </div>
+
+    <!-- Profile banner — populated by renderMainMenu() in ui.js -->
+    <div id="menu-profile-banner"></div>
+
+    <!-- Ideal cards — populated by renderMainMenu() in ui.js -->
+    <div class="ideal-grid" id="menu-ideal-grid">
+      <!-- Rendered dynamically per user profile -->
+    </div>
+
+    <!-- Daily totals table -->
+    <div class="section-title" style="font-size:1.1rem;margin-bottom:10px">Daily Totals</div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Nutrient</th><th>Break-fast</th><th>Lunch</th>
+            <th>Snacks</th><th>Dinner</th><th>Daily Total</th>
+          </tr>
+        </thead>
+        <tbody id="menu-totals-table">
+          <!-- Rendered dynamically per user profile -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       TAB 2 — LOG MEALS
+  ════════════════════════════════════════════ -->
+  <div class="content fade-in" id="tab-content-log" style="display:none">
+    <div class="section-title">Log Your Weekly Meals</div>
+    <div class="section-sub" id="log-tab-sub">
+      Select a day and log what you ate. Mark skipped meals —
+      nutrients are automatically compensated in the next slot.
+    </div>
+
+    <div class="day-tabs-row" id="day-tabs-row"></div>
+
+    <div class="adjust-box" id="adjust-box">
+      <div class="adjust-box-title">⚡ Missed Meal Compensation Active</div>
+      <div class="adjust-box-text" id="adjust-box-text"></div>
+    </div>
+
+    <div class="meals-input-grid" id="meals-input-grid"></div>
+
+    <div class="save-row">
+      <button class="btn-outline" onclick="clearDay()">Clear Day</button>
+      <button class="btn-save"    onclick="saveDay()">Save Day &amp; Generate Plan →</button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       TAB 3 — WEEKLY PLAN
+  ════════════════════════════════════════════ -->
+  <div class="content fade-in" id="tab-content-plan" style="display:none">
+    <div class="section-title">Generated Weekly Diet Plan</div>
+    <div class="section-sub">
+      AI-recommended meals aligned to your profile targets (diet · age · diabetic status).
+      Skipped meals show ⚡ Adjusted targets.
+    </div>
+
+    <div class="stats-strip"   id="plan-stats"></div>
+    <div class="day-tabs-row"  id="plan-day-tabs"></div>
+    <div class="plan-grid"     id="plan-grid"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       TAB 4 — NUTRIENT SUMMARY
+  ════════════════════════════════════════════ -->
+  <div class="content fade-in" id="tab-content-summary" style="display:none">
+    <div class="section-title">Nutrient Summary</div>
+    <div class="section-sub">
+      Detailed nutrient breakdown vs your personalised ideal targets.
+    </div>
+
+    <div class="selectors-row">
+      <span class="sel-label">Day:</span>
+      <select class="sel-select" id="sum-day" onchange="renderSummary()"></select>
+      <span class="sel-label">Meal:</span>
+      <select class="sel-select" id="sum-meal" onchange="renderSummary()">
+        <option value="Break-fast">Break-fast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Dinner">Dinner</option>
+      </select>
+      <span class="sel-label">Source:</span>
+      <select class="sel-select" id="sum-source" onchange="renderSummary()">
+        <option value="log">My Log</option>
+        <option value="plan">Generated Plan</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Food Name</th><th>Cal</th><th>Protein</th>
+            <th>Fat</th><th>Carbs</th><th>Fiber</th><th>Sugar</th>
+          </tr>
+        </thead>
+        <tbody id="sum-tbody"></tbody>
+        <tfoot><tr id="sum-tfoot"></tr></tfoot>
+      </table>
+    </div>
+
+    <div class="section-title" style="font-size:1.1rem;margin-bottom:14px">vs. Ideal Targets</div>
+    <div class="vs-grid" id="vs-grid"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       TAB 5 — WEEKLY OVERVIEW
+  ════════════════════════════════════════════ -->
+  <div class="content fade-in" id="tab-content-overview" style="display:none">
+    <div class="section-title">Weekly Nutrient Overview</div>
+    <div class="section-sub">
+      Daily totals vs your profile-specific WHO/FAO + ADA 2024 targets.<br/>
+      <span style="color:var(--green)">■ Green</span> = on target (85–115%) &nbsp;
+      <span style="color:var(--amber)">■ Amber</span> = below target &nbsp;
+      <span style="color:var(--red)">■ Red</span> = exceeds target &nbsp;
+      <span style="color:var(--amber);font-size:.8rem">(Sugar row inverted for diabetics — green = under limit)</span>
+    </div>
+    <div id="weekly-heatmap-wrap"></div>
+  </div>
+
+</div><!-- /screen-app -->
+
+<div class="toast" id="toast"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     JAVASCRIPT — strict load order
+════════════════════════════════════════════════════════ -->
+<script src="data/food_db.js"></script>
+<script src="js/constants.js"></script>
+<script src="js/state.js"></script>
+<script src="js/database.js"></script>
+<script src="js/compensation.js"></script>
+<script src="js/planner.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/logTab.js"></script>
+<script src="js/planTab.js"></script>
+<script src="js/summaryTab.js"></script>
+<script src="js/overviewTab.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Inline helpers for signup form interactivity -->
+<script>
+'use strict';
+
+/** Live age input validation */
+function checkAgeInput(input) {
+  const v = parseInt(input.value, 10);
+  document.getElementById('age-warn').style.display =
+    (!isNaN(v) && (v < 18 || v > 59)) ? 'block' : 'none';
+}
+
+/** Visual selection of diabetic radio cards */
+function selectDiabetic(val) {
+  document.getElementById('rc-no').className  = 'radio-card' + (val === 'no'  ? ' selected-no'  : '');
+  document.getElementById('rc-yes').className = 'radio-card' + (val === 'yes' ? ' selected-yes' : '');
+  document.getElementById('diab-no').checked  = (val === 'no');
+  document.getElementById('diab-yes').checked = (val === 'yes');
+  document.getElementById('in-diabetic').value = val;
+}
+
+/** Phone number — digits only, exactly 10 */
+function validatePhone(input) {
+  // Strip non-digits
+  input.value = input.value.replace(/\D/g, '').slice(0, 10);
+  const warn = document.getElementById('phone-warn');
+  const hint = document.getElementById('phone-hint');
+  const len  = input.value.length;
+  if (len === 0) {
+    warn.style.display = 'none'; hint.style.display = 'block';
+  } else if (len < 10) {
+    warn.style.display = 'none';
+    hint.textContent   = (10 - len) + ' more digit' + (10 - len > 1 ? 's' : '') + ' needed';
+    hint.style.display = 'block';
+  } else {
+    warn.style.display = 'none'; hint.style.display = 'none';
+  }
+}
+
+/** Build full phone ID = countryCode + 10-digit number */
+function getFullPhone() {
+  const code   = document.getElementById('in-country').value;
+  const mobile = document.getElementById('in-mobile').value.trim();
+  return code + mobile;   // e.g. "+919876543210"
+}
+
+/** Get just the mobile digits */
+function getMobileDigits() {
+  return document.getElementById('in-mobile').value.trim();
+}
+
+/** Update hint when country changes */
+function updateCountryFlag() {
+  const hint = document.getElementById('phone-hint');
+  hint.textContent = 'Enter your 10-digit mobile number without country code';
+  hint.style.display = 'block';
+}
+
+/** Password strength indicator */
+function validatePassword(input) {
+  const wrap  = document.getElementById('pass-strength-wrap');
+  const bar   = document.getElementById('pass-strength-bar');
+  const label = document.getElementById('pass-strength-label');
+  const v     = input.value;
+  if (!v) { wrap.style.display = 'none'; return; }
+  wrap.style.display = 'flex';
+
+  let score = 0;
+  if (v.length >= 6)  score++;
+  if (v.length >= 10) score++;
+  if (/[A-Z]/.test(v)) score++;
+  if (/[0-9]/.test(v)) score++;
+  if (/[^A-Za-z0-9]/.test(v)) score++;
+
+  const levels = [
+    { cls: 'strength-weak',   label: 'Weak',      pct: '20%' },
+    { cls: 'strength-weak',   label: 'Weak',      pct: '30%' },
+    { cls: 'strength-fair',   label: 'Fair',      pct: '50%' },
+    { cls: 'strength-good',   label: 'Good',      pct: '70%' },
+    { cls: 'strength-strong', label: 'Strong',    pct: '90%' },
+    { cls: 'strength-strong', label: 'Very Strong', pct: '100%' },
+  ];
+  const lv = levels[Math.min(score, 5)];
+  bar.style.width = lv.pct;
+  bar.className   = 'pass-strength-bar ' + lv.cls;
+  label.textContent = lv.label;
+}
+
+/** Toggle password visibility */
+function togglePassword() {
+  const inp = document.getElementById('in-pass');
+  const btn = document.querySelector('.pass-toggle');
+  if (inp.type === 'password') { inp.type = 'text';     btn.textContent = '🙈'; }
+  else                         { inp.type = 'password'; btn.textContent = '👁'; }
+}
+</script>
+
+<!-- Hidden select consumed by auth.js for diabetic value -->
+<select id="in-diabetic" style="display:none">
+  <option value="no" selected>no</option>
+  <option value="yes">yes</option>
+</select>
+
+</body>
+</html>

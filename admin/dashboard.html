@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Smart Diet Planner — Admin Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0f1117;--surface:#181c27;--card:#1e2333;--border:#2a3048;
+  --green:#22c55e;--green2:#16a34a;--green-dim:#1a3a27;
+  --amber:#f59e0b;--red:#ef4444;--red-dim:#3a1a1a;
+  --blue:#3b82f6;--purple:#a78bfa;
+  --text:#f1f5f9;--muted:#64748b;--light:#94a3b8;--radius:12px;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:'Outfit',sans-serif;color:var(--text);min-height:100vh}
+
+/* ── Topbar ── */
+.topbar{background:linear-gradient(135deg,#0d1f16,#0f1f2e);border-bottom:1px solid var(--border);
+  padding:16px 32px;display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:100;gap:12px}
+.logo{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--green);white-space:nowrap}
+.logo span{color:var(--text);font-weight:300}
+.admin-badge{background:var(--amber);color:#000;font-size:.7rem;font-weight:700;
+  padding:3px 10px;border-radius:99px;margin-left:8px;white-space:nowrap}
+.topbar-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.refresh-btn{background:var(--green2);border:none;color:#fff;padding:8px 18px;
+  border-radius:8px;cursor:pointer;font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:600}
+.refresh-btn:hover{filter:brightness(1.1)}
+.excel-btn{background:transparent;border:1px solid #217346;color:#4caf6e;
+  padding:8px 18px;border-radius:8px;cursor:pointer;font-family:'Outfit',sans-serif;font-size:.82rem;font-weight:600}
+.excel-btn:hover{background:#0d2a1a}
+.app-link{color:var(--muted);font-size:.78rem;text-decoration:none}
+.app-link:hover{color:var(--green)}
+
+.content{padding:28px 32px;max-width:1360px;margin:0 auto}
+.section-title{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--green);margin-bottom:5px}
+.section-sub{color:var(--muted);font-size:.83rem;margin-bottom:20px;line-height:1.5}
+
+/* ── Stats strip ── */
+.stats-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:26px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--green);margin-bottom:3px}
+.stat-num.amber{color:var(--amber)}
+.stat-num.blue{color:var(--blue)}
+.stat-lbl{font-size:.72rem;color:var(--muted);font-weight:500;line-height:1.3}
+
+/* ── Filters ── */
+.filters{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.filter-input{background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:8px 14px;color:var(--text);font-family:'Outfit',sans-serif;font-size:.82rem;
+  outline:none;width:210px;transition:.15s}
+.filter-input:focus{border-color:var(--green)}
+.filter-select{background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:8px 14px;color:var(--text);font-family:'Outfit',sans-serif;font-size:.82rem;
+  outline:none;cursor:pointer;transition:.15s}
+.filter-select:focus{border-color:var(--green)}
+.export-csv-btn{background:transparent;border:1px solid var(--green2);color:var(--green);
+  padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'Outfit',sans-serif;
+  font-size:.8rem;font-weight:600}
+.export-csv-btn:hover{background:var(--green-dim)}
+.results-count{color:var(--muted);font-size:.8rem;margin-left:auto}
+
+/* ── Data table ── */
+.table-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  overflow:hidden;margin-bottom:24px}
+.data-table{width:100%;border-collapse:collapse;font-size:.79rem}
+.data-table thead th{background:#111827;color:var(--muted);padding:10px 12px;text-align:left;
+  font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;
+  white-space:nowrap;cursor:pointer;user-select:none}
+.data-table thead th:hover{color:var(--green)}
+.data-table tbody tr{border-bottom:1px solid var(--border);cursor:pointer;transition:.1s}
+.data-table tbody tr:hover{background:#1a2030}
+.data-table tbody tr.selected{background:#0d2818;border-left:3px solid var(--green)}
+.data-table tbody td{padding:9px 12px;color:var(--light);vertical-align:middle}
+.data-table tbody td:first-child{color:var(--text);font-weight:500}
+.no-data{text-align:center;padding:48px;color:var(--muted);font-size:.9rem}
+.loading-msg{text-align:center;padding:28px;color:var(--muted);font-size:.85rem}
+
+/* ── Badges ── */
+.badge{display:inline-block;font-size:.67rem;font-weight:700;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.b-vegan  {background:var(--green-dim);color:var(--green);border:1px solid var(--green2)}
+.b-nonveg {background:#1a1f35;color:#93c5fd;border:1px solid var(--blue)}
+.b-diab   {background:#2a1a0a;color:var(--amber);border:1px solid var(--amber)}
+.b-healthy{background:var(--green-dim);color:var(--green);border:1px solid var(--green2)}
+.b-young  {background:#1a1f35;color:var(--blue);border:1px solid var(--blue)}
+.b-middle {background:#251a35;color:var(--purple);border:1px solid var(--purple)}
+
+/* ── Detail panel ── */
+.detail-panel{display:none;background:var(--card);border:1px solid var(--green2);
+  border-radius:var(--radius);padding:24px;margin-bottom:24px;animation:fadeIn .25s ease}
+.detail-panel.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.detail-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px;gap:12px}
+.detail-title{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--green)}
+.detail-sub{font-size:.78rem;color:var(--muted);margin-top:2px}
+.close-btn{background:none;border:1px solid var(--border);color:var(--muted);
+  padding:5px 12px;border-radius:6px;cursor:pointer;font-size:.78rem;white-space:nowrap}
+.close-btn:hover{border-color:var(--red);color:var(--red)}
+
+.profile-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+.profile-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+.pc-title{font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;
+  letter-spacing:.06em;margin-bottom:10px}
+.pc-row{display:flex;justify-content:space-between;font-size:.8rem;
+  padding:4px 0;border-bottom:1px solid var(--border)}
+.pc-row:last-child{border-bottom:none}
+.pc-lbl{color:var(--muted)}
+.pc-val{font-weight:600;color:var(--text)}
+
+/* ── Detail tabs ── */
+.detail-tabs{display:flex;gap:6px;margin:14px 0 10px}
+.dtab{padding:6px 14px;border-radius:8px;border:1px solid var(--border);
+  background:var(--surface);color:var(--muted);font-size:.78rem;cursor:pointer;transition:.15s}
+.dtab:hover{border-color:var(--green);color:var(--green)}
+.dtab.active{background:var(--green2);color:#fff;border-color:var(--green2)}
+
+/* ── Mini bars ── */
+.mini-bars{margin-top:10px}
+.mbar-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;font-size:.73rem}
+.mbar-lbl{width:72px;color:var(--muted);flex-shrink:0}
+.mbar-track{flex:1;height:5px;background:#1e2333;border-radius:99px;overflow:hidden}
+.mbar-fill{height:100%;border-radius:99px;background:var(--green);transition:width .4s}
+.mbar-val{width:42px;text-align:right;color:var(--light);flex-shrink:0}
+
+/* ── Error banner ── */
+.error-banner{background:var(--red-dim);border:1px solid var(--red);border-radius:var(--radius);
+  padding:16px 20px;margin-bottom:20px;font-size:.85rem;color:var(--red);display:none}
+
+@media(max-width:900px){
+  .stats-strip{grid-template-columns:repeat(3,1fr)}
+  .profile-cards{grid-template-columns:1fr}
+  .content{padding:16px}
+  .topbar{padding:12px 16px}
+}
+@media(max-width:600px){
+  .stats-strip{grid-template-columns:1fr 1fr}
+  .filters{flex-direction:column;align-items:stretch}
+  .filter-input{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div style="display:flex;align-items:center;gap:6px">
+    <span class="logo">Smart<span>Diet</span></span>
+    <span class="admin-badge">ADMIN</span>
+  </div>
+  <div class="topbar-right">
+    <a href="/" class="app-link">← Back to App</a>
+    <button class="excel-btn" onclick="openExcel()">📊 Open Excel</button>
+    <button class="refresh-btn" onclick="loadData()">⟳ Refresh</button>
+  </div>
+</div>
+
+<div class="content">
+  <div class="section-title">User Data Dashboard</div>
+  <div class="section-sub">
+    Every user who signed up is listed below. Click a row to see their full meal log and generated plan.
+    Data is auto-saved to <code>data/SmartDiet_Data.xlsx</code> whenever a user saves their plan.
+  </div>
+
+  <div class="error-banner" id="error-banner"></div>
+
+  <!-- Stats -->
+  <div class="stats-strip">
+    <div class="stat-card"><div class="stat-num" id="st-total">—</div><div class="stat-lbl">Total Users</div></div>
+    <div class="stat-card"><div class="stat-num" id="st-vegan">—</div><div class="stat-lbl">Vegan</div></div>
+    <div class="stat-card"><div class="stat-num" id="st-nonveg">—</div><div class="stat-lbl">Non-Vegetarian</div></div>
+    <div class="stat-card"><div class="stat-num amber" id="st-diab">—</div><div class="stat-lbl">Diabetic</div></div>
+    <div class="stat-card"><div class="stat-num blue" id="st-young">—</div><div class="stat-lbl">Young Adults<br/>(18–35)</div></div>
+    <div class="stat-card"><div class="stat-num blue" id="st-mid">—</div><div class="stat-lbl">Middle Adults<br/>(36–59)</div></div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters">
+    <input class="filter-input" id="f-search" placeholder="Search name or phone..." oninput="renderTable()"/>
+    <select class="filter-select" id="f-diet" onchange="renderTable()">
+      <option value="">All Diets</option>
+      <option value="vegan">Vegan</option>
+      <option value="non-veg">Non-Vegetarian</option>
+    </select>
+    <select class="filter-select" id="f-diab" onchange="renderTable()">
+      <option value="">All Profiles</option>
+      <option value="Yes">Diabetic</option>
+      <option value="No">Non-Diabetic</option>
+    </select>
+    <select class="filter-select" id="f-age" onchange="renderTable()">
+      <option value="">All Age Groups</option>
+      <option value="18-35">Young Adult (18–35)</option>
+      <option value="36-59">Middle Adult (36–59)</option>
+    </select>
+    <button class="export-csv-btn" onclick="exportCSV()">⬇ Export CSV</button>
+    <span class="results-count" id="results-count"></span>
+  </div>
+
+  <!-- Users table -->
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th onclick="sortBy('first_name')">Name ↕</th>
+          <th onclick="sortBy('phone')">Phone ↕</th>
+          <th onclick="sortBy('age')">Age ↕</th>
+          <th>Age Group</th>
+          <th>Diet</th>
+          <th>Diabetic</th>
+          <th>Profile</th>
+          <th onclick="sortBy('signup_date')">Signed Up ↕</th>
+          <th onclick="sortBy('last_login')">Last Login ↕</th>
+        </tr>
+      </thead>
+      <tbody id="users-tbody">
+        <tr><td colspan="9" class="loading-msg">⏳ Loading users...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Detail panel -->
+  <div class="detail-panel" id="detail-panel">
+    <div class="detail-header">
+      <div>
+        <div class="detail-title" id="detail-name">—</div>
+        <div class="detail-sub" id="detail-profile">—</div>
+      </div>
+      <button class="close-btn" onclick="closeDetail()">✕ Close</button>
+    </div>
+
+    <div class="profile-cards" id="profile-cards"></div>
+
+    <div class="detail-tabs">
+      <div class="dtab active" onclick="showTab('log',this)">📝 Meal Log</div>
+      <div class="dtab" onclick="showTab('plan',this)">🗓 Generated Plan</div>
+    </div>
+    <div id="detail-log"></div>
+    <div id="detail-plan" style="display:none"></div>
+  </div>
+
+</div>
+
+<script>
+var ALL = [], sortKey = 'signup_date', sortAsc = false, SELECTED = null;
+
+var API_BASE   = window.parent.SMARTDIET_API_URL || '';
+var ADMIN_KEY  = localStorage.getItem('smartdiet_admin_key') || '';
+
+function promptAdminKey() {
+  if (!ADMIN_KEY) {
+    ADMIN_KEY = prompt('Enter Admin Key to view user data:') || '';
+    if (ADMIN_KEY) localStorage.setItem('smartdiet_admin_key', ADMIN_KEY);
+  }
+}
+
+function loadData() {
+  promptAdminKey();
+  document.getElementById('error-banner').style.display = 'none';
+  document.getElementById('users-tbody').innerHTML =
+    '<tr><td colspan="9" class="loading-msg">⏳ Loading...</td></tr>';
+
+  fetch(API_BASE + '/api/users', {
+    headers: { 'x-admin-key': ADMIN_KEY }
+  })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      ALL = d.users || [];
+      renderStats(); renderTable();
+    })
+    .catch(function(){
+      var b = document.getElementById('error-banner');
+      b.innerHTML = '⚠ Cannot reach the server. Make sure <b>server.py</b> is running ' +
+        '(double-click START.bat), then refresh this page.';
+      b.style.display = 'block';
+      document.getElementById('users-tbody').innerHTML =
+        '<tr><td colspan="9" class="no-data">No connection to server.</td></tr>';
+    });
+}
+
+function renderStats(){
+  var t = ALL.length;
+  var v = ALL.filter(function(u){ return u.diet_preference==='vegan'; }).length;
+  var d = ALL.filter(function(u){ return u.diabetic==='Yes'; }).length;
+  var y = ALL.filter(function(u){ return u.age_group==='18-35'; }).length;
+  setText('st-total', t);
+  setText('st-vegan', v);
+  setText('st-nonveg', t-v);
+  setText('st-diab', d);
+  setText('st-young', y);
+  setText('st-mid', t-y);
+}
+
+function getFiltered(){
+  var s = val('f-search').toLowerCase();
+  var d = val('f-diet'), di = val('f-diab'), ag = val('f-age');
+  return ALL.filter(function(u){
+    var name = (u.first_name+' '+u.last_name).toLowerCase();
+    if (s && !name.includes(s) && !u.phone.includes(s)) return false;
+    if (d  && u.diet_preference !== d)  return false;
+    if (di && u.diabetic !== di)        return false;
+    if (ag && u.age_group !== ag)       return false;
+    return true;
+  });
+}
+
+function sortBy(key){
+  sortAsc = sortKey===key ? !sortAsc : true;
+  sortKey = key; renderTable();
+}
+
+function renderTable(){
+  var rows = getFiltered().slice();
+  rows.sort(function(a,b){
+    var av=a[sortKey]||'', bv=b[sortKey]||'';
+    if (!isNaN(av)&&!isNaN(bv)){av=Number(av);bv=Number(bv);}
+    return sortAsc ? (av<bv?-1:av>bv?1:0) : (av>bv?-1:av<bv?1:0);
+  });
+
+  document.getElementById('results-count').textContent =
+    rows.length + ' of ' + ALL.length + ' users';
+
+  if (!rows.length){
+    document.getElementById('users-tbody').innerHTML =
+      '<tr><td colspan="9" class="no-data">No users match your filters. ' +
+      (ALL.length===0 ? 'Sign up some users in the app first!' : '') + '</td></tr>';
+    return;
+  }
+
+  document.getElementById('users-tbody').innerHTML = rows.map(function(u){
+    var sel = SELECTED && SELECTED.phone===u.phone ? ' selected' : '';
+    var dietBadge = u.diet_preference==='vegan'
+      ? '<span class="badge b-vegan">Vegan</span>'
+      : '<span class="badge b-nonveg">Non-Veg</span>';
+    var diabBadge = u.diabetic==='Yes'
+      ? '<span class="badge b-diab">Diabetic</span>'
+      : '<span class="badge b-healthy">Healthy</span>';
+    var ageBadge = u.age_group==='18-35'
+      ? '<span class="badge b-young">Young (18–35)</span>'
+      : '<span class="badge b-middle">Middle (36–59)</span>';
+    return '<tr class="'+sel+'" onclick="showDetail(\''+u.phone+'\')">'+
+      '<td>'+esc(u.first_name)+' '+esc(u.last_name)+'</td>'+
+      '<td>'+esc(u.phone)+'</td>'+
+      '<td>'+u.age+'</td>'+
+      '<td>'+ageBadge+'</td>'+
+      '<td>'+dietBadge+'</td>'+
+      '<td>'+diabBadge+'</td>'+
+      '<td style="font-size:.72rem;color:var(--muted)">'+esc(u.profile_key||'—')+'</td>'+
+      '<td style="font-size:.76rem">'+fmt(u.signup_date)+'</td>'+
+      '<td style="font-size:.76rem">'+fmt(u.last_login)+'</td>'+
+      '</tr>';
+  }).join('');
+}
+
+function showDetail(phone){
+  SELECTED = ALL.find(function(u){ return u.phone===phone; }) || null;
+  renderTable();
+
+  fetch(API_BASE + '/api/user/'+phone, {
+    headers: { 'x-admin-key': ADMIN_KEY }
+  })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      var u = data.user || {};
+      var logs  = data.log  || [];
+      var plans = data.plan || [];
+
+      document.getElementById('detail-name').textContent =
+        u.first_name+' '+u.last_name+'   ('+u.phone+')';
+      document.getElementById('detail-profile').textContent =
+        u.profile_key + '  ·  ' + (u.diabetic==='Yes'?'🩺 Diabetic':'✅ Non-Diabetic') +
+        '  ·  Signed up '+fmt(u.signup_date);
+
+      // Profile cards
+      var foodLogs = logs.filter(function(l){ return l.food_name!=='-- SKIPPED --'; });
+      var skipped  = logs.filter(function(l){ return l.skipped==='Yes'; });
+      document.getElementById('profile-cards').innerHTML =
+        card('User Profile',[
+          ['Phone / ID',    u.phone],
+          ['Name',          u.first_name+' '+u.last_name],
+          ['Age',           u.age+' years ('+u.age_group+')'],
+          ['Diet',          u.diet_preference==='vegan'?'🌱 Vegan':'🍗 Non-Vegetarian'],
+          ['Diabetic',      u.diabetic==='Yes'?'🩺 Yes':'✅ No'],
+          ['Profile Key',   u.profile_key],
+          ['Signup Date',   fmt(u.signup_date)],
+          ['Last Login',    fmt(u.last_login)],
+        ])+
+        card('Meal Data Summary',[
+          ['Foods Logged',      foodLogs.length],
+          ['Skipped Meals',     skipped.length],
+          ['Plan Items',        plans.length],
+          ['Days Logged',       unique(logs,'day')],
+          ['Days Planned',      unique(plans,'day')],
+          ['Meals w/ Compensation', plans.filter(function(p){return p.compensation_active==='Yes';}).length],
+        ], avgCalBars(plans));
+
+      // Tables
+      renderDetailTable('detail-log', logs,
+        ['day','meal_type','food_name','calories','protein','fat','carbs','fiber','sugar','skipped'],
+        'No meal log data yet — user needs to log meals and save.');
+      renderDetailTable('detail-plan', plans,
+        ['day','meal_type','food_name','calories','protein','fat','carbs','fiber','sugar','compensation_active'],
+        'No plan data yet — user needs to save a day to generate a plan.');
+
+      document.getElementById('detail-panel').classList.add('open');
+      document.getElementById('detail-panel').scrollIntoView({behavior:'smooth',block:'start'});
+    });
+}
+
+function renderDetailTable(id, rows, fields, empty){
+  var el = document.getElementById(id);
+  if (!rows.length){ el.innerHTML='<div class="no-data">'+empty+'</div>'; return; }
+  var ths = fields.map(function(f){ return '<th>'+f+'</th>'; }).join('');
+  var trs = rows.map(function(r){
+    var tds = fields.map(function(f){
+      var v = r[f]||'—';
+      if (f==='skipped'&&v==='Yes') v='<span style="color:var(--red)">Yes</span>';
+      if (f==='compensation_active'&&v==='Yes') v='<span style="color:var(--amber)">⚡ Yes</span>';
+      if (f==='food_name'&&v==='-- SKIPPED --') v='<span style="color:var(--muted);font-style:italic">Skipped</span>';
+      return '<td>'+v+'</td>';
+    }).join('');
+    return '<tr>'+tds+'</tr>';
+  }).join('');
+  el.innerHTML='<div class="table-wrap" style="max-height:320px;overflow-y:auto">'+
+    '<table class="data-table"><thead><tr>'+ths+'</tr></thead><tbody>'+trs+'</tbody></table></div>';
+}
+
+function showTab(tab,btn){
+  document.querySelectorAll('.dtab').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.getElementById('detail-log').style.display  = tab==='log'  ? '' : 'none';
+  document.getElementById('detail-plan').style.display = tab==='plan' ? '' : 'none';
+}
+
+function closeDetail(){
+  SELECTED = null;
+  document.getElementById('detail-panel').classList.remove('open');
+  renderTable();
+}
+
+function avgCalBars(plans){
+  var days={};
+  plans.forEach(function(p){ days[p.day]=(days[p.day]||0)+parseFloat(p.calories||0); });
+  var vals=Object.values(days);
+  if(!vals.length) return '<div style="font-size:.76rem;color:var(--muted);margin-top:8px">No plan data yet</div>';
+  var avg=vals.reduce(function(a,b){return a+b;},0)/vals.length;
+  var pct=Math.min(Math.round(avg/1950*100),100);
+  var col=pct>=85&&pct<=115?'var(--green)':pct>115?'var(--red)':'var(--amber)';
+  return '<div class="mini-bars" style="margin-top:10px">'+
+    '<div style="font-size:.7rem;color:var(--muted);font-weight:700;margin-bottom:6px">AVG DAILY CALORIES</div>'+
+    '<div class="mbar-row"><span class="mbar-lbl">Avg/day</span>'+
+    '<div class="mbar-track"><div class="mbar-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'+
+    '<span class="mbar-val">'+Math.round(avg)+'</span></div>'+
+    '<div style="font-size:.7rem;color:var(--muted)">Target ~1,950 kcal &nbsp;('+pct+'%)</div></div>';
+}
+
+function card(title, rows, extra){
+  var html='<div class="profile-card"><div class="pc-title">'+title+'</div>';
+  rows.forEach(function(r){
+    html+='<div class="pc-row"><span class="pc-lbl">'+r[0]+'</span>'+
+          '<span class="pc-val">'+r[1]+'</span></div>';
+  });
+  if(extra) html+=extra;
+  return html+'</div>';
+}
+
+function exportCSV(){
+  var rows=getFiltered();
+  if(!rows.length){alert('No users to export.');return;}
+  var fields=Object.keys(rows[0]);
+  var csv=[fields.join(',')].concat(rows.map(function(r){
+    return fields.map(function(f){
+      return '"'+String(r[f]||'').replace(/"/g,'""')+'"';
+    }).join(',');
+  })).join('\n');
+  var a=document.createElement('a');
+  a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);
+  a.download='smartdiet_users_'+new Date().toISOString().slice(0,10)+'.csv';
+  a.click();
+}
+
+function openExcel(){
+  alert('The Excel file is at:\n\ndata\\SmartDiet_Data.xlsx\n\nOpen it in File Explorer from your SmartDietPlanner folder.');
+}
+
+function unique(arr,key){ return new Set(arr.map(function(r){return r[key];})).size; }
+function fmt(s){ return s?(s+'').substring(0,16):'—'; }
+function val(id){ return document.getElementById(id).value; }
+function setText(id,v){ document.getElementById(id).textContent=v; }
+function esc(s){
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+loadData();
+</script>
+</body>
+</html>
