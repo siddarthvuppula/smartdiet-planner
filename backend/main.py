@@ -56,6 +56,11 @@ def signup(data: dict):
     if d.table("users").select("phone").eq("phone", phone).execute().data:
         raise HTTPException(409, "User already exists")
 
+    weight     = float(u.get("weight", 0) or 0)
+    height_cm  = float(u.get("height", 0) or 0)
+    height_str = str(u.get("heightDisplay", "")).strip()
+    bmi        = round(weight / ((height_cm/100)**2), 1) if height_cm > 0 and weight > 0 else 0
+
     d.table("users").insert({
         "phone": phone, "mobile": u.get("mobile",""),
         "country_code": u.get("countryCode","+91"),
@@ -63,6 +68,8 @@ def signup(data: dict):
         "diet_preference": u.get("diet","vegan"),
         "age": age, "age_group": "18-35" if band=="young" else "36-59",
         "diabetic": diab, "profile_key": f"{cond}-{band}",
+        "weight_kg": weight, "height_cm": height_cm,
+        "height_display": height_str, "bmi": bmi,
         "password_hash": hp(str(u.get("pass", u.get("password","")))),
         "signup_date": now, "last_login": now
     }).execute()
@@ -91,7 +98,11 @@ def login(data: dict):
         "countryCode": u.get("country_code","+91"),
         "fname": u["first_name"], "lname": u["last_name"],
         "diet": u["diet_preference"], "age": u["age"],
-        "diabetic": u["diabetic"], "profile_key": u["profile_key"]
+        "diabetic": u["diabetic"], "profile_key": u["profile_key"],
+        "weight": u.get("weight_kg", 0),
+        "height": u.get("height_cm", 0),
+        "heightDisplay": u.get("height_display", ""),
+        "bmi": u.get("bmi", 0)
     }}
 
 @app.post("/api/save")
@@ -151,7 +162,8 @@ def get_users(x_admin_key: str = Header(default="")):
     d   = db()
     res = d.table("users").select(
         "phone,mobile,country_code,first_name,last_name,"
-        "diet_preference,age,age_group,diabetic,profile_key,signup_date,last_login"
+        "diet_preference,age,age_group,diabetic,profile_key,"
+        "weight_kg,height_cm,height_display,bmi,signup_date,last_login"
     ).order("signup_date", desc=True).execute()
     return {"users": res.data, "total": len(res.data)}
 

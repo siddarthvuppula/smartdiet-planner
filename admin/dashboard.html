@@ -205,6 +205,9 @@ body{background:#f0f7f4;font-family:'Outfit',sans-serif;color:#1a2e1f;min-height
           <th onclick="sortBy('phone')">Phone ↕</th>
           <th onclick="sortBy('age')">Age ↕</th>
           <th>Age Group</th>
+          <th onclick="sortBy('weight_kg')">Weight ↕</th>
+          <th onclick="sortBy('height_cm')">Height ↕</th>
+          <th onclick="sortBy('bmi')">BMI ↕</th>
           <th>Diet</th>
           <th>Diabetic</th>
           <th>Profile</th>
@@ -378,6 +381,9 @@ function showDetail(phone){
           ['Phone / ID',    u.phone],
           ['Name',          u.first_name+' '+u.last_name],
           ['Age',           u.age+' years ('+u.age_group+')'],
+          ['Weight',        (u.weight_kg||'—')+' kg'],
+          ['Height',        u.height_display || (u.height_cm ? u.height_cm+' cm' : '—')],
+          ['BMI',           u.bmi ? u.bmi+' ('+( u.bmi<18.5?'Underweight':u.bmi<25?'Normal':u.bmi<30?'Overweight':'Obese')+')' : '—'],
           ['Diet',          u.diet_preference==='vegan'?'🌱 Vegan':'🍗 Non-Vegetarian'],
           ['Diabetic',      u.diabetic==='Yes'?'🩺 Yes':'✅ No'],
           ['Profile Key',   u.profile_key],

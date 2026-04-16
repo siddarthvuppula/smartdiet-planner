@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <!-- Age field with validation hint -->
+      <!-- Age + Weight + Height row -->
       <div class="form-group">
         <label class="form-label">Age (years)</label>
         <input class="form-input" id="in-age" type="number" min="18" max="59"
@@ -53,6 +53,60 @@
         <div class="form-hint">Must be between 18 and 59 years.</div>
         <div class="age-warn" id="age-warn">
           ⚠ This app supports users aged 18–59 only. Please check your age.
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="form-group">
+          <label class="form-label">Weight (kg)</label>
+          <input class="form-input" id="in-weight" type="number" min="30" max="250"
+                 placeholder="e.g. 70" oninput="validateWeight(this)"/>
+          <div class="form-hint" id="weight-hint">Your current body weight</div>
+          <div class="age-warn" id="weight-warn" style="display:none">
+            ⚠ Please enter a valid weight (30–250 kg)
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Height</label>
+          <div class="height-input-wrap">
+            <select class="height-select" id="in-height-ft" onchange="validateHeight()">
+              <option value="">ft</option>
+              <option value="4">4 ft</option>
+              <option value="5">5 ft</option>
+              <option value="6">6 ft</option>
+              <option value="7">7 ft</option>
+            </select>
+            <select class="height-select" id="in-height-in" onchange="validateHeight()">
+              <option value="0">0 in</option>
+              <option value="1">1 in</option>
+              <option value="2">2 in</option>
+              <option value="3">3 in</option>
+              <option value="4">4 in</option>
+              <option value="5">5 in</option>
+              <option value="6">6 in</option>
+              <option value="7">7 in</option>
+              <option value="8">8 in</option>
+              <option value="9">9 in</option>
+              <option value="10">10 in</option>
+              <option value="11">11 in</option>
+            </select>
+          </div>
+          <div class="form-hint" id="height-hint">Select your height in feet and inches</div>
+          <div class="age-warn" id="height-warn" style="display:none">
+            ⚠ Please select your height
+          </div>
+        </div>
+      </div>
+
+      <!-- BMI display (auto-calculated) -->
+      <div class="bmi-card" id="bmi-card" style="display:none">
+        <div class="bmi-left">
+          <span class="bmi-label">BMI</span>
+          <span class="bmi-value" id="bmi-value">—</span>
+        </div>
+        <div class="bmi-right">
+          <span class="bmi-cat" id="bmi-cat">—</span>
+          <span class="bmi-note" id="bmi-note">—</span>
         </div>
       </div>
 
@@ -382,6 +436,76 @@ function updateCountryFlag() {
   const hint = document.getElementById('phone-hint');
   hint.textContent = 'Enter your 10-digit mobile number without country code';
   hint.style.display = 'block';
+}
+
+/** Weight validation */
+function validateWeight(input) {
+  var v = parseFloat(input.value);
+  var warn  = document.getElementById('weight-warn');
+  var hint  = document.getElementById('weight-hint');
+  warn.style.display = (!isNaN(v) && (v < 30 || v > 250)) ? 'block' : 'none';
+  if (!isNaN(v) && v >= 30 && v <= 250) {
+    hint.textContent = v + ' kg — good';
+    _calcBMI();
+  } else {
+    hint.textContent = 'Your current body weight';
+  }
+}
+
+/** Height validation — feet and inches */
+function validateHeight() {
+  var ft   = parseInt(document.getElementById('in-height-ft').value) || 0;
+  var ins  = parseInt(document.getElementById('in-height-in').value) || 0;
+  var warn = document.getElementById('height-warn');
+  var hint = document.getElementById('height-hint');
+  if (ft < 4) {
+    warn.style.display = 'none';
+    hint.textContent = 'Select your height in feet and inches';
+    return;
+  }
+  warn.style.display = 'none';
+  // Convert to cm for BMI calculation
+  var totalInches = (ft * 12) + ins;
+  var cm = Math.round(totalInches * 2.54);
+  hint.textContent = ft + ' ft ' + ins + ' in  =  ' + cm + ' cm';
+  _calcBMI();
+}
+
+/** Get height in cm from feet+inches */
+function getHeightCm() {
+  var ft  = parseInt(document.getElementById('in-height-ft').value) || 0;
+  var ins = parseInt(document.getElementById('in-height-in').value) || 0;
+  if (ft < 4) return 0;
+  return Math.round(((ft * 12) + ins) * 2.54);
+}
+
+/** Get height display string e.g. "5 ft 7 in" */
+function getHeightDisplay() {
+  var ft  = parseInt(document.getElementById('in-height-ft').value) || 0;
+  var ins = parseInt(document.getElementById('in-height-in').value) || 0;
+  if (ft < 4) return '';
+  return ft + ' ft ' + ins + ' in';
+}
+
+/** Auto-calculate and display BMI */
+function _calcBMI() {
+  var w = parseFloat(document.getElementById('in-weight').value);
+  var h = getHeightCm();
+  var card = document.getElementById('bmi-card');
+  if (isNaN(w) || w < 30 || h < 100) { card.style.display='none'; return; }
+  var bmi = w / ((h/100) * (h/100));
+  var bmiRound = bmi.toFixed(1);
+  var cat, note, cls;
+  if      (bmi < 18.5) { cat='Underweight'; note='Consider increasing calorie intake'; cls='bmi-under'; }
+  else if (bmi < 25)   { cat='Normal weight'; note='Healthy range — maintain your diet'; cls='bmi-normal'; }
+  else if (bmi < 30)   { cat='Overweight'; note='Consider reducing calorie intake'; cls='bmi-over'; }
+  else                  { cat='Obese'; note='Recommend consulting a nutritionist'; cls='bmi-obese'; }
+  document.getElementById('bmi-value').textContent = bmiRound;
+  document.getElementById('bmi-cat').textContent   = cat;
+  document.getElementById('bmi-note').textContent  = note;
+  document.getElementById('bmi-value').className   = 'bmi-value ' + cls;
+  document.getElementById('bmi-cat').className     = 'bmi-cat ' + cls;
+  card.style.display = 'flex';
 }
 
 /** Password strength indicator */

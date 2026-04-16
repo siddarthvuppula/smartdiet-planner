@@ -48,10 +48,21 @@ function _handleSignup(phone, mobile, code, pass) {
     _showAuthError('Age must be between ' + AGE_MIN + ' and ' + AGE_MAX + ' years.'); return;
   }
 
+  var weightRaw = document.getElementById('in-weight') ? document.getElementById('in-weight').value.trim() : '';
+  var weight    = parseFloat(weightRaw) || 0;
+  var heightCm  = (typeof getHeightCm  === 'function') ? getHeightCm()      : 0;
+  var heightStr = (typeof getHeightDisplay === 'function') ? getHeightDisplay() : '';
+  var bmi       = (weight > 0 && heightCm > 0)
+                  ? parseFloat((weight / ((heightCm/100)*(heightCm/100))).toFixed(1)) : 0;
+
   var userObj = {
     phone: phone, mobile: mobile, countryCode: code,
     fname: fname, lname: lname, pass: pass,
     diet: diet, age: age, diabetic: diabetic,
+    weight: weight,
+    height: heightCm,       // stored in cm for calculations
+    heightDisplay: heightStr, // stored as "5 ft 7 in" for display
+    bmi: bmi,
     signupDate: new Date().toISOString()
   };
 
@@ -165,7 +176,7 @@ function signOut() {
   document.getElementById('screen-app').classList.remove('active');
   document.getElementById('screen-login').classList.add('active');
 
-  ['in-pass','in-fname','in-lname','in-age','in-mobile'].forEach(function(id) {
+  ['in-pass','in-fname','in-lname','in-age','in-mobile','in-weight','in-height'].forEach(function(id) {
     var el = document.getElementById(id); if (el) el.value = '';
   });
   var d = document.getElementById('in-diabetic'); if (d) d.value = 'no';
