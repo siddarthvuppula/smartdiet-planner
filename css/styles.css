@@ -27,13 +27,13 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   padding: 14px 28px; display: flex; align-items: center; justify-content: space-between;
   position: sticky; top: 0; z-index: 200;
 }
-.logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--green); letter-spacing: .02em; }
-.logo span { color: var(--text); font-weight: 300; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #ffffff; letter-spacing: .02em; }
+.logo span { color: rgba(255,255,255,0.85); font-weight: 300; }
 .logo .db-badge { font-size: .6rem; font-weight: 300; color: var(--muted); margin-left: 6px; }
 .topbar-right { display: flex; gap: 8px; align-items: center; }
 .user-chip {
-  background: var(--green-dim); border: 1px solid var(--green2);
-  color: var(--green); padding: 5px 14px; border-radius: 99px; font-size: .78rem; font-weight: 600;
+  background: rgba(255,255,255,0.2); border: 1.5px solid rgba(255,255,255,0.5);
+  color: #ffffff; padding: 5px 14px; border-radius: 99px; font-size: .78rem; font-weight: 600;
 }
 
 /* ── Profile pill (next to user chip) ── */
@@ -41,15 +41,15 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   padding: 4px 12px; border-radius: 99px; font-size: .72rem; font-weight: 700;
   border: 1px solid; cursor: default;
 }
-.profile-pill.healthy  { background: var(--green-dim); color: var(--green);  border-color: var(--green2); }
+.profile-pill.healthy  { background: rgba(255,255,255,0.2); color: #ffffff; border-color: rgba(255,255,255,0.5); }
 .profile-pill.diabetic { background: #fff8ec;           color: var(--amber);  border-color: var(--amber);  }
 
 .btn-ghost {
-  background: transparent; border: 1px solid var(--border); color: var(--light);
+  background: rgba(255,255,255,0.2); border: 1.5px solid rgba(255,255,255,0.6); color: #ffffff;
   padding: 6px 14px; border-radius: 8px; cursor: pointer; font-size: .78rem;
-  font-family: 'Outfit', sans-serif; transition: .15s;
+  font-family: 'Outfit', sans-serif; transition: .15s; font-weight: 500;
 }
-.btn-ghost:hover { border-color: var(--green); color: var(--green); }
+.btn-ghost:hover { background: rgba(255,255,255,0.35); border-color: #ffffff; color: #ffffff; }
 
 /* ── NAV TABS ── */
 .nav-tabs {
