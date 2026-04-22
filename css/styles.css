@@ -392,6 +392,151 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 
 
 
+
+/* ================================================================
+   DAILY DASHBOARD
+   ================================================================ */
+
+#daily-dashboard {
+  margin-bottom: 32px;
+}
+
+/* ── Header: date + greeting ── */
+.dash-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  margin-bottom: 18px; flex-wrap: wrap; gap: 10px;
+}
+.dash-date {
+  font-size: .82rem; color: var(--muted); font-weight: 500; margin-bottom: 3px;
+}
+.dash-greeting {
+  font-family: 'Playfair Display', serif; font-size: 1.6rem;
+  color: var(--text); font-weight: 700; line-height: 1.2;
+}
+.dash-day-badge {
+  background: var(--green2); color: #fff;
+  padding: 6px 16px; border-radius: 99px; font-size: .82rem; font-weight: 700;
+  white-space: nowrap; align-self: center;
+}
+
+/* ── 4 quick-stat cards ── */
+.dash-stats-row {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 22px;
+}
+.dash-stat-card {
+  background: #ffffff; border: 1.5px solid #c8e6d0; border-radius: 14px;
+  padding: 16px 14px; text-align: center;
+  box-shadow: 0 2px 8px rgba(21,128,61,.06); transition: .15s;
+  cursor: default;
+}
+.dash-stat-card:hover { border-color: var(--green2); transform: translateY(-2px); }
+.dsc-icon { font-size: 1.4rem; margin-bottom: 6px; }
+.dsc-val  { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--green2); }
+.dsc-lbl  { font-size: .72rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
+.dsc-sub  { font-size: .68rem; color: var(--muted); margin-top: 2px; }
+.dsc-val.amber { color: var(--amber); }
+.dsc-val.red   { color: var(--red);   }
+.dsc-val.blue  { color: var(--blue);  }
+
+/* ── Section titles inside dashboard ── */
+.dash-section-title {
+  font-size: .78rem; font-weight: 700; color: var(--green2);
+  text-transform: uppercase; letter-spacing: .07em;
+  margin-bottom: 10px; margin-top: 4px;
+}
+
+/* ── Meal status row ── */
+.dash-meals-row {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 20px;
+}
+.dash-meal-card {
+  background: #ffffff; border: 1.5px solid #c8e6d0; border-radius: 12px;
+  padding: 12px; text-align: center; position: relative;
+}
+.dash-meal-card.done    { border-color: var(--green2); background: #f0fdf4; }
+.dash-meal-card.skipped { border-color: var(--red);    background: #fff5f5; }
+.dash-meal-card.pending { border-color: #e5e7eb;       background: #fafafa; }
+.dmc-icon   { font-size: 1.3rem; margin-bottom: 4px; }
+.dmc-name   { font-size: .75rem; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.dmc-status { font-size: .68rem; color: var(--muted); }
+.dmc-cal    { font-size: .72rem; font-weight: 600; color: var(--green2); margin-top: 3px; }
+.dmc-badge  {
+  position: absolute; top: -6px; right: -6px;
+  width: 20px; height: 20px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .65rem; font-weight: 700; border: 2px solid #fff;
+}
+.dmc-badge.done    { background: var(--green2); color: #fff; }
+.dmc-badge.skipped { background: var(--red);    color: #fff; }
+
+/* ── Today's plan row ── */
+.dash-plan-row {
+  display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-bottom: 20px;
+}
+.dash-plan-meal {
+  background: #f8fdf9; border: 1.5px solid #c8e6d0; border-radius: 12px; padding: 12px 14px;
+}
+.dpm-header { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+.dpm-icon   { font-size: 1rem; }
+.dpm-name   { font-size: .8rem; font-weight: 700; color: var(--green2); }
+.dpm-foods  { font-size: .75rem; color: var(--muted); line-height: 1.6; }
+.dpm-cal    { font-size: .72rem; font-weight: 700; color: var(--text); margin-top: 6px; }
+
+/* ── Nutrient progress bars ── */
+.dash-nutrients {
+  background: #ffffff; border: 1.5px solid #c8e6d0; border-radius: 14px;
+  padding: 16px 20px; margin-bottom: 20px;
+}
+.dash-nut-row {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+}
+.dash-nut-row:last-child { margin-bottom: 0; }
+.dn-label { font-size: .74rem; font-weight: 600; color: var(--muted); width: 72px; flex-shrink: 0; }
+.dn-track { flex: 1; height: 8px; background: #e5e7eb; border-radius: 99px; overflow: hidden; position: relative; }
+.dn-fill  { height: 100%; border-radius: 99px; transition: width .6s cubic-bezier(.4,0,.2,1); }
+.dn-fill.ok   { background: var(--green2); }
+.dn-fill.low  { background: var(--amber); }
+.dn-fill.over { background: var(--red); }
+.dn-nums { font-size: .72rem; color: var(--muted); width: 80px; text-align: right; flex-shrink: 0; }
+.dn-pct  { font-size: .68rem; font-weight: 700; width: 36px; text-align: right; flex-shrink: 0; }
+
+/* ── Weekly mini heatmap ── */
+.dash-week-row {
+  display: grid; grid-template-columns: repeat(7,1fr); gap: 8px; margin-bottom: 18px;
+}
+.dash-day-pill {
+  background: #f9fafb; border: 1.5px solid #e5e7eb; border-radius: 10px;
+  padding: 8px 4px; text-align: center; cursor: pointer; transition: .15s;
+}
+.dash-day-pill:hover { border-color: var(--green2); }
+.dash-day-pill.today  { border-color: var(--green2); background: #f0fdf4; }
+.dash-day-pill.logged { border-color: var(--green2); background: #dcfce7; }
+.dash-day-pill.missed { border-color: var(--amber);  background: #fffbeb; }
+.dash-day-pill.future { opacity: .45; }
+.ddp-name { font-size: .7rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+.ddp-icon { font-size: 1rem; margin-bottom: 2px; }
+.ddp-cal  { font-size: .65rem; color: var(--muted); }
+
+/* ── Tip card ── */
+.dash-tip-card {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: linear-gradient(135deg,#f0fdf4,#dcfce7);
+  border: 1.5px solid #86efac; border-radius: 14px;
+  padding: 14px 18px; margin-bottom: 8px;
+}
+.dash-tip-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 1px; }
+.dash-tip-text { font-size: .83rem; color: #166534; line-height: 1.55; font-weight: 500; }
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .dash-stats-row  { grid-template-columns: 1fr 1fr; }
+  .dash-meals-row  { grid-template-columns: 1fr 1fr; }
+  .dash-plan-row   { grid-template-columns: 1fr; }
+  .dash-week-row   { grid-template-columns: repeat(7,1fr); gap: 4px; }
+  .dash-greeting   { font-size: 1.2rem; }
+  .ddp-cal         { display: none; }
+}
+
 /* ── Height feet+inches selector ── */
 .height-input-wrap {
   display: flex; gap: 8px; margin-bottom: 4px;

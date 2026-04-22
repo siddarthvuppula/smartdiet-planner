@@ -231,6 +231,81 @@
        TAB 1 — MAIN MENU (personalised targets)
   ════════════════════════════════════════════ -->
   <div class="content" id="tab-content-menu">
+
+    <!-- ═══ DAILY DASHBOARD ═══ -->
+    <div id="daily-dashboard">
+
+      <!-- Top row: date + greeting -->
+      <div class="dash-header">
+        <div>
+          <div class="dash-date" id="dash-date">—</div>
+          <div class="dash-greeting" id="dash-greeting">Good morning!</div>
+        </div>
+        <div class="dash-day-badge" id="dash-day-badge">—</div>
+      </div>
+
+      <!-- Stats row: 4 quick-look cards -->
+      <div class="dash-stats-row">
+        <div class="dash-stat-card" id="dsc-cal">
+          <div class="dsc-icon">🔥</div>
+          <div class="dsc-val" id="dsc-cal-val">0</div>
+          <div class="dsc-lbl">kcal today</div>
+          <div class="dsc-sub" id="dsc-cal-sub">target: —</div>
+        </div>
+        <div class="dash-stat-card" id="dsc-meals">
+          <div class="dsc-icon">🍽</div>
+          <div class="dsc-val" id="dsc-meals-val">0/4</div>
+          <div class="dsc-lbl">meals logged</div>
+          <div class="dsc-sub" id="dsc-meals-sub">—</div>
+        </div>
+        <div class="dash-stat-card" id="dsc-nar">
+          <div class="dsc-icon">📊</div>
+          <div class="dsc-val" id="dsc-nar-val">—</div>
+          <div class="dsc-lbl">NAR score</div>
+          <div class="dsc-sub" id="dsc-nar-sub">nutrient adequacy</div>
+        </div>
+        <div class="dash-stat-card" id="dsc-streak">
+          <div class="dsc-icon">🏆</div>
+          <div class="dsc-val" id="dsc-streak-val">0</div>
+          <div class="dsc-lbl">day streak</div>
+          <div class="dsc-sub" id="dsc-streak-sub">days logged</div>
+        </div>
+      </div>
+
+      <!-- Today's meal status row -->
+      <div class="dash-section-title">Today's Meal Status</div>
+      <div class="dash-meals-row" id="dash-meals-row">
+        <!-- Rendered by renderMainMenu() -->
+      </div>
+
+      <!-- Today's recommended plan -->
+      <div class="dash-section-title" id="dash-plan-title" style="display:none">
+        Today's Recommended Meals
+      </div>
+      <div class="dash-plan-row" id="dash-plan-row"></div>
+
+      <!-- Nutrient progress bars for today -->
+      <div class="dash-section-title">Today's Nutrient Progress</div>
+      <div class="dash-nutrients" id="dash-nutrients">
+        <!-- Rendered by renderMainMenu() -->
+      </div>
+
+      <!-- Weekly progress mini heatmap -->
+      <div class="dash-section-title">This Week at a Glance</div>
+      <div class="dash-week-row" id="dash-week-row">
+        <!-- 7 day pills -->
+      </div>
+
+      <!-- Tips / insight card -->
+      <div class="dash-tip-card" id="dash-tip-card">
+        <span class="dash-tip-icon">💡</span>
+        <span class="dash-tip-text" id="dash-tip-text">Loading your personalised tip...</span>
+      </div>
+
+    </div>
+    <!-- ═══ END DAILY DASHBOARD ═══ -->
+
+    <div style="height:8px"></div>
     <div class="section-title">Ideal Nutrient Intake</div>
     <div class="section-sub">
       Personalised WHO/FAO + ADA 2024 targets for your profile.
