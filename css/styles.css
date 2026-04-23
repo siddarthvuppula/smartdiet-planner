@@ -28,7 +28,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   position: sticky; top: 0; z-index: 200;
 }
 .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #ffffff; letter-spacing: .02em; }
-.logo span { color: rgba(255,255,255,0.85); font-weight: 300; }
+.logo span { color: #ffffff; font-weight: 300; }
 .logo .db-badge { font-size: .6rem; font-weight: 300; color: var(--muted); margin-left: 6px; }
 .topbar-right { display: flex; gap: 8px; align-items: center; }
 .user-chip {
@@ -61,7 +61,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; transition: .15s;
 }
 .nav-tab:hover { color: var(--light); }
-.nav-tab.active { color: var(--green); border-bottom-color: var(--green); }
+.nav-tab.active { color: var(--green2); border-bottom-color: var(--green2); }
 
 .content { flex: 1; padding: 28px; max-width: 1200px; margin: 0 auto; width: 100%; }
 
@@ -75,7 +75,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   padding: 44px; width: 100%; max-width: 480px;
   box-shadow: 0 8px 40px rgba(21,128,61,.12);
 }
-.login-title { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--green); margin-bottom: 6px; }
+.login-title { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--green2); margin-bottom: 6px; }
 .login-sub { color: var(--muted); font-size: .88rem; margin-bottom: 30px; }
 
 .mode-toggle { display: flex; background: #f3f4f6; border-radius: 10px; padding: 4px; margin-bottom: 26px; }
@@ -199,7 +199,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 .login-err { color: var(--red); font-size: .8rem; margin-top: 10px; text-align: center; display: none; }
 
 /* ── SECTION TITLES ── */
-.section-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--green); margin-bottom: 6px; }
+.section-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--green2); margin-bottom: 6px; }
 .section-sub { color: var(--muted); font-size: .85rem; margin-bottom: 22px; }
 
 /* ── PROFILE BANNER (Main Menu) ── */
@@ -224,7 +224,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   border-radius: var(--radius); padding: 18px; text-align: center; border-top: 3px solid var(--green2);
 }
 .ideal-card .ic-icon { font-size: 1.6rem; margin-bottom: 8px; }
-.ideal-card .ic-name { font-family: 'Playfair Display', serif; font-size: .95rem; color: var(--green); margin-bottom: 12px; }
+.ideal-card .ic-name { font-family: 'Playfair Display', serif; font-size: .95rem; color: var(--green2); margin-bottom: 12px; }
 .ideal-card .ic-row { display: flex; justify-content: space-between; font-size: .74rem; padding: 3px 0; border-bottom: 1px solid var(--border); }
 .ideal-card .ic-row:last-child { border-bottom: none; }
 .ideal-card .ic-lbl { color: var(--muted); }
@@ -305,14 +305,14 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 /* ── Data table ── */
 .table-wrap { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 20px; }
 .data-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
-.data-table thead th { background: #166534; color: var(--muted); padding: 10px 14px; text-align: right; font-weight: 600; font-size: .74rem; text-transform: uppercase; letter-spacing: .05em; }
+.data-table thead th { background: #166534; color: #ffffff; padding: 10px 14px; text-align: right; font-weight: 600; font-size: .74rem; text-transform: uppercase; letter-spacing: .05em; }
 .data-table thead th:first-child { text-align: left; }
 .data-table tbody tr { border-bottom: 1px solid var(--border); transition: .1s; }
 .data-table tbody tr:last-child { border-bottom: none; }
 .data-table tbody tr:hover { background: #f0fdf4; }
 .data-table tbody td { padding: 10px 14px; text-align: right; color: var(--muted); }
 .data-table tbody td:first-child { text-align: left; color: var(--text); font-weight: 500; }
-.data-table tfoot td { padding: 10px 14px; text-align: right; font-weight: 700; color: var(--green2); background: #dcfce7; font-size: .82rem; }
+.data-table tfoot td { padding: 10px 14px; text-align: right; font-weight: 700; color: #166534; background: #dcfce7; font-size: .82rem; }
 .data-table tfoot td:first-child { text-align: left; }
 
 /* ── Bars ── */
@@ -344,10 +344,10 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 
 /* ── Weekly heatmap ── */
 .wh-row { display: grid; grid-template-columns: 110px repeat(7,1fr); gap: 6px; align-items: center; margin-bottom: 6px; }
-.wh-header { text-align: center; font-size: .72rem; font-weight: 700; color: var(--green); padding: 6px; background: #dcfce7; border-radius: 7px; }
+.wh-header { text-align: center; font-size: .72rem; font-weight: 700; color: #ffffff; padding: 6px; background: #15803d; border-radius: 7px; }
 .wh-label  { font-size: .74rem; font-weight: 600; color: var(--muted); }
 .wh-cell   { border-radius: 8px; padding: 7px 4px; text-align: center; font-size: .74rem; font-weight: 700; border: 1px solid var(--border); cursor: default; }
-.wh-cell.good  { background: #dcfce7; color: var(--green); border-color: #1a4d2a; }
+.wh-cell.good  { background: #15803d; color: #ffffff; border-color: #14532d; }
 .wh-cell.over  { background: #fee2e2;   color: var(--red);   border-color: #4d1a1a; }
 .wh-cell.low   { background: #fffbeb;          color: var(--amber); border-color: #4d3a0a; }
 .wh-cell.empty { background: #f9fafb;   color: var(--border); }
@@ -356,10 +356,10 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 .plan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .plan-meal-card { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .plan-meal-header { padding: 12px 16px; background: linear-gradient(135deg,#15803d,#166534); border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-.plan-meal-title  { font-size: .9rem; font-weight: 700; color: var(--text); }
+.plan-meal-title  { font-size: .9rem; font-weight: 700; color: #ffffff; }
 .plan-meal-status { font-size: .72rem; padding: 2px 9px; border-radius: 99px; }
-.status-ok       { background: var(--green-dim); color: var(--green); border: 1px solid var(--green2); }
-.status-skipped  { background: var(--red-dim);   color: var(--red);   border: 1px solid var(--red);   }
+.status-ok       { background: rgba(255,255,255,0.2); color: #ffffff; border: 1px solid rgba(255,255,255,0.5); }
+.status-skipped  { background: rgba(255,255,255,0.2); color: #fecaca; border: 1px solid rgba(255,255,255,0.4); }
 .status-adjusted { background: #fffbeb;          color: var(--amber); border: 1px solid var(--amber); }
 
 /* ── Stats strip ── */
@@ -414,7 +414,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
   color: var(--text); font-weight: 700; line-height: 1.2;
 }
 .dash-day-badge {
-  background: var(--green2); color: #fff;
+  background: var(--green2); color: #ffffff;
   padding: 6px 16px; border-radius: 99px; font-size: .82rem; font-weight: 700;
   white-space: nowrap; align-self: center;
 }
@@ -440,7 +440,7 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 
 /* ── Section titles inside dashboard ── */
 .dash-section-title {
-  font-size: .78rem; font-weight: 700; color: var(--green2);
+  font-size: .78rem; font-weight: 700; color: #15803d;
   text-transform: uppercase; letter-spacing: .07em;
   margin-bottom: 10px; margin-top: 4px;
 }
@@ -510,10 +510,13 @@ body { background: var(--bg); font-family: 'Outfit', sans-serif; color: var(--te
 }
 .dash-day-pill:hover { border-color: var(--green2); }
 .dash-day-pill.today  { border-color: var(--green2); background: #f0fdf4; }
-.dash-day-pill.logged { border-color: var(--green2); background: #dcfce7; }
+.dash-day-pill.logged { border-color: var(--green2); background: #15803d; color: #ffffff; }
 .dash-day-pill.missed { border-color: var(--amber);  background: #fffbeb; }
 .dash-day-pill.future { opacity: .45; }
 .ddp-name { font-size: .7rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+.dash-day-pill.logged .ddp-name,
+.dash-day-pill.logged .ddp-icon,
+.dash-day-pill.logged .ddp-cal { color: #ffffff; }
 .ddp-icon { font-size: 1rem; margin-bottom: 2px; }
 .ddp-cal  { font-size: .65rem; color: var(--muted); }
 
