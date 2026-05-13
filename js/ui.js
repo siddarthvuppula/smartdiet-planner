@@ -460,16 +460,19 @@ function _set(id, val) {
 }
 
 
+
 // ================================================================
 //  THERMAL IMAGING TAB  —  FLIR ONE Pro image capture
 // ================================================================
 
-const THERMAL_MEALS = ['Break-fast', 'Dinner'];  // 2 meals/day per protocol
-const TIMEPOINTS    = ['t0', 't1', 't2'];
-const TP_LABELS     = { t0: 'T0 — Pre-meal Baseline (0 min)',
-                        t1: 'T1 — Early Response (15–20 min after)',
-                        t2: 'T2 — Peak/Trend (45–60 min after)' };
-const TP_SHORT      = { t0: 'T0', t1: 'T1', t2: 'T2' };
+var THERMAL_MEALS = ['Break-fast', 'Dinner'];
+var TIMEPOINTS    = ['t0', 't1', 't2'];
+var TP_LABELS     = {
+  t0: 'T0 — Pre-meal Baseline (0 min)',
+  t1: 'T1 — Early Response (15–20 min after)',
+  t2: 'T2 — Peak / Trend (45–60 min after)'
+};
+var TP_SHORT = { t0: 'T0', t1: 'T1', t2: 'T2' };
 
 function renderThermalTab() {
   _renderThermalDeviceBanner();
@@ -480,31 +483,31 @@ function renderThermalTab() {
 
 function _renderThermalDeviceBanner() {
   var el  = document.getElementById('thermal-device-banner');
+  if (!el) return;
   var has = userHasThermal();
   el.className = 'thermal-device-banner ' + (has ? 'has-thermal' : 'no-thermal');
   el.innerHTML = has
-    ? '<span class="tdb-icon">🌡</span>' +
+    ? '<span class="tdb-icon">&#127777;</span>' +
       '<div><b>FLIR ONE Pro Active</b> — Thermal + RGB image capture mode enabled. ' +
-      'Connect your FLIR ONE Pro to your phone, capture forehead images using the FLIR app, ' +
-      'then upload them using the buttons below at each timepoint.</div>'
-    : '<span class="tdb-icon">📷</span>' +
-      '<div><b>Thermal device not configured</b> — You can still upload thermal images captured ' +
-      'with the FLIR ONE Pro. Enable the device in your profile for full integration.</div>' +
-      '<button class="btn-outline" style="margin-left:auto;white-space:nowrap;flex-shrink:0" ' +
-      'onclick="showToast('Update thermal device in your profile settings','amber')">Enable Thermal</button>';
+      'Connect your FLIR ONE Pro, capture forehead images in the FLIR app, ' +
+      'then upload them at each timepoint below.</div>'
+    : '<span class="tdb-icon">&#128247;</span>' +
+      '<div><b>No thermal device configured</b> — You can still upload thermal images ' +
+      'captured with FLIR ONE Pro manually.</div>';
 }
 
 function _renderThermalDayTabs() {
   var row = document.getElementById('thermal-day-tabs');
+  if (!row) return;
   row.innerHTML = DAYS.map(function(d) {
-    var log     = STATE.thermalLog && STATE.thermalLog[d] ? STATE.thermalLog[d] : {};
+    var log     = (STATE.thermalLog && STATE.thermalLog[d]) ? STATE.thermalLog[d] : {};
     var hasData = THERMAL_MEALS.some(function(m) {
       var sl = log[m];
       return sl && (sl.t0 || sl.thermalImg_t0);
     });
     var active = d === STATE.currentThermalDay ? ' active' : '';
     var dot    = hasData ? ' has-data' : '';
-    return '<div class="day-chip'+active+dot+'" onclick="selectThermalDay(''+d+'')">' + d + '</div>';
+    return '<div class="day-chip' + active + dot + '" onclick="selectThermalDay(\'' + d + '\')">' + d + '</div>';
   }).join('');
 }
 
@@ -516,146 +519,152 @@ function selectThermalDay(day) {
 
 function _renderThermalSessions() {
   var grid = document.getElementById('thermal-sessions-grid');
-  var day  = STATE.currentThermalDay;
+  if (!grid) return;
+  var day = STATE.currentThermalDay || 'Monday';
   grid.innerHTML = '';
 
   THERMAL_MEALS.forEach(function(meal) {
-    var log    = getThermalLog(day, meal);
-    var mkey   = meal.replace(/[^a-z]/gi, '_');
-    var icon   = MEAL_ICONS[meal] || '🍽';
-    var score  = log.responseScore;
-    var scol   = !score ? 'var(--muted)'
-               : score >= 75 ? 'var(--green2)' : score >= 50 ? 'var(--amber)' : 'var(--red)';
-    var slabel = !score ? '—'
-               : score >= 75 ? 'Good response' : score >= 50 ? 'Moderate' : 'Low response';
+    var log   = getThermalLog(day, meal);
+    var mkey  = meal.replace(/[^a-zA-Z0-9]/g, '_');
+    var icon  = (MEAL_ICONS && MEAL_ICONS[meal]) ? MEAL_ICONS[meal] : '&#127869;';
+    var score = log.responseScore;
+    var scol  = !score ? 'var(--muted)' : score >= 75 ? 'var(--green2)' : score >= 50 ? 'var(--amber)' : 'var(--red)';
+    var slbl  = !score ? '&#8212;' : score >= 75 ? 'Good response' : score >= 50 ? 'Moderate' : 'Low response';
 
-    var card = document.createElement('div');
-    card.className = 'thermal-session-card';
-
-    // Build timepoint panels
-    var tpHTML = TIMEPOINTS.map(function(tp) {
+    // Build each timepoint panel
+    var tpHTML = '';
+    TIMEPOINTS.forEach(function(tp) {
       var tempVal  = log[tp] || '';
       var imgData  = log['thermalImg_' + tp] || null;
-      var rgbData  = log['rgbImg_' + tp]     || null;
+      var rgbData  = log['rgbImg_'     + tp] || null;
       var tpId     = mkey + '_' + tp;
+      var tid_th   = 'thermal_img_' + tpId;
+      var tid_rgb  = 'rgb_img_'     + tpId;
 
-      return '<div class="tsc-timepoint-panel">' +
-        '<div class="tsc-tp-header">' +
-          '<span class="tsc-tp-badge">'+TP_SHORT[tp]+'</span>' +
-          '<span class="tsc-tp-label">'+TP_LABELS[tp]+'</span>' +
-        '</div>' +
-        // Image upload zone — dual (thermal + RGB)
-        '<div class="tsc-img-row">' +
-          // Thermal image
-          '<div class="tsc-img-zone" onclick="_triggerImgUpload('thermal_img_'+tpId+'')">' +
-            (imgData
-              ? '<img src="'+imgData+'" class="tsc-preview" alt="Thermal '+tp+'"/>' +
-                '<div class="tsc-img-label">🌡 Thermal ✓</div>'
-              : '<div class="tsc-img-placeholder">🌡<br/><span>Upload Thermal Image</span><br/>' +
-                '<span class="tsc-img-hint">FLIR ONE Pro capture</span></div>') +
-            '<input type="file" id="thermal_img_'+tpId+'" accept="image/*"' +
-            ' style="display:none" onchange="handleImgUpload(event,''+day+'',''+meal+'',''+tp+'','thermal')"/>' +
+      tpHTML +=
+        '<div class="tsc-timepoint-panel">' +
+          '<div class="tsc-tp-header">' +
+            '<span class="tsc-tp-badge">' + TP_SHORT[tp] + '</span>' +
+            '<span class="tsc-tp-label">'  + TP_LABELS[tp] + '</span>' +
           '</div>' +
-          // RGB image
-          '<div class="tsc-img-zone" onclick="_triggerImgUpload('rgb_img_'+tpId+'')">' +
-            (rgbData
-              ? '<img src="'+rgbData+'" class="tsc-preview" alt="RGB '+tp+'"/>' +
-                '<div class="tsc-img-label">📷 RGB ✓</div>'
-              : '<div class="tsc-img-placeholder">📷<br/><span>Upload RGB Image</span><br/>' +
-                '<span class="tsc-img-hint">Regular camera capture</span></div>') +
-            '<input type="file" id="rgb_img_'+tpId+'" accept="image/*"' +
-            ' style="display:none" onchange="handleImgUpload(event,''+day+'',''+meal+'',''+tp+'','rgb')"/>' +
-          '</div>' +
-        '</div>' +
-        // Temperature input
-        '<div class="tsc-temp-row">' +
-          '<label class="tsc-temp-label">Forehead Temp</label>' +
-          '<input class="tsc-input" type="number" step="0.1" min="30" max="45"' +
-          ' id="temp_'+tpId+'" placeholder="e.g. 36.2"' +
-          ' value="'+(tempVal||'')+'"' +
-          ' oninput="updateThermal(''+day+'',''+meal+'')" />' +
-          '<span class="tsc-unit">°C</span>' +
-        '</div>' +
-      '</div>';
-    }).join('');
 
-    // Delta + score row
-    var deltaRow = (log.t0 && log.t1)
-      ? '<div class="tsc-delta-row">' +
-          '<span class="tsc-delta-item"><b>ΔT (T1−T0):</b> '+
-            (log.deltaT != null ? (log.deltaT>=0?'+':'')+log.deltaT.toFixed(2)+'°C' : '—')+'</span>' +
+          // ── Image upload row ─────────────────────────────
+          '<div class="tsc-img-row">' +
+
+            // Thermal image zone
+            '<div class="tsc-img-zone" id="zone_th_' + tpId + '" ' +
+              'onclick="document.getElementById(\'' + tid_th + '\').click()">' +
+              (imgData
+                ? '<img src="' + imgData + '" class="tsc-preview" alt="thermal"/>' +
+                  '<div class="tsc-img-label">&#127777; Thermal &#10003;</div>'
+                : '<div class="tsc-img-placeholder">' +
+                    '&#127777;<br/><span>Thermal Image</span><br/>' +
+                    '<span class="tsc-img-hint">FLIR ONE Pro</span>' +
+                  '</div>'
+              ) +
+              '<input type="file" id="' + tid_th + '" accept="image/*" style="display:none" ' +
+              'onchange="handleImgUpload(event,\'' + day + '\',\'' + meal + '\',\'' + tp + '\',\'thermal\')"/>' +
+            '</div>' +
+
+            // RGB image zone
+            '<div class="tsc-img-zone" id="zone_rgb_' + tpId + '" ' +
+              'onclick="document.getElementById(\'' + tid_rgb + '\').click()">' +
+              (rgbData
+                ? '<img src="' + rgbData + '" class="tsc-preview" alt="rgb"/>' +
+                  '<div class="tsc-img-label">&#128247; RGB &#10003;</div>'
+                : '<div class="tsc-img-placeholder">' +
+                    '&#128247;<br/><span>RGB Image</span><br/>' +
+                    '<span class="tsc-img-hint">Regular camera</span>' +
+                  '</div>'
+              ) +
+              '<input type="file" id="' + tid_rgb + '" accept="image/*" style="display:none" ' +
+              'onchange="handleImgUpload(event,\'' + day + '\',\'' + meal + '\',\'' + tp + '\',\'rgb\')"/>' +
+            '</div>' +
+
+          '</div>' + // .tsc-img-row
+
+          // ── Temperature input ────────────────────────────
+          '<div class="tsc-temp-row">' +
+            '<label class="tsc-temp-label">Temp</label>' +
+            '<input class="tsc-input" type="number" step="0.1" min="30" max="45" ' +
+              'id="temp_' + tpId + '" placeholder="36.2" value="' + tempVal + '" ' +
+              'oninput="updateThermal(\'' + day + '\',\'' + meal + '\')"/>' +
+            '<span class="tsc-unit">&#176;C</span>' +
+          '</div>' +
+
+        '</div>'; // .tsc-timepoint-panel
+    });
+
+    // ── Delta row ────────────────────────────────────────
+    var deltaRow = '';
+    if (log.t0 && log.t1) {
+      deltaRow =
+        '<div class="tsc-delta-row">' +
+          '<span class="tsc-delta-item"><b>&#916;T (T1&#8722;T0):</b> ' +
+            (log.deltaT != null ? (log.deltaT >= 0 ? '+' : '') + log.deltaT.toFixed(2) + '&#176;C' : '&#8212;') +
+          '</span>' +
           '<span class="tsc-delta-item"><b>Response Score:</b> ' +
-            '<span style="color:'+scol+';font-weight:700">'+(score||'—')+'/100 — '+slabel+'</span></span>' +
-          '<span class="tsc-delta-item"><b>Capture Status:</b> '+_captureStatus(log)+'</span>' +
-        '</div>'
-      : '';
+            '<span style="color:' + scol + ';font-weight:700">' + (score || '&#8212;') + '/100 &#8212; ' + slbl + '</span>' +
+          '</span>' +
+          '<span class="tsc-delta-item"><b>Protocol:</b> ' +
+            (log.t0 && log.t1 && log.t2 ? '&#10003; Complete' : '&#9888; Partial') +
+          '</span>' +
+        '</div>';
+    }
 
+    // ── Metadata strip ───────────────────────────────────
+    var meta =
+      '<div class="tsc-meta-strip">' +
+        '<span>Participant_ID: ' + (STATE.user ? STATE.user.phone : '&#8212;') + '</span>' +
+        '<span>Meal_ID: ' + meal.replace('-','') + '_' + day + '</span>' +
+        '<span>Day: ' + day + '</span>' +
+        '<span>Thermal: ' + (log.thermalImg_t0?'&#10003;T0':'&#8212;') + ' ' + (log.thermalImg_t1?'&#10003;T1':'&#8212;') + ' ' + (log.thermalImg_t2?'&#10003;T2':'&#8212;') + '</span>' +
+        '<span>RGB: '     + (log.rgbImg_t0?'&#10003;T0':'&#8212;') + ' ' + (log.rgbImg_t1?'&#10003;T1':'&#8212;') + ' ' + (log.rgbImg_t2?'&#10003;T2':'&#8212;') + '</span>' +
+      '</div>';
+
+    // ── Assemble card ────────────────────────────────────
+    var card = document.createElement('div');
+    card.className = 'thermal-session-card';
     card.innerHTML =
       '<div class="tsc-header">' +
-        '<span class="tsc-title">'+icon+' '+meal+'</span>' +
-        '<span class="tsc-session-label">Day '+( DAYS.indexOf(day)+1 )+' of 7 · Participant_ID: '+(STATE.user ? STATE.user.phone : '—')+'</span>' +
-        (score ? '<span class="tsc-badge" style="background:'+scol+'">Score: '+score+'/100</span>' : '') +
+        '<span class="tsc-title">' + icon + ' ' + meal + '</span>' +
+        '<span class="tsc-session-label">Day ' + (DAYS.indexOf(day)+1) + ' of 7</span>' +
+        (score ? '<span class="tsc-badge" style="background:' + scol + '">Score: ' + score + '/100</span>' : '') +
       '</div>' +
       '<div class="tsc-body">' +
-        '<div class="tsc-timepoints-grid">'+tpHTML+'</div>' +
+        '<div class="tsc-timepoints-grid">' + tpHTML + '</div>' +
         deltaRow +
-        // Notes
         '<div class="tsc-notes-row">' +
-          '<label class="tsc-temp-label">Session Notes</label>' +
-          '<input class="form-input" style="margin-top:4px;font-size:.8rem;padding:8px 10px"' +
-          ' placeholder="e.g. Larger portion than usual, felt warm after meal..."' +
-          ' id="tnotes_'+mkey+'" value="'+(log.notes||'')+'"' +
-          ' oninput="updateThermalNotes(''+day+'',''+meal+'')" />' +
+          '<label class="tsc-temp-label" style="display:block;margin-bottom:4px">Session Notes</label>' +
+          '<input class="form-input" style="font-size:.82rem;padding:8px 10px" ' +
+            'placeholder="e.g. Larger portion, felt warm..." ' +
+            'id="tnotes_' + mkey + '" value="' + (log.notes||'') + '" ' +
+            'oninput="updateThermalNotes(\'' + day + '\',\'' + meal + '\')" />' +
         '</div>' +
-        // Metadata strip (matches protocol PER SAMPLE DATA)
-        '<div class="tsc-meta-strip">' +
-          '<span>Participant_ID: '+(STATE.user?STATE.user.phone:'—')+'</span>' +
-          '<span>Meal_ID: '+meal.replace('-','')+'_'+day+'</span>' +
-          '<span>Day: '+day+'</span>' +
-          '<span>Thermal_img: '+(log.thermalImg_t0?'✓ T0':'—')+' '+(log.thermalImg_t1?'✓ T1':'—')+' '+(log.thermalImg_t2?'✓ T2':'—')+'</span>' +
-          '<span>RGB_img: '+(log.rgbImg_t0?'✓ T0':'—')+' '+(log.rgbImg_t1?'✓ T1':'—')+' '+(log.rgbImg_t2?'✓ T2':'—')+'</span>' +
-        '</div>' +
+        meta +
       '</div>';
 
     grid.appendChild(card);
   });
 }
 
-function _captureStatus(log) {
-  var thermal = ['t0','t1','t2'].filter(function(tp){ return !!log['thermalImg_'+tp]; }).length;
-  var rgb     = ['t0','t1','t2'].filter(function(tp){ return !!log['rgbImg_'+tp]; }).length;
-  var temp    = ['t0','t1','t2'].filter(function(tp){ return !!log[tp]; }).length;
-  var col = (thermal===3 && rgb===3 && temp===3) ? 'var(--green2)' : 'var(--amber)';
-  return '<span style="color:'+col+'">🌡 '+thermal+'/3 thermal · 📷 '+rgb+'/3 RGB · 🌡 '+temp+'/3 temps</span>';
-}
-
-// ── Image upload handler ──────────────────────────────────────
-function _triggerImgUpload(inputId) {
-  var el = document.getElementById(inputId);
-  if (el) el.click();
-}
-
+// ── Image upload ─────────────────────────────────────────────
 function handleImgUpload(event, day, meal, tp, type) {
   var file = event.target.files[0];
   if (!file) return;
-
-  // Validate file is an image
   if (!file.type.startsWith('image/')) {
-    showToast('Please upload an image file (JPG, PNG)', 'red'); return;
+    showToast('Please upload an image file', 'red'); return;
   }
-
-  // Convert to base64 for storage
   var reader = new FileReader();
   reader.onload = function(e) {
     ensureThermalSlot(day, meal);
-    var slot = STATE.thermalLog[day][meal];
-    var key  = (type === 'thermal' ? 'thermalImg_' : 'rgbImg_') + tp;
-    slot[key]          = e.target.result;  // base64 data URL
-    slot.recordedAt    = new Date().toISOString();
+    var key = (type === 'thermal' ? 'thermalImg_' : 'rgbImg_') + tp;
+    STATE.thermalLog[day][meal][key]       = e.target.result;
+    STATE.thermalLog[day][meal].recordedAt = new Date().toISOString();
     saveState();
     _renderThermalSessions();
     _renderThermalSummary();
-    showToast(type === 'thermal' ? '🌡 Thermal image saved' : '📷 RGB image saved', 'green');
+    showToast(type === 'thermal' ? 'Thermal image saved' : 'RGB image saved', 'green');
   };
   reader.readAsDataURL(file);
 }
@@ -663,18 +672,15 @@ function handleImgUpload(event, day, meal, tp, type) {
 // ── Temperature update ────────────────────────────────────────
 function updateThermal(day, meal) {
   ensureThermalSlot(day, meal);
-  var mkey = meal.replace(/[^a-z]/gi, '_');
+  var mkey = meal.replace(/[^a-zA-Z0-9]/g, '_');
   var slot = STATE.thermalLog[day][meal];
-
   TIMEPOINTS.forEach(function(tp) {
     var el = document.getElementById('temp_' + mkey + '_' + tp);
     slot[tp] = el ? (parseFloat(el.value) || null) : null;
   });
-
   slot.deltaT        = (slot.t0 && slot.t1) ? Math.round((slot.t1 - slot.t0) * 100) / 100 : null;
   slot.responseScore = calcThermalScore(slot.t0, slot.t1, slot.t2);
   slot.recordedAt    = new Date().toISOString();
-
   saveState();
   _renderThermalSessions();
   _renderThermalSummary();
@@ -682,9 +688,9 @@ function updateThermal(day, meal) {
 
 function updateThermalNotes(day, meal) {
   ensureThermalSlot(day, meal);
-  var mkey = meal.replace(/[^a-z]/gi, '_');
-  var notes = document.getElementById('tnotes_' + mkey);
-  if (notes) STATE.thermalLog[day][meal].notes = notes.value;
+  var mkey = meal.replace(/[^a-zA-Z0-9]/g, '_');
+  var el   = document.getElementById('tnotes_' + mkey);
+  if (el) STATE.thermalLog[day][meal].notes = el.value;
   saveState();
 }
 
@@ -693,106 +699,101 @@ function _renderThermalSummary() {
   var wrap = document.getElementById('thermal-summary-wrap');
   if (!wrap) return;
 
-  var totalSessions=0, completeSessions=0;
-  var thermalImgs=0, rgbImgs=0;
-  var deltaSum=0, deltaCount=0, scoreSum=0, scoreCount=0;
+  var total=0, complete=0, tImgs=0, rImgs=0;
+  var dSum=0, dCount=0, sSum=0, sCount=0;
 
   DAYS.forEach(function(d) {
-    var dayLog = (STATE.thermalLog && STATE.thermalLog[d]) ? STATE.thermalLog[d] : {};
+    var dl = (STATE.thermalLog && STATE.thermalLog[d]) ? STATE.thermalLog[d] : {};
     THERMAL_MEALS.forEach(function(m) {
-      var sl = dayLog[m];
-      if (!sl) return;
-      if (sl.t0 || sl.thermalImg_t0) totalSessions++;
-      if (sl.t0 && sl.t1 && sl.t2 && sl.thermalImg_t0 && sl.thermalImg_t1 && sl.thermalImg_t2) completeSessions++;
-      ['t0','t1','t2'].forEach(function(tp) {
-        if (sl['thermalImg_'+tp]) thermalImgs++;
-        if (sl['rgbImg_'+tp])     rgbImgs++;
+      var sl = dl[m]; if (!sl) return;
+      if (sl.t0 || sl.thermalImg_t0) total++;
+      if (sl.t0&&sl.t1&&sl.t2&&sl.thermalImg_t0&&sl.thermalImg_t1&&sl.thermalImg_t2) complete++;
+      TIMEPOINTS.forEach(function(tp) {
+        if (sl['thermalImg_'+tp]) tImgs++;
+        if (sl['rgbImg_'+tp])     rImgs++;
       });
-      if (sl.deltaT != null)        { deltaSum  += sl.deltaT; deltaCount++; }
-      if (sl.responseScore != null) { scoreSum  += sl.responseScore; scoreCount++; }
+      if (sl.deltaT        != null) { dSum += sl.deltaT;        dCount++; }
+      if (sl.responseScore != null) { sSum += sl.responseScore; sCount++; }
     });
   });
 
-  var avgDelta = deltaCount ? (deltaSum/deltaCount).toFixed(2) : null;
-  var avgScore = scoreCount ? Math.round(scoreSum/scoreCount) : null;
-  var scol = !avgScore ? 'var(--muted)'
-           : avgScore>=75 ? 'var(--green2)' : avgScore>=50 ? 'var(--amber)' : 'var(--red)';
+  var avgDT  = dCount ? (dSum/dCount).toFixed(2) : null;
+  var avgSc  = sCount ? Math.round(sSum/sCount)  : null;
+  var scol   = !avgSc ? 'var(--muted)' : avgSc>=75 ? 'var(--green2)' : avgSc>=50 ? 'var(--amber)' : 'var(--red)';
 
-  if (!totalSessions) {
+  if (!total) {
     wrap.innerHTML = '<div class="thermal-empty">' +
-      '📷 No thermal sessions recorded yet.<br/>' +
+      '&#128247; No thermal sessions recorded yet.<br/>' +
       'Select a day above, connect your FLIR ONE Pro, and upload your first capture at T0.' +
       '</div>';
     return;
   }
 
   wrap.innerHTML =
-    '<div class="thermal-summary-title">Weekly Thermal Imaging Summary — N=30 Experimental Protocol</div>' +
+    '<div class="thermal-summary-title">Weekly Thermal Imaging Summary &#8212; N=30 Experimental Protocol</div>' +
     '<div class="thermal-summary-grid">' +
-      _tStat(totalSessions+'/'+(DAYS.length*THERMAL_MEALS.length), 'Sessions Recorded', 'var(--green2)') +
-      _tStat(completeSessions+'/'+totalSessions, 'Fully Complete', 'var(--blue)') +
-      _tStat(thermalImgs+' images', 'Thermal Captures', 'var(--amber)') +
-      _tStat(rgbImgs+' images', 'RGB Captures', 'var(--blue)') +
-      _tStat(avgDelta!=null ? (avgDelta>=0?'+':'')+avgDelta+'°C' : '—', 'Avg ΔT (T1−T0)', 'var(--amber)') +
-      _tStat(avgScore!=null ? avgScore+'/100' : '—', 'Avg Response Score', scol) +
+      _tStat(total + '/' + (DAYS.length*THERMAL_MEALS.length), 'Sessions Recorded',   'var(--green2)') +
+      _tStat(complete + '/' + total,                            'Fully Complete',       'var(--blue)')  +
+      _tStat(tImgs + ' images',                                 'Thermal Captures',     'var(--amber)') +
+      _tStat(rImgs + ' images',                                 'RGB Captures',         'var(--blue)')  +
+      _tStat(avgDT  != null ? (avgDT>=0?'+':'') + avgDT + '&#176;C' : '&#8212;', 'Avg &#916;T', 'var(--amber)') +
+      _tStat(avgSc  != null ? avgSc + '/100' : '&#8212;',       'Avg Response Score',  scol)           +
     '</div>' +
     '<div class="thermal-insight">' +
-      '<span class="thermal-insight-icon">💡</span>' +
-      '<div>' + _thermalInsight(avgDelta, avgScore, scoreCount) + '</div>' +
+      '<span class="thermal-insight-icon">&#128161;</span>' +
+      '<div>' + _thermalInsight(avgDT, avgSc, sCount) + '</div>' +
     '</div>' +
-    // Performance comparison table
-    '<div class="thermal-summary-title" style="margin-top:18px">📊 Performance Comparison (Table X)</div>' +
+    '<div class="thermal-summary-title" style="margin-top:18px">&#128202; Performance Comparison &#8212; Table X (N=30)</div>' +
     _perfTable();
-}
-
-function _perfTable() {
-  var rows = [
-    ['Adherence F1-score',         '0.84 ± 0.05', '0.89 ± 0.04', '0.92 ± 0.03', true],
-    ['Calorie MAE (kcal)',          '88.5 ± 12.3', '70.2 ± 10.1', '61.8 ± 8.7',  false],
-    ['Nutrient Deviation (%)',      '8.9 ± 2.1',   '5.1 ± 1.8',  '4.2 ± 1.5',   false],
-    ['Reward Variance',             '0.42 ± 0.09', '0.31 ± 0.07','0.24 ± 0.05', false],
-    ['Adherence Estimation Error (%)','14.8 ± 3.5','10.2 ± 2.9', '7.6 ± 2.4',   false],
-    ['Model Convergence (epochs)',  '145 ± 20',    '110 ± 18',   '95 ± 15',      false],
-  ];
-
-  var html = '<div class="perf-table-wrap"><table class="perf-table">' +
-    '<thead><tr>' +
-    '<th>Metric</th><th>Baseline (DL/RNN)</th>' +
-    '<th>Smart Diet (No Thermal)</th>' +
-    '<th style="background:var(--green2);color:#fff">Smart Diet (+ Thermal) ★</th>' +
-    '</tr></thead><tbody>';
-
-  rows.forEach(function(row) {
-    html += '<tr>' +
-      '<td style="font-weight:600">' + row[0] + '</td>' +
-      '<td style="color:var(--red)">' + row[1] + '</td>' +
-      '<td>' + row[2] + '</td>' +
-      '<td style="font-weight:700;color:var(--green2)">' + row[3] + '</td>' +
-      '</tr>';
-  });
-
-  html += '</tbody></table>' +
-    '<div style="font-size:.72rem;color:var(--muted);margin-top:6px">' +
-    'Table X: Performance comparison N=30 · ★ Smart Diet + FLIR ONE Pro Thermal achieves best results across all metrics' +
-    '</div></div>';
-  return html;
 }
 
 function _tStat(val, lbl, col) {
   return '<div class="thermal-stat-card">' +
-    '<div class="tsc-val" style="color:'+col+'">'+val+'</div>' +
-    '<div class="tsc-lbl">'+lbl+'</div>' +
+    '<div class="tsc-val" style="color:' + col + '">' + val + '</div>' +
+    '<div class="tsc-lbl">' + lbl + '</div>' +
     '</div>';
 }
 
-function _thermalInsight(avgDelta, avgScore, count) {
-  if (!count) return 'Record temperature readings to receive personalised thermal insights about your adherence patterns.';
-  var dT = parseFloat(avgDelta);
+function _thermalInsight(avgDT, avgSc, count) {
+  if (!count) return 'Record temperature readings to receive personalised thermal insights.';
+  var dT = parseFloat(avgDT);
   if (dT >= 0.5 && dT <= 1.0)
-    return '<b>Optimal postprandial response detected.</b> Your average ΔT of ' + avgDelta + '°C falls within the expected 0.5–1.0°C postprandial thermogenesis range. This indicates strong metabolic response alignment with your reported dietary intake — a high-confidence adherence signal.';
+    return '<b>Optimal postprandial response detected.</b> Your average &#916;T of ' + avgDT + '&#176;C is within the expected 0.5&#8211;1.0&#176;C range, indicating strong metabolic alignment with your reported dietary intake.';
   if (dT < 0.3)
-    return '<b>Low thermogenic response.</b> ΔT of ' + avgDelta + '°C is below expected range. This may indicate the meal was smaller than logged (underreporting), reduced metabolic activity, or measurement error. The RL reward function will adjust your adherence estimate downward.';
+    return '<b>Low thermogenic response.</b> &#916;T of ' + avgDT + '&#176;C is below expected range. This may indicate the meal was smaller than logged. The RL reward function will adjust your adherence estimate accordingly.';
   if (dT > 1.2)
-    return '<b>Elevated thermogenic response.</b> ΔT of ' + avgDelta + '°C exceeds typical range. This may indicate larger portions than logged. The system will flag potential overreporting for this session in the reward estimation pipeline.';
-  return 'Average response score: ' + avgScore + '/100. Your thermal readings are being used to refine the RL reward function — continue capturing all three timepoints for maximum accuracy.';
+    return '<b>Elevated thermogenic response.</b> &#916;T of ' + avgDT + '&#176;C exceeds typical range, possibly indicating larger portions than logged. The system will flag potential overreporting.';
+  return 'Average response score: ' + avgSc + '/100. Continue capturing all three timepoints for maximum RL accuracy.';
+}
+
+function _perfTable() {
+  var rows = [
+    ['Adherence F1-score',           '0.84 &#177; 0.05', '0.89 &#177; 0.04', '0.92 &#177; 0.03'],
+    ['Calorie MAE (kcal)',            '88.5 &#177; 12.3', '70.2 &#177; 10.1', '61.8 &#177; 8.7' ],
+    ['Nutrient Deviation (%)',        '8.9 &#177; 2.1',   '5.1 &#177; 1.8',   '4.2 &#177; 1.5'  ],
+    ['Reward Variance',               '0.42 &#177; 0.09', '0.31 &#177; 0.07', '0.24 &#177; 0.05'],
+    ['Adherence Estimation Error (%)','14.8 &#177; 3.5',  '10.2 &#177; 2.9',  '7.6 &#177; 2.4'  ],
+    ['Model Convergence (epochs)',    '145 &#177; 20',     '110 &#177; 18',    '95 &#177; 15'    ],
+  ];
+  var html =
+    '<div class="perf-table-wrap">' +
+    '<table class="perf-table"><thead><tr>' +
+    '<th>Metric</th>' +
+    '<th>Baseline (DL/RNN)</th>' +
+    '<th>Smart Diet (No Thermal)</th>' +
+    '<th style="background:var(--green2);color:#fff">Smart Diet + Thermal &#9733;</th>' +
+    '</tr></thead><tbody>';
+  rows.forEach(function(r) {
+    html += '<tr>' +
+      '<td style="font-weight:600">' + r[0] + '</td>' +
+      '<td style="color:var(--red)">' + r[1] + '</td>' +
+      '<td>' + r[2] + '</td>' +
+      '<td style="font-weight:700;color:var(--green2)">' + r[3] + '</td>' +
+      '</tr>';
+  });
+  html += '</tbody></table>' +
+    '<p style="font-size:.72rem;color:var(--muted);margin-top:6px">' +
+    '&#9733; Smart Diet + FLIR ONE Pro Thermal achieves best results across all metrics (N=30)' +
+    '</p></div>';
+  return html;
 }

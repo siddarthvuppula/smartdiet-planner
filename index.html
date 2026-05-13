@@ -466,20 +466,35 @@
   <div class="content fade-in" id="tab-content-thermal" style="display:none">
     <div class="section-title">🌡 Thermal Imaging Log</div>
     <div class="section-sub">
-      Record postprandial thermal readings at T0 (pre-meal), T1 (15–20 min after) and T2 (45–60 min after).
-      These readings are used to validate dietary adherence and improve RL reward estimation.
+      Attach your <strong>FLIR ONE Pro</strong> thermal camera to your phone, capture forehead images
+      at <strong>T0</strong> (pre-meal), <strong>T1</strong> (15–20 min after) and
+      <strong>T2</strong> (45–60 min after), then upload them below alongside temperature readings.
+      Images are stored locally and synced to the server for RL reward estimation.
     </div>
 
-    <!-- Device status banner -->
+    <!-- Protocol checklist -->
+    <div class="thermal-checklist">
+      <div class="tcl-title">📋 Standardisation Checklist — Complete Before Every Capture Session</div>
+      <div class="tcl-grid">
+        <label class="tcl-item"><input type="checkbox"/> Indoor environment only</label>
+        <label class="tcl-item"><input type="checkbox"/> Fixed camera distance 30–50 cm</label>
+        <label class="tcl-item"><input type="checkbox"/> Standardised meal served</label>
+        <label class="tcl-item"><input type="checkbox"/> No exercise 30 min before capture</label>
+        <label class="tcl-item"><input type="checkbox"/> Glasses and hats removed</label>
+        <label class="tcl-item"><input type="checkbox"/> FLIR ONE Pro connected to phone</label>
+      </div>
+    </div>
+
+    <!-- Device status banner (rendered by JS) -->
     <div class="thermal-device-banner" id="thermal-device-banner"></div>
 
     <!-- Day selector -->
     <div class="day-tabs-row" id="thermal-day-tabs"></div>
 
-    <!-- T0/T1/T2 capture cards -->
+    <!-- T0 / T1 / T2 session cards (rendered by renderThermalTab()) -->
     <div class="thermal-sessions-grid" id="thermal-sessions-grid"></div>
 
-    <!-- Today's thermal summary -->
+    <!-- Weekly summary + performance table -->
     <div class="thermal-summary-wrap" id="thermal-summary-wrap"></div>
   </div>
 
