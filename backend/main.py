@@ -70,6 +70,7 @@ def signup(data: dict):
         "diabetic": diab, "profile_key": f"{cond}-{band}",
         "weight_kg": weight, "height_cm": height_cm,
         "height_display": height_str, "bmi": bmi,
+        "thermal_device": bool(u.get("thermalDevice", False)),
         "password_hash": hp(str(u.get("pass", u.get("password","")))),
         "signup_date": now, "last_login": now
     }).execute()
@@ -102,7 +103,8 @@ def login(data: dict):
         "weight": u.get("weight_kg", 0),
         "height": u.get("height_cm", 0),
         "heightDisplay": u.get("height_display", ""),
-        "bmi": u.get("bmi", 0)
+        "bmi": u.get("bmi", 0),
+        "thermalDevice": u.get("thermal_device", False)
     }}
 
 @app.post("/api/save")
@@ -163,7 +165,7 @@ def get_users(x_admin_key: str = Header(default="")):
     res = d.table("users").select(
         "phone,mobile,country_code,first_name,last_name,"
         "diet_preference,age,age_group,diabetic,profile_key,"
-        "weight_kg,height_cm,height_display,bmi,signup_date,last_login"
+        "weight_kg,height_cm,height_display,bmi,thermal_device,signup_date,last_login"
     ).order("signup_date", desc=True).execute()
     return {"users": res.data, "total": len(res.data)}
 
@@ -175,4 +177,9 @@ def get_user(phone: str, x_admin_key: str = Header(default="")):
     logs  = d.table("meal_logs").select("*").eq("phone", phone).execute()
     plans = d.table("meal_plans").select("*").eq("phone", phone).execute()
     if not user.data: raise HTTPException(404, "User not found")
-    return {"user": user.data[0], "log": logs.data, "plan": plans.data}
+    try:
+        thermal = d.table("thermal_logs").select("*").eq("phone", phone).execute()
+        thermal_data = thermal.data
+    except:
+        thermal_data = []
+    return {"user": user.data[0], "log": logs.data, "plan": plans.data, "thermal": thermal_data}

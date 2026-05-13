@@ -140,6 +140,30 @@
         </div>
       </div>
 
+      <!-- Thermal Imaging -->
+      <div class="form-group">
+        <label class="form-label">Thermal Imaging Device</label>
+        <div class="thermal-toggle-wrap">
+          <label class="thermal-card" id="tc-no" onclick="selectThermal('no')">
+            <input type="radio" name="thermal" id="therm-no" value="no" checked/>
+            <div>
+              <div class="rc-label">📷 Not Available</div>
+              <div class="rc-sub">Self-report mode only</div>
+            </div>
+          </label>
+          <label class="thermal-card" id="tc-yes" onclick="selectThermal('yes')">
+            <input type="radio" name="thermal" id="therm-yes" value="yes"/>
+            <div>
+              <div class="rc-label">🌡 FLIR ONE Pro</div>
+              <div class="rc-sub">Thermal + RGB feedback mode</div>
+            </div>
+          </label>
+        </div>
+        <div class="form-hint">
+          Thermal imaging captures postprandial skin temperature for objective adherence validation
+        </div>
+      </div>
+
     </div><!-- /signup-fields -->
 
     <!-- ── Shared fields ── -->
@@ -225,6 +249,7 @@
     <div class="nav-tab"        id="tab-plan"     onclick="switchTab('plan')"    >🗓 Weekly Plan</div>
     <div class="nav-tab"        id="tab-summary"  onclick="switchTab('summary')" >📊 Nutrient Summary</div>
     <div class="nav-tab"        id="tab-overview" onclick="switchTab('overview')">📈 Weekly Overview</div>
+    <div class="nav-tab"        id="tab-thermal"  onclick="switchTab('thermal')">🌡 Thermal Log</div>
   </div>
 
   <!-- ════════════════════════════════════════════
@@ -435,6 +460,29 @@
     <div id="weekly-heatmap-wrap"></div>
   </div>
 
+  <!-- ════════════════════════════════════════════
+       TAB 6 — THERMAL IMAGING LOG
+  ════════════════════════════════════════════ -->
+  <div class="content fade-in" id="tab-content-thermal" style="display:none">
+    <div class="section-title">🌡 Thermal Imaging Log</div>
+    <div class="section-sub">
+      Record postprandial thermal readings at T0 (pre-meal), T1 (15–20 min after) and T2 (45–60 min after).
+      These readings are used to validate dietary adherence and improve RL reward estimation.
+    </div>
+
+    <!-- Device status banner -->
+    <div class="thermal-device-banner" id="thermal-device-banner"></div>
+
+    <!-- Day selector -->
+    <div class="day-tabs-row" id="thermal-day-tabs"></div>
+
+    <!-- T0/T1/T2 capture cards -->
+    <div class="thermal-sessions-grid" id="thermal-sessions-grid"></div>
+
+    <!-- Today's thermal summary -->
+    <div class="thermal-summary-wrap" id="thermal-summary-wrap"></div>
+  </div>
+
 </div><!-- /screen-app -->
 
 <div class="toast" id="toast"></div>
@@ -613,6 +661,17 @@ function validatePassword(input) {
   label.textContent = lv.label;
 }
 
+/** Thermal device selection */
+function selectThermal(val) {
+  var yes = document.getElementById('tc-yes');
+  var no  = document.getElementById('tc-no');
+  if (yes) yes.className = 'thermal-card' + (val==='yes' ? ' selected-thermal' : '');
+  if (no)  no.className  = 'thermal-card' + (val==='no'  ? ' selected-no'     : '');
+  var ry = document.getElementById('therm-yes'); if (ry) ry.checked = (val==='yes');
+  var rn = document.getElementById('therm-no');  if (rn) rn.checked = (val==='no');
+  document.getElementById('in-thermal').value = val;
+}
+
 /** Toggle password visibility */
 function togglePassword() {
   const inp = document.getElementById('in-pass');
@@ -623,6 +682,10 @@ function togglePassword() {
 </script>
 
 <!-- Hidden select consumed by auth.js for diabetic value -->
+<select id="in-thermal" style="display:none">
+  <option value="no" selected>no</option>
+  <option value="yes">yes</option>
+</select>
 <select id="in-diabetic" style="display:none">
   <option value="no" selected>no</option>
   <option value="yes">yes</option>

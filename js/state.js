@@ -16,7 +16,9 @@ const LS_USERS_KEY   = 'smartdiet_all_users';
 let STATE = {
   user: null, token: null,
   currentLogDay: 'Monday', currentPlanDay: 'Monday',
-  weekLog: {}, weekPlan: {}, carryover: {}
+  currentThermalDay: 'Monday',
+  weekLog: {}, weekPlan: {}, carryover: {},
+  thermalLog: {}
 };
 
 // ── LOCAL USER REGISTRY (offline support) ────────────────────────
@@ -62,7 +64,9 @@ function loadStateForUser(phone) {
 
 function resetWeekData() {
   STATE.weekLog = {}; STATE.weekPlan = {}; STATE.carryover = {};
+  STATE.thermalLog = {};
   STATE.currentLogDay = 'Monday'; STATE.currentPlanDay = 'Monday';
+  STATE.currentThermalDay = 'Monday';
 }
 
 // ── SERVER SYNC ───────────────────────────────────────────────────
@@ -76,7 +80,8 @@ function _pushToServer() {
       token:     STATE.token || '',
       weekLog:   STATE.weekLog,
       weekPlan:  STATE.weekPlan,
-      carryover: STATE.carryover
+      carryover: STATE.carryover,
+      thermalLog: STATE.thermalLog
     })
   }).catch(function() {});  // silent — localStorage already saved
 }
@@ -112,11 +117,47 @@ function getPlanFoods(day, meal) {
   return (STATE.weekPlan[day] && STATE.weekPlan[day][meal])
     ? STATE.weekPlan[day][meal] : [];
 }
+// ── THERMAL DATA HELPERS ────────────────────────────────────────
+function ensureThermalSlot(day, meal) {
+  if (!STATE.thermalLog)          STATE.thermalLog = {};
+  if (!STATE.thermalLog[day])     STATE.thermalLog[day] = {};
+  if (!STATE.thermalLog[day][meal]) STATE.thermalLog[day][meal] = {
+    t0: null, t1: null, t2: null,   // temperatures °C
+    deltaT: null,                    // ΔT = T1 - T0
+    responseScore: null,             // 0-100 adherence proxy
+    notes: '', recordedAt: null
+  };
+}
+
+function getThermalLog(day, meal) {
+  return (STATE.thermalLog && STATE.thermalLog[day] && STATE.thermalLog[day][meal])
+    ? STATE.thermalLog[day][meal]
+    : { t0:null, t1:null, t2:null, deltaT:null, responseScore:null, notes:'', recordedAt:null };
+}
+
+function calcThermalScore(t0, t1, t2) {
+  // Postprandial thermogenesis: typical rise 0.3-1.2°C after meal
+  // Higher rise within expected range = better metabolic response = higher adherence score
+  if (!t0 || !t1) return null;
+  var delta1 = t1 - t0;
+  var delta2 = t2 ? t2 - t0 : delta1;
+  // Score 0-100: optimal response is +0.5 to +1.0°C
+  var optimal = 0.75;
+  var score = Math.max(0, Math.min(100, 100 - Math.abs(delta1 - optimal) * 60));
+  return Math.round(score);
+}
+
+function userHasThermal() {
+  return STATE.user && STATE.user.thermalDevice === true;
+}
+
 function getUserProfileLabel() {
   var u = STATE.user; if (!u) return '';
   var cond = u.diabetic ? 'Diabetic' : 'Non-Diabetic';
   var band = u.age <= 35
     ? 'Age ' + u.age + ' (Young Adult)'
     : 'Age ' + u.age + ' (Middle Adult)';
-  return cond + ' · ' + band;
+  var wt = u.weight ? ' · ' + u.weight + 'kg' : '';
+  var bmiStr = u.bmi ? ' · BMI ' + u.bmi : '';
+  return cond + ' · ' + band + wt + bmiStr;
 }

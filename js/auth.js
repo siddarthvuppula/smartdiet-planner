@@ -55,14 +55,18 @@ function _handleSignup(phone, mobile, code, pass) {
   var bmi       = (weight > 0 && heightCm > 0)
                   ? parseFloat((weight / ((heightCm/100)*(heightCm/100))).toFixed(1)) : 0;
 
+  var thermalVal = document.getElementById('in-thermal') ? document.getElementById('in-thermal').value : 'no';
+  var thermalDevice = (thermalVal === 'yes');
+
   var userObj = {
     phone: phone, mobile: mobile, countryCode: code,
     fname: fname, lname: lname, pass: pass,
     diet: diet, age: age, diabetic: diabetic,
     weight: weight,
-    height: heightCm,       // stored in cm for calculations
-    heightDisplay: heightStr, // stored as "5 ft 7 in" for display
+    height: heightCm,
+    heightDisplay: heightStr,
     bmi: bmi,
+    thermalDevice: thermalDevice,
     signupDate: new Date().toISOString()
   };
 

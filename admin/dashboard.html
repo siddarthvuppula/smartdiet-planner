@@ -211,6 +211,7 @@ body{background:#f0f7f4;font-family:'Outfit',sans-serif;color:#1a2e1f;min-height
           <th>Diet</th>
           <th>Diabetic</th>
           <th>Profile</th>
+          <th>Thermal</th>
           <th onclick="sortBy('signup_date')">Signed Up ↕</th>
           <th onclick="sortBy('last_login')">Last Login ↕</th>
         </tr>
@@ -236,9 +237,11 @@ body{background:#f0f7f4;font-family:'Outfit',sans-serif;color:#1a2e1f;min-height
     <div class="detail-tabs">
       <div class="dtab active" onclick="showTab('log',this)">📝 Meal Log</div>
       <div class="dtab" onclick="showTab('plan',this)">🗓 Generated Plan</div>
+      <div class="dtab" onclick="showTab('thermal',this)">🌡 Thermal Log</div>
     </div>
     <div id="detail-log"></div>
     <div id="detail-plan" style="display:none"></div>
+    <div id="detail-thermal" style="display:none"></div>
   </div>
 
 </div>
@@ -348,6 +351,7 @@ function renderTable(){
       '<td>'+dietBadge+'</td>'+
       '<td>'+diabBadge+'</td>'+
       '<td style="font-size:.72rem;color:var(--muted)">'+esc(u.profile_key||'—')+'</td>'+
+      '<td>'+(u.thermal_device?'<span class="badge" style="background:#d97706;color:#fff;border-color:#d97706">🌡 Active</span>':'<span style="color:var(--muted);font-size:.75rem">—</span>')+'</td>'+
       '<td style="font-size:.76rem">'+fmt(u.signup_date)+'</td>'+
       '<td style="font-size:.76rem">'+fmt(u.last_login)+'</td>'+
       '</tr>';
@@ -387,6 +391,7 @@ function showDetail(phone){
           ['Diet',          u.diet_preference==='vegan'?'🌱 Vegan':'🍗 Non-Vegetarian'],
           ['Diabetic',      u.diabetic==='Yes'?'🩺 Yes':'✅ No'],
           ['Profile Key',   u.profile_key],
+          ['Thermal Device', u.thermal_device ? '🌡 FLIR ONE Pro — Active' : '📷 Not configured'],
           ['Signup Date',   fmt(u.signup_date)],
           ['Last Login',    fmt(u.last_login)],
         ])+
@@ -403,6 +408,37 @@ function showDetail(phone){
       renderDetailTable('detail-log', logs,
         ['day','meal_type','food_name','calories','protein','fat','carbs','fiber','sugar','skipped'],
         'No meal log data yet — user needs to log meals and save.');
+      // Thermal log
+      var thermalData = data.thermal || [];
+      // Build enhanced thermal display with image status
+      var thermalHtml = '';
+      if (!thermalData.length) {
+        thermalHtml = '<div class="no-data">No thermal sessions recorded yet.</div>';
+      } else {
+        thermalHtml = '<div class="table-wrap" style="max-height:320px;overflow-y:auto">' +
+          '<table class="data-table"><thead><tr>' +
+          '<th>Day</th><th>Meal</th><th>T0 °C</th><th>T1 °C</th><th>T2 °C</th>' +
+          '<th>ΔT</th><th>Score</th><th>🌡 Images</th><th>📷 RGB</th><th>Notes</th>' +
+          '</tr></thead><tbody>';
+        thermalData.forEach(function(r) {
+          var thermal = [r.has_thermal_t0,r.has_thermal_t1,r.has_thermal_t2].filter(Boolean).length;
+          var rgb     = [r.has_rgb_t0,r.has_rgb_t1,r.has_rgb_t2].filter(Boolean).length;
+          var scol = !r.response_score ? '' :
+            r.response_score>=75 ? 'color:var(--green)' :
+            r.response_score>=50 ? 'color:var(--amber)' : 'color:var(--red)';
+          thermalHtml += '<tr>' +
+            '<td>'+r.day+'</td><td>'+r.meal_type+'</td>' +
+            '<td>'+(r.t0||'—')+'</td><td>'+(r.t1||'—')+'</td><td>'+(r.t2||'—')+'</td>' +
+            '<td>'+(r.delta_t!=null?(r.delta_t>=0?'+':'')+r.delta_t+'°C':'—')+'</td>' +
+            '<td style="'+scol+';font-weight:700">'+(r.response_score||'—')+'</td>' +
+            '<td>'+thermal+'/3 '+(thermal===3?'✓':'')+'</td>' +
+            '<td>'+rgb+'/3 '+(rgb===3?'✓':'')+'</td>' +
+            '<td style="font-size:.76rem">'+(r.notes||'—')+'</td>' +
+            '</tr>';
+        });
+        thermalHtml += '</tbody></table></div>';
+      }
+      document.getElementById('detail-thermal').innerHTML = thermalHtml;
       renderDetailTable('detail-plan', plans,
         ['day','meal_type','food_name','calories','protein','fat','carbs','fiber','sugar','compensation_active'],
         'No plan data yet — user needs to save a day to generate a plan.');
@@ -433,8 +469,9 @@ function renderDetailTable(id, rows, fields, empty){
 function showTab(tab,btn){
   document.querySelectorAll('.dtab').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
-  document.getElementById('detail-log').style.display  = tab==='log'  ? '' : 'none';
-  document.getElementById('detail-plan').style.display = tab==='plan' ? '' : 'none';
+  document.getElementById('detail-log').style.display     = tab==='log'     ? '' : 'none';
+  document.getElementById('detail-plan').style.display    = tab==='plan'    ? '' : 'none';
+  document.getElementById('detail-thermal').style.display = tab==='thermal' ? '' : 'none';
 }
 
 function closeDetail(){
